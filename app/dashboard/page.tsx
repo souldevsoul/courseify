@@ -111,7 +111,7 @@ export default async function DashboardPage() {
       title: "Cloned Voices",
       value: stats.totalVoices,
       icon: RiVoiceprintLine,
-      color: "bg-purple-400",
+      color: "bg-blue-400",
       link: "/dashboard/voices",
     },
     {
@@ -125,7 +125,7 @@ export default async function DashboardPage() {
       title: "Credits",
       value: stats.creditsRemaining,
       icon: RiCoinLine,
-      color: "bg-yellow-400",
+      color: "bg-green-400",
       link: "#",
     },
   ]
@@ -187,7 +187,7 @@ export default async function DashboardPage() {
               {recentAudios.map((audio) => (
                 <div
                   key={audio.id}
-                  className="flex items-center justify-between border-2 border-black p-4 hover:bg-yellow-50 transition-colors"
+                  className="flex items-center justify-between border-2 border-black p-4 hover:bg-green-50 transition-colors"
                 >
                   <div className="flex items-center space-x-4">
                     <div className="flex h-10 w-10 items-center justify-center border-2 border-black bg-white">
@@ -240,7 +240,7 @@ export default async function DashboardPage() {
 
             <div className="mt-6 space-y-4">
               <div className="flex items-center justify-center">
-                <div className="flex h-32 w-32 items-center justify-center border-4 border-black bg-yellow-400">
+                <div className="flex h-32 w-32 items-center justify-center border-4 border-black bg-green-400">
                   <div className="text-center">
                     <Heading as="h2" className="text-4xl font-bold">
                       {stats.creditsRemaining}

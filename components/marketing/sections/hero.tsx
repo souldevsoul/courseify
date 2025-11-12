@@ -48,7 +48,7 @@ const Hero = React.forwardRef<HTMLElement, HeroProps>(
               {/* Badge */}
               {badge && (
                 <div className="mb-6 animate-fade-in">
-                  <span className="inline-block px-4 py-2 text-sm font-bold text-black bg-yellow-400 border-2 border-black uppercase">
+                  <span className="inline-block px-4 py-2 text-sm font-bold text-black bg-green-400 border-2 border-black uppercase">
                     {badge}
                   </span>
                 </div>
@@ -115,7 +115,7 @@ const Hero = React.forwardRef<HTMLElement, HeroProps>(
 
         {/* Background Decorations */}
         <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-20">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-yellow-400 rounded-full filter blur-3xl" />
+          <div className="absolute top-20 left-10 w-72 h-72 bg-green-400 rounded-full filter blur-3xl" />
           <div className="absolute bottom-20 right-10 w-72 h-72 bg-black rounded-full filter blur-3xl" />
         </div>
       </section>

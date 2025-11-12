@@ -89,7 +89,7 @@ export function EstimateCard({
         <Card variant="outlined" className="border-4 border-black">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <RiMoneyDollarCircleLine className="h-6 w-6 text-yellow-400" />
+              <RiMoneyDollarCircleLine className="h-6 w-6 text-green-400" />
               AI ESTIMATION
             </CardTitle>
             <CardDescription>
@@ -144,7 +144,7 @@ export function EstimateCard({
               <AlertDialogAction
                 onClick={handleGetEstimate}
                 disabled={requestText.length < 10 || requestText.length > 5000 || loading}
-                className="bg-yellow-400 text-black border-4 border-black hover:bg-yellow-500"
+                className="bg-green-400 text-black border-4 border-black hover:bg-green-500"
               >
                 {loading ? "ESTIMATING..." : "GET ESTIMATE"}
               </AlertDialogAction>

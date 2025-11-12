@@ -25,7 +25,7 @@ const TestimonialCard = React.forwardRef<HTMLDivElement, TestimonialCardProps>(
       >
         <CardContent className="p-0">
           {/* Quote Icon */}
-          <Quote className="w-10 h-10 text-yellow-400 mb-4" />
+          <Quote className="w-10 h-10 text-green-400 mb-4" />
 
           {/* Rating */}
           {rating > 0 && (

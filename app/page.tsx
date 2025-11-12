@@ -125,19 +125,19 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center brutalist-shadow-yellow">
-              <RiMic2Fill className="w-7 h-7 text-yellow-400" />
+              <RiMic2Fill className="w-7 h-7 text-green-400" />
             </div>
             <span className="text-xl font-bold uppercase tracking-tight">VOICECRAFT</span>
           </div>
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-sm font-bold uppercase tracking-wider hover:text-yellow-400 transition-colors">Features</a>
-            <a href="#pricing" className="text-sm font-bold uppercase tracking-wider hover:text-yellow-400 transition-colors">Pricing</a>
-            <a href="/about" className="text-sm font-bold uppercase tracking-wider hover:text-yellow-400 transition-colors">About</a>
-            <a href="/contact" className="text-sm font-bold uppercase tracking-wider hover:text-yellow-400 transition-colors">Contact</a>
+            <a href="#features" className="text-sm font-bold uppercase tracking-wider hover:text-green-400 transition-colors">Features</a>
+            <a href="#pricing" className="text-sm font-bold uppercase tracking-wider hover:text-green-400 transition-colors">Pricing</a>
+            <a href="/about" className="text-sm font-bold uppercase tracking-wider hover:text-green-400 transition-colors">About</a>
+            <a href="/contact" className="text-sm font-bold uppercase tracking-wider hover:text-green-400 transition-colors">Contact</a>
           </nav>
           <Button
             size="md"
-            className="bg-yellow-400 text-black hover:bg-yellow-300 border-4 border-black font-bold uppercase"
+            className="bg-green-400 text-black hover:bg-yellow-300 border-4 border-black font-bold uppercase"
             onClick={() => window.location.href = '/dashboard'}
           >
             Get Started
@@ -146,11 +146,11 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-white via-yellow-50 to-white border-b-8 border-black min-h-[90vh] flex items-center">
+      <section className="relative overflow-hidden bg-gradient-to-br from-white via-green-50 to-white border-b-8 border-black min-h-[90vh] flex items-center">
         <div className="max-w-7xl mx-auto px-6 py-24 relative z-10">
           <div className="text-center space-y-12">
             {/* Badge */}
-            <div className={`inline-flex items-center gap-3 px-6 py-3 bg-yellow-400 border-4 border-black brutalist-shadow transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}>
+            <div className={`inline-flex items-center gap-3 px-6 py-3 bg-green-400 border-4 border-black brutalist-shadow transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}>
               <RiSparklingLine className="w-6 h-6" />
               <Text variant="body-sm" className="font-bold uppercase tracking-wider">AI-POWERED VOICE SYNTHESIS</Text>
             </div>
@@ -160,15 +160,15 @@ export default function Home() {
               <h1 className="text-6xl md:text-8xl lg:text-9xl font-black uppercase leading-none">
                 <span className={`block transition-all duration-700 delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                   <span className="text-black">YOUR</span>{" "}
-                  <span className="text-yellow-400 [-webkit-text-stroke:3px_black] [text-stroke:3px_black]">VOICE</span>
+                  <span className="text-green-400 [-webkit-text-stroke:3px_black] [text-stroke:3px_black]">VOICE</span>
                 </span>
                 <span className={`block transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                   <span className="text-black">YOUR</span>{" "}
-                  <span className="text-yellow-400 [-webkit-text-stroke:3px_black] [text-stroke:3px_black]">STYLE</span>
+                  <span className="text-green-400 [-webkit-text-stroke:3px_black] [text-stroke:3px_black]">STYLE</span>
                 </span>
                 <span className={`block transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                   <span className="text-black">IN</span>{" "}
-                  <span className="text-yellow-400 [-webkit-text-stroke:3px_black] [text-stroke:3px_black]">SECONDS</span>
+                  <span className="text-green-400 [-webkit-text-stroke:3px_black] [text-stroke:3px_black]">SECONDS</span>
                 </span>
               </h1>
             </div>
@@ -184,7 +184,7 @@ export default function Home() {
             <div className={`flex flex-wrap justify-center gap-6 pt-4 transition-all duration-700 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
               <Button
                 size="xl"
-                className="gap-3 bg-black text-yellow-400 hover:bg-gray-900 border-4 border-black font-bold uppercase brutalist-shadow text-lg px-12 py-8"
+                className="gap-3 bg-black text-green-400 hover:bg-gray-900 border-4 border-black font-bold uppercase brutalist-shadow text-lg px-12 py-8"
                 onClick={() => window.location.href = '/dashboard'}
               >
                 <RiArrowRightLine className="w-6 h-6" />
@@ -205,7 +205,7 @@ export default function Home() {
       </section>
 
       {/* Microphone Lineup */}
-      <section className="relative bg-gradient-to-br from-white via-yellow-50 to-white pb-20 -mb-8">
+      <section className="relative bg-gradient-to-br from-white via-green-50 to-white pb-20 -mb-8">
         <div className="max-w-7xl mx-auto px-6">
           <div className={`flex justify-center items-end gap-4 md:gap-8 lg:gap-12 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <img
@@ -253,8 +253,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-3 px-6 py-3 bg-black border-4 border-black mb-6">
-              <RiSparklingLine className="w-6 h-6 text-yellow-400" />
-              <Text variant="body-sm" className="text-yellow-400 font-bold uppercase tracking-wider">Features</Text>
+              <RiSparklingLine className="w-6 h-6 text-green-400" />
+              <Text variant="body-sm" className="text-green-400 font-bold uppercase tracking-wider">Features</Text>
             </div>
             <Heading variant="h2" className="mb-4 uppercase text-4xl md:text-5xl lg:text-6xl">EVERYTHING YOU NEED</Heading>
             <Text variant="body-lg" className="text-gray-600 max-w-3xl mx-auto">
@@ -265,8 +265,8 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {features.map((feature, index) => {
               const Icon = feature.icon
-              const bgColors = ["bg-white", "bg-black", "bg-yellow-400"]
-              const textColors = ["text-black", "text-yellow-400", "text-black"]
+              const bgColors = ["bg-white", "bg-black", "bg-green-400"]
+              const textColors = ["text-black", "text-green-400", "text-black"]
               const borderColors = ["border-black", "border-black", "border-black"]
               const shadowColors = ["brutalist-shadow", "brutalist-shadow-yellow", "brutalist-shadow"]
 
@@ -274,8 +274,8 @@ export default function Home() {
 
               return (
                 <div key={index} className={`p-8 ${bgColors[colorIndex]} border-4 ${borderColors[colorIndex]} ${shadowColors[colorIndex]}`}>
-                  <div className={`w-16 h-16 ${colorIndex === 1 ? "bg-yellow-400" : "bg-black"} flex items-center justify-center mb-6`}>
-                    <Icon className={`w-8 h-8 ${colorIndex === 1 ? "text-black" : "text-yellow-400"}`} />
+                  <div className={`w-16 h-16 ${colorIndex === 1 ? "bg-green-400" : "bg-black"} flex items-center justify-center mb-6`}>
+                    <Icon className={`w-8 h-8 ${colorIndex === 1 ? "text-black" : "text-green-400"}`} />
                   </div>
                   <Heading variant="h4" className={`mb-4 ${textColors[colorIndex]} uppercase`}>
                     {feature.title}
@@ -294,7 +294,7 @@ export default function Home() {
       <section id="pricing" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-3 px-6 py-3 bg-yellow-400 border-4 border-black mb-6">
+            <div className="inline-flex items-center gap-3 px-6 py-3 bg-green-400 border-4 border-black mb-6">
               <Text variant="body-sm" className="text-black font-bold uppercase tracking-wider">Pricing</Text>
             </div>
             <Heading variant="h2" className="mb-4 uppercase text-4xl md:text-5xl lg:text-6xl">CHOOSE YOUR PLAN</Heading>
@@ -314,15 +314,15 @@ export default function Home() {
                 }`}
               >
                 {plan.popular && (
-                  <div className="inline-flex items-center px-4 py-2 bg-yellow-400 border-4 border-yellow-400 mb-6">
+                  <div className="inline-flex items-center px-4 py-2 bg-green-400 border-4 border-green-400 mb-6">
                     <Text variant="caption" className="text-black font-bold uppercase tracking-wider">Most Popular</Text>
                   </div>
                 )}
-                <Heading variant="h3" className={`mb-2 uppercase ${plan.popular ? "text-yellow-400" : "text-black"}`}>
+                <Heading variant="h3" className={`mb-2 uppercase ${plan.popular ? "text-green-400" : "text-black"}`}>
                   {plan.name}
                 </Heading>
                 <div className="mb-6">
-                  <span className={`text-5xl font-bold uppercase ${plan.popular ? "text-yellow-400" : "text-black"}`}>
+                  <span className={`text-5xl font-bold uppercase ${plan.popular ? "text-green-400" : "text-black"}`}>
                     {plan.price}
                   </span>
                   {plan.price !== "CUSTOM" && (
@@ -336,7 +336,7 @@ export default function Home() {
                   {plan.features.map((feature, i) => (
                     <li key={i} className="flex items-start gap-3">
                       {feature.included ? (
-                        <RiCheckLine className={`w-5 h-5 flex-shrink-0 ${plan.popular ? "text-yellow-400" : "text-black"}`} />
+                        <RiCheckLine className={`w-5 h-5 flex-shrink-0 ${plan.popular ? "text-green-400" : "text-black"}`} />
                       ) : (
                         <RiCloseLine className={`w-5 h-5 flex-shrink-0 ${plan.popular ? "text-gray-600" : "text-gray-400"}`} />
                       )}
@@ -357,8 +357,8 @@ export default function Home() {
                   size="lg"
                   className={`w-full gap-3 border-4 border-black font-bold uppercase ${
                     plan.popular
-                      ? "bg-yellow-400 text-black hover:bg-yellow-300"
-                      : "bg-black text-yellow-400 hover:bg-gray-900"
+                      ? "bg-green-400 text-black hover:bg-yellow-300"
+                      : "bg-black text-green-400 hover:bg-gray-900"
                   }`}
                 >
                   {plan.ctaText}
@@ -371,13 +371,13 @@ export default function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 bg-black border-t-8 border-yellow-400">
+      <section className="py-24 bg-black border-t-8 border-green-400">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <div className="inline-flex items-center gap-3 px-6 py-3 bg-yellow-400 border-4 border-yellow-400 mb-8">
+          <div className="inline-flex items-center gap-3 px-6 py-3 bg-green-400 border-4 border-green-400 mb-8">
             <RiSparklingLine className="w-6 h-6 text-black" />
             <Text variant="body-sm" className="text-black font-bold uppercase tracking-wider">Ready to Start?</Text>
           </div>
-          <Heading variant="h1" className="mb-6 text-yellow-400 uppercase text-5xl md:text-6xl lg:text-7xl">
+          <Heading variant="h1" className="mb-6 text-green-400 uppercase text-5xl md:text-6xl lg:text-7xl">
             TRANSFORM YOUR VOICE CONTENT
           </Heading>
           <Text variant="body-lg" className="text-white mb-12 max-w-2xl mx-auto">
@@ -386,7 +386,7 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-4">
             <Button
               size="xl"
-              className="gap-3 bg-yellow-400 text-black hover:bg-yellow-300 border-4 border-yellow-400 font-bold uppercase brutalist-shadow-yellow"
+              className="gap-3 bg-green-400 text-black hover:bg-yellow-300 border-4 border-green-400 font-bold uppercase brutalist-shadow-yellow"
               onClick={() => window.location.href = '/dashboard'}
             >
               <RiArrowRightLine className="w-5 h-5" />

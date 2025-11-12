@@ -85,7 +85,7 @@ export default async function VoicesPage() {
             <Card key={voice.id} variant="outlined" className="p-6">
               <div className="flex items-start justify-between">
                 <div className="flex items-center space-x-3">
-                  <div className="flex h-12 w-12 items-center justify-center border-2 border-black bg-yellow-400">
+                  <div className="flex h-12 w-12 items-center justify-center border-2 border-black bg-green-400">
                     <RiVoiceprintLine className="h-6 w-6" />
                   </div>
                   <div>

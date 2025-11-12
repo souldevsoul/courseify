@@ -143,13 +143,13 @@ export default function ComponentsPage() {
           <div className="py-8">
             <div className="flex items-center gap-4 mb-4">
               <div className="w-16 h-16 bg-black flex items-center justify-center brutalist-shadow-yellow">
-                <FiPackage className="w-8 h-8 text-yellow-400" />
+                <FiPackage className="w-8 h-8 text-green-400" />
               </div>
               <Heading variant="h1" className="text-black">
                 COMPONENT LIBRARY
               </Heading>
             </div>
-            <div className="border-l-4 border-yellow-500 pl-4">
+            <div className="border-l-4 border-green-500 pl-4">
               <Text variant="body-lg" className="text-gray-800 max-w-2xl font-semibold">
                 A BOLD BLACK & WHITE DESIGN SYSTEM WITH YELLOW HIGHLIGHTS
               </Text>
@@ -163,41 +163,41 @@ export default function ComponentsPage() {
         <section>
           <div className="mb-12">
             <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-12 bg-yellow-400 flex items-center justify-center border-4 border-black">
+              <div className="w-12 h-12 bg-green-400 flex items-center justify-center border-4 border-black">
                 <FiBox className="w-6 h-6 text-black" />
               </div>
               <Heading variant="h2" className="text-black uppercase">Core Components</Heading>
             </div>
-            <div className="h-1 w-24 bg-yellow-400" />
+            <div className="h-1 w-24 bg-green-400" />
           </div>
 
           {/* Buttons with Bold Design */}
           <div className="mb-20">
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-2 h-2 bg-yellow-400" />
+              <div className="w-2 h-2 bg-green-400" />
               <Heading variant="h3" className="text-black uppercase">Interactive Buttons</Heading>
             </div>
             <div className="space-y-10">
               {/* Primary Actions - Black Background */}
               <div className="p-10 bg-black border-4 border-black brutalist-shadow">
-                <Text variant="body-sm" className="text-yellow-400 mb-6 font-bold uppercase tracking-wider flex items-center gap-2">
-                  <div className="w-4 h-4 bg-yellow-400" />
+                <Text variant="body-sm" className="text-green-400 mb-6 font-bold uppercase tracking-wider flex items-center gap-2">
+                  <div className="w-4 h-4 bg-green-400" />
                   Primary Actions
                 </Text>
                 <div className="flex flex-wrap gap-6">
-                  <Button variant="primary" className="gap-2 bg-yellow-400 text-black hover:bg-yellow-300 border-4 border-black font-bold uppercase">
+                  <Button variant="primary" className="gap-2 bg-green-400 text-black hover:bg-yellow-300 border-4 border-black font-bold uppercase">
                     <RiRocketLine className="w-5 h-5" />
                     Launch
                   </Button>
-                  <Button variant="primary" className="gap-2 bg-yellow-400 text-black hover:bg-yellow-300 border-4 border-black font-bold uppercase">
+                  <Button variant="primary" className="gap-2 bg-green-400 text-black hover:bg-yellow-300 border-4 border-black font-bold uppercase">
                     <RiSave3Line className="w-5 h-5" />
                     Save
                   </Button>
-                  <Button variant="primary" className="gap-2 bg-yellow-400 text-black hover:bg-yellow-300 border-4 border-black font-bold uppercase">
+                  <Button variant="primary" className="gap-2 bg-green-400 text-black hover:bg-yellow-300 border-4 border-black font-bold uppercase">
                     <RiPlayCircleLine className="w-6 h-6" />
                     Start
                   </Button>
-                  <Button variant="primary" className="gap-2 bg-yellow-400 text-black hover:bg-yellow-300 border-4 border-black font-bold uppercase">
+                  <Button variant="primary" className="gap-2 bg-green-400 text-black hover:bg-yellow-300 border-4 border-black font-bold uppercase">
                     <RiDownloadLine className="w-5 h-5" />
                     Download
                   </Button>
@@ -215,11 +215,11 @@ export default function ComponentsPage() {
                     <RiSettings3Line className="w-5 h-5" />
                     Settings
                   </Button>
-                  <Button variant="outline" className="gap-2 bg-white text-black border-4 border-black hover:bg-yellow-400 font-bold uppercase">
+                  <Button variant="outline" className="gap-2 bg-white text-black border-4 border-black hover:bg-green-400 font-bold uppercase">
                     <RiExternalLinkLine className="w-5 h-5" />
                     View
                   </Button>
-                  <Button variant="ghost" className="gap-2 text-black hover:bg-yellow-400 border-4 border-transparent hover:border-black font-bold uppercase">
+                  <Button variant="ghost" className="gap-2 text-black hover:bg-green-400 border-4 border-transparent hover:border-black font-bold uppercase">
                     <RiArrowRightLine className="w-5 h-5" />
                     More
                   </Button>
@@ -231,25 +231,25 @@ export default function ComponentsPage() {
               </div>
 
               {/* Size Variations */}
-              <div className="p-10 bg-yellow-400 border-4 border-black">
+              <div className="p-10 bg-green-400 border-4 border-black">
                 <Text variant="body-sm" className="text-black mb-6 font-bold uppercase tracking-wider flex items-center gap-2">
                   <div className="w-4 h-4 bg-black" />
                   Button Sizes
                 </Text>
                 <div className="flex flex-wrap items-center gap-6">
-                  <Button size="sm" className="gap-2 bg-black text-yellow-400 border-4 border-black font-bold uppercase">
+                  <Button size="sm" className="gap-2 bg-black text-green-400 border-4 border-black font-bold uppercase">
                     <RiStarLine className="w-3.5 h-3.5" />
                     Small
                   </Button>
-                  <Button size="md" className="gap-2 bg-black text-yellow-400 border-4 border-black font-bold uppercase">
+                  <Button size="md" className="gap-2 bg-black text-green-400 border-4 border-black font-bold uppercase">
                     <RiStarLine className="w-4 h-4" />
                     Medium
                   </Button>
-                  <Button size="lg" className="gap-2 bg-black text-yellow-400 border-4 border-black font-bold uppercase">
+                  <Button size="lg" className="gap-2 bg-black text-green-400 border-4 border-black font-bold uppercase">
                     <RiStarLine className="w-5 h-5" />
                     Large
                   </Button>
-                  <Button size="xl" className="gap-2 bg-black text-yellow-400 border-4 border-black font-bold uppercase">
+                  <Button size="xl" className="gap-2 bg-black text-green-400 border-4 border-black font-bold uppercase">
                     <RiStarLine className="w-5 h-5" />
                     XL
                   </Button>
@@ -261,20 +261,20 @@ export default function ComponentsPage() {
           {/* Bold Cards */}
           <div className="mb-20">
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-2 h-2 bg-yellow-400" />
+              <div className="w-2 h-2 bg-green-400" />
               <Heading variant="h3" className="text-black uppercase">Card Styles</Heading>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
               {/* Minimal Card */}
               <Card variant="default" padding="lg" className="group bg-white border-4 border-black hover:brutalist-shadow-yellow transition-all duration-200">
-                <div className="w-16 h-16 bg-black flex items-center justify-center mb-6 group-hover:bg-yellow-400 transition-colors">
-                  <TbBrandOpenai className="w-8 h-8 text-yellow-400 group-hover:text-black" />
+                <div className="w-16 h-16 bg-black flex items-center justify-center mb-6 group-hover:bg-green-400 transition-colors">
+                  <TbBrandOpenai className="w-8 h-8 text-green-400 group-hover:text-black" />
                 </div>
                 <Heading variant="h4" className="mb-3 uppercase">White Card</Heading>
                 <Text variant="body-sm" className="text-gray-700 mb-6 font-semibold">
                   Clean white background with bold black borders
                 </Text>
-                <Button variant="ghost" size="sm" className="gap-2 text-black hover:text-yellow-400 font-bold uppercase border-2 border-black">
+                <Button variant="ghost" size="sm" className="gap-2 text-black hover:text-green-400 font-bold uppercase border-2 border-black">
                   Explore
                   <RiArrowRightLine className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
@@ -282,29 +282,29 @@ export default function ComponentsPage() {
 
               {/* Black Card */}
               <Card variant="elevated" padding="lg" className="group bg-black border-4 border-black brutalist-shadow">
-                <div className="w-16 h-16 bg-yellow-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform border-4 border-black">
+                <div className="w-16 h-16 bg-green-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform border-4 border-black">
                   <TbWaveSine className="w-8 h-8 text-black" />
                 </div>
-                <Heading variant="h4" className="mb-3 text-yellow-400 uppercase">Black Card</Heading>
+                <Heading variant="h4" className="mb-3 text-green-400 uppercase">Black Card</Heading>
                 <Text variant="body-sm" className="text-gray-300 mb-6 font-semibold">
                   Bold black background with dramatic yellow accents
                 </Text>
-                <Button variant="secondary" size="sm" className="gap-2 bg-yellow-400 text-black border-4 border-yellow-400 font-bold uppercase">
+                <Button variant="secondary" size="sm" className="gap-2 bg-green-400 text-black border-4 border-green-400 font-bold uppercase">
                   Discover
                   <RiArrowRightLine className="w-4 h-4" />
                 </Button>
               </Card>
 
               {/* Yellow Card */}
-              <Card variant="gradient" padding="lg" className="group bg-yellow-400 border-4 border-black hover:brutalist-shadow transition-all">
+              <Card variant="gradient" padding="lg" className="group bg-green-400 border-4 border-black hover:brutalist-shadow transition-all">
                 <div className="w-16 h-16 bg-black flex items-center justify-center mb-6 group-hover:scale-110 transition-transform border-4 border-black">
-                  <HiOutlineSparkles className="w-8 h-8 text-yellow-400" />
+                  <HiOutlineSparkles className="w-8 h-8 text-green-400" />
                 </div>
                 <Heading variant="h4" className="mb-3 text-black uppercase">Yellow Highlight</Heading>
                 <Text variant="body-sm" className="text-gray-900 mb-6 font-semibold">
                   Eye-catching yellow for important call-to-actions
                 </Text>
-                <Button variant="primary" size="sm" className="gap-2 bg-black text-yellow-400 border-4 border-black font-bold uppercase">
+                <Button variant="primary" size="sm" className="gap-2 bg-black text-green-400 border-4 border-black font-bold uppercase">
                   View More
                   <RiArrowRightLine className="w-4 h-4" />
                 </Button>
@@ -315,7 +315,7 @@ export default function ComponentsPage() {
           {/* Bold Inputs */}
           <div className="mb-20">
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-2 h-2 bg-yellow-400" />
+              <div className="w-2 h-2 bg-green-400" />
               <Heading variant="h3" className="text-black uppercase">Input Fields</Heading>
             </div>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl">
@@ -326,7 +326,7 @@ export default function ComponentsPage() {
                 </label>
                 <Input variant="default" placeholder="ENTER TEXT..." className="border-4 border-black font-semibold uppercase" />
               </div>
-              <div className="p-8 bg-yellow-400 border-4 border-black brutalist-shadow">
+              <div className="p-8 bg-green-400 border-4 border-black brutalist-shadow">
                 <label className="block text-sm font-bold text-black mb-4 uppercase tracking-wide flex items-center gap-2">
                   <RiCheckLine className="w-5 h-5" />
                   Success State
@@ -340,10 +340,10 @@ export default function ComponentsPage() {
                 <Input variant="error" placeholder="CHECK THIS FIELD..." className="border-4 border-red-500 font-semibold uppercase" />
               </div>
               <div className="p-8 bg-black border-4 border-black">
-                <label className="block text-sm font-bold text-yellow-400 mb-4 uppercase tracking-wide">
+                <label className="block text-sm font-bold text-green-400 mb-4 uppercase tracking-wide">
                   Large Input
                 </label>
-                <Input inputSize="lg" placeholder="LARGER TEXT..." className="border-4 border-yellow-400 bg-white font-semibold uppercase" />
+                <Input inputSize="lg" placeholder="LARGER TEXT..." className="border-4 border-green-400 bg-white font-semibold uppercase" />
               </div>
             </div>
           </div>
@@ -351,7 +351,7 @@ export default function ComponentsPage() {
           {/* Typography Showcase */}
           <div className="p-12 bg-white border-4 border-black brutalist-shadow-yellow">
             <div className="flex items-center gap-3 mb-10">
-              <div className="w-2 h-2 bg-yellow-400" />
+              <div className="w-2 h-2 bg-green-400" />
               <Heading variant="h3" className="text-black uppercase">Typography Scale</Heading>
             </div>
             <div className="space-y-8">
@@ -371,7 +371,7 @@ export default function ComponentsPage() {
                 <Heading variant="h4" className="text-black uppercase">TITLE LARGE</Heading>
                 <Text variant="caption" className="text-gray-600 mt-2 font-bold uppercase">Card headers</Text>
               </div>
-              <div className="p-6 bg-yellow-400 border-4 border-black">
+              <div className="p-6 bg-green-400 border-4 border-black">
                 <Heading variant="h2" className="text-black uppercase">
                   BOLD YELLOW HIGHLIGHT
                 </Heading>
@@ -385,12 +385,12 @@ export default function ComponentsPage() {
         <section>
           <div className="mb-12">
             <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-12 bg-yellow-400 flex items-center justify-center border-4 border-black">
+              <div className="w-12 h-12 bg-green-400 flex items-center justify-center border-4 border-black">
                 <TbChartBar className="w-6 h-6 text-black" />
               </div>
               <Heading variant="h2" className="text-black uppercase">Marketing Components</Heading>
             </div>
-            <div className="h-1 w-24 bg-yellow-400" />
+            <div className="h-1 w-24 bg-green-400" />
           </div>
 
           {/* Feature Cards */}
@@ -399,7 +399,7 @@ export default function ComponentsPage() {
             <div className="grid md:grid-cols-3 gap-8">
               <FeatureCard
                 icon={Sparkles}
-                iconColor="text-yellow-500"
+                iconColor="text-green-500"
                 title="AI-POWERED"
                 description="Generate natural-sounding voices using cutting-edge AI technology"
               />
@@ -411,7 +411,7 @@ export default function ComponentsPage() {
               />
               <FeatureCard
                 icon={Shield}
-                iconColor="text-yellow-500"
+                iconColor="text-green-500"
                 title="SECURE"
                 description="Your voice data is encrypted and never shared"
               />
@@ -452,7 +452,7 @@ export default function ComponentsPage() {
           <div className="mb-12">
             <div className="flex items-center gap-4 mb-4">
               <div className="w-12 h-12 bg-black flex items-center justify-center border-4 border-black brutalist-shadow-yellow">
-                <TbMicrophone className="w-6 h-6 text-yellow-400" />
+                <TbMicrophone className="w-6 h-6 text-green-400" />
               </div>
               <Heading variant="h2" className="text-black uppercase">Voice Components</Heading>
             </div>
@@ -470,7 +470,7 @@ export default function ComponentsPage() {
                 </Text>
                 <Waveform size="sm" color="primary" />
               </Card>
-              <Card variant="elevated" padding="lg" className="bg-yellow-400 border-4 border-black brutalist-shadow">
+              <Card variant="elevated" padding="lg" className="bg-green-400 border-4 border-black brutalist-shadow">
                 <Text variant="body-sm" className="text-black mb-4 font-bold uppercase tracking-wider flex items-center gap-2">
                   <TbWaveSine className="w-5 h-5" />
                   Medium
@@ -478,7 +478,7 @@ export default function ComponentsPage() {
                 <Waveform size="md" color="secondary" />
               </Card>
               <Card variant="elevated" padding="lg" className="bg-black border-4 border-black">
-                <Text variant="body-sm" className="text-yellow-400 mb-4 font-bold uppercase tracking-wider flex items-center gap-2">
+                <Text variant="body-sm" className="text-green-400 mb-4 font-bold uppercase tracking-wider flex items-center gap-2">
                   <TbWaveSine className="w-5 h-5" />
                   Large
                 </Text>
@@ -560,12 +560,12 @@ export default function ComponentsPage() {
         <section>
           <div className="mb-12">
             <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-12 bg-yellow-400 flex items-center justify-center border-4 border-black">
+              <div className="w-12 h-12 bg-green-400 flex items-center justify-center border-4 border-black">
                 <TbLayoutDashboard className="w-6 h-6 text-black" />
               </div>
               <Heading variant="h2" className="text-black uppercase">Marketing Cards</Heading>
             </div>
-            <div className="h-1 w-24 bg-yellow-400" />
+            <div className="h-1 w-24 bg-green-400" />
           </div>
 
           {/* Pricing Cards */}
@@ -683,12 +683,12 @@ export default function ComponentsPage() {
         <section>
           <div className="mb-12">
             <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-12 bg-yellow-400 flex items-center justify-center border-4 border-black brutalist-shadow">
+              <div className="w-12 h-12 bg-green-400 flex items-center justify-center border-4 border-black brutalist-shadow">
                 <TbUsers className="w-6 h-6 text-black" />
               </div>
               <Heading variant="h2" className="text-black uppercase">Design Tokens</Heading>
             </div>
-            <div className="h-1 w-24 bg-yellow-400" />
+            <div className="h-1 w-24 bg-green-400" />
           </div>
 
           {/* Bold Color Palette */}
@@ -696,19 +696,19 @@ export default function ComponentsPage() {
             <Heading variant="h3" className="mb-8 text-black uppercase">Bold Color System</Heading>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="p-8 bg-black border-4 border-black brutalist-shadow-yellow">
-                <Text variant="body-sm" className="text-yellow-400 mb-6 font-bold uppercase tracking-wide">
+                <Text variant="body-sm" className="text-green-400 mb-6 font-bold uppercase tracking-wide">
                   Monochrome Base
                 </Text>
                 <div className="space-y-4">
                   <div className="flex items-center gap-4">
-                    <div className="w-20 h-20 bg-black border-4 border-yellow-400" />
+                    <div className="w-20 h-20 bg-black border-4 border-green-400" />
                     <div>
                       <Text variant="body-sm" className="font-bold text-white uppercase">Black</Text>
                       <Text variant="body-sm" className="text-gray-400 font-mono">#000000</Text>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
-                    <div className="w-20 h-20 bg-white border-4 border-yellow-400" />
+                    <div className="w-20 h-20 bg-white border-4 border-green-400" />
                     <div>
                       <Text variant="body-sm" className="font-bold text-white uppercase">White</Text>
                       <Text variant="body-sm" className="text-gray-400 font-mono">#FFFFFF</Text>
@@ -716,20 +716,20 @@ export default function ComponentsPage() {
                   </div>
                 </div>
               </div>
-              <div className="p-8 bg-yellow-400 border-4 border-black brutalist-shadow">
+              <div className="p-8 bg-green-400 border-4 border-black brutalist-shadow">
                 <Text variant="body-sm" className="text-black mb-6 font-bold uppercase tracking-wide">
                   Yellow Highlight
                 </Text>
                 <div className="space-y-4">
                   <div className="flex items-center gap-4">
-                    <div className="w-20 h-20 bg-yellow-500 border-4 border-black" />
+                    <div className="w-20 h-20 bg-green-500 border-4 border-black" />
                     <div>
                       <Text variant="body-sm" className="font-bold uppercase">Yellow 500</Text>
                       <Text variant="body-sm" className="text-gray-800 font-mono">#EAB308</Text>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
-                    <div className="w-20 h-20 bg-yellow-400 border-4 border-black" />
+                    <div className="w-20 h-20 bg-green-400 border-4 border-black" />
                     <div>
                       <Text variant="body-sm" className="font-bold uppercase">Yellow 400</Text>
                       <Text variant="body-sm" className="text-gray-800 font-mono">#FACC15</Text>
@@ -742,7 +742,7 @@ export default function ComponentsPage() {
                   Bold Shadows
                 </Text>
                 <div className="space-y-4">
-                  <div className="w-20 h-20 bg-yellow-400 border-4 border-black brutalist-shadow" />
+                  <div className="w-20 h-20 bg-green-400 border-4 border-black brutalist-shadow" />
                   <Text variant="body-sm" className="font-bold uppercase">Brutalist Shadow</Text>
                   <div className="w-20 h-20 bg-black border-4 border-black brutalist-shadow-yellow" />
                   <Text variant="body-sm" className="font-bold uppercase">Yellow Shadow</Text>
@@ -775,26 +775,26 @@ export default function ComponentsPage() {
       </Container>
 
       {/* Footer CTA - Bold Black & Yellow */}
-      <div className="bg-black py-24 mt-28 border-t-8 border-yellow-400">
+      <div className="bg-black py-24 mt-28 border-t-8 border-green-400">
         <Container maxWidth="lg">
           <div className="text-center">
-            <div className="inline-flex items-center gap-3 px-6 py-3 bg-yellow-400 border-4 border-black mb-8">
+            <div className="inline-flex items-center gap-3 px-6 py-3 bg-green-400 border-4 border-black mb-8">
               <HiOutlineSparkles className="w-6 h-6 text-black" />
               <Text variant="body-sm" className="text-black font-bold uppercase tracking-wider">Ready to Build?</Text>
             </div>
-            <Heading variant="h1" className="mb-6 text-yellow-400 uppercase">START BUILDING NOW</Heading>
+            <Heading variant="h1" className="mb-6 text-green-400 uppercase">START BUILDING NOW</Heading>
             <Text variant="body-lg" className="mb-12 text-gray-300 max-w-2xl mx-auto font-semibold uppercase">
               Use these bold components to create powerful voice synthesis experiences
             </Text>
             <div className="flex flex-wrap gap-6 justify-center">
-              <Button variant="primary" size="xl" className="gap-3 bg-yellow-400 text-black border-4 border-yellow-400 font-bold uppercase brutalist-shadow-yellow">
+              <Button variant="primary" size="xl" className="gap-3 bg-green-400 text-black border-4 border-green-400 font-bold uppercase brutalist-shadow-yellow">
                 <FiCode className="w-6 h-6" />
                 View Documentation
               </Button>
               <Button
                 variant="outline"
                 size="xl"
-                className="gap-3 text-yellow-400 border-4 border-yellow-400 hover:bg-yellow-400 hover:text-black font-bold uppercase"
+                className="gap-3 text-green-400 border-4 border-green-400 hover:bg-green-400 hover:text-black font-bold uppercase"
               >
                 <RiDownloadLine className="w-6 h-6" />
                 Download Kit

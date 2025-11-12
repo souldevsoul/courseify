@@ -27,7 +27,7 @@ export default function PaymentPolicyPage() {
       <section className="py-20 border-b-8 border-black">
         <Container maxWidth="xl">
           <div className="max-w-4xl mx-auto">
-            <div className="inline-flex items-center gap-3 px-6 py-3 bg-yellow-400 border-4 border-black mb-8">
+            <div className="inline-flex items-center gap-3 px-6 py-3 bg-green-400 border-4 border-black mb-8">
               <RiSecurePaymentLine className="w-6 h-6" />
               <span className="text-sm font-bold uppercase tracking-wider">Payment Policy</span>
             </div>
@@ -51,7 +51,7 @@ export default function PaymentPolicyPage() {
             <div>
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center">
-                  <RiSecurePaymentLine className="w-6 h-6 text-yellow-400" />
+                  <RiSecurePaymentLine className="w-6 h-6 text-green-400" />
                 </div>
                 <h2 className="text-3xl font-bold uppercase">1. Accepted Payment Methods</h2>
               </div>
@@ -78,7 +78,7 @@ export default function PaymentPolicyPage() {
                   </p>
                 </div>
 
-                <div className="p-6 bg-yellow-50 border-4 border-black">
+                <div className="p-6 bg-green-50 border-4 border-black">
                   <h3 className="text-lg font-bold uppercase mb-3">Payment Processor</h3>
                   <p className="text-gray-700 leading-relaxed">
                     All payments are processed securely through Stripe, a PCI DSS Level 1 compliant payment processor. VoiceCraft does not store your complete credit card information on our servers.
@@ -91,7 +91,7 @@ export default function PaymentPolicyPage() {
             <div>
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center">
-                  <RiMoneyDollarCircleLine className="w-6 h-6 text-yellow-400" />
+                  <RiMoneyDollarCircleLine className="w-6 h-6 text-green-400" />
                 </div>
                 <h2 className="text-3xl font-bold uppercase">2. Billing & Charges</h2>
               </div>
@@ -119,7 +119,7 @@ export default function PaymentPolicyPage() {
                   </ul>
                 </div>
 
-                <div className="p-6 bg-yellow-50 border-4 border-black">
+                <div className="p-6 bg-green-50 border-4 border-black">
                   <h3 className="text-lg font-bold uppercase mb-3">Currency & Pricing</h3>
                   <p className="text-gray-700 leading-relaxed mb-3">
                     <span className="font-bold">Primary Currency:</span> United States Dollar (USD)
@@ -133,7 +133,7 @@ export default function PaymentPolicyPage() {
                 </div>
 
                 <div className="p-6 bg-black text-white border-4 border-black brutalist-shadow-yellow">
-                  <h3 className="text-lg font-bold uppercase mb-3 text-yellow-400">No Minimum or Maximum Transaction Amounts</h3>
+                  <h3 className="text-lg font-bold uppercase mb-3 text-green-400">No Minimum or Maximum Transaction Amounts</h3>
                   <p className="leading-relaxed">
                     In compliance with Visa and Mastercard regulations, we do not impose minimum or maximum transaction amounts for card payments. All subscription tiers are available regardless of payment amount.
                   </p>
@@ -145,7 +145,7 @@ export default function PaymentPolicyPage() {
             <div>
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center">
-                  <RiShieldCheckLine className="w-6 h-6 text-yellow-400" />
+                  <RiShieldCheckLine className="w-6 h-6 text-green-400" />
                 </div>
                 <h2 className="text-3xl font-bold uppercase">3. Payment Security</h2>
               </div>
@@ -177,7 +177,7 @@ export default function PaymentPolicyPage() {
                   </ul>
                 </div>
 
-                <div className="p-6 bg-yellow-50 border-4 border-black">
+                <div className="p-6 bg-green-50 border-4 border-black">
                   <h3 className="text-lg font-bold uppercase mb-3">What We Store</h3>
                   <p className="text-gray-700 leading-relaxed mb-3">
                     For your convenience, we store:
@@ -211,7 +211,7 @@ export default function PaymentPolicyPage() {
             <div>
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center">
-                  <RiAlertLine className="w-6 h-6 text-yellow-400" />
+                  <RiAlertLine className="w-6 h-6 text-green-400" />
                 </div>
                 <h2 className="text-3xl font-bold uppercase">4. Failed Payments & Retries</h2>
               </div>
@@ -238,7 +238,7 @@ export default function PaymentPolicyPage() {
                   </ul>
                 </div>
 
-                <div className="p-6 bg-yellow-50 border-4 border-black">
+                <div className="p-6 bg-green-50 border-4 border-black">
                   <h3 className="text-lg font-bold uppercase mb-3">Account Suspension</h3>
                   <p className="text-gray-700 leading-relaxed">
                     If all retry attempts fail, your subscription will be suspended. You can reactivate by updating your payment method. No data is deleted during suspension.
@@ -246,7 +246,7 @@ export default function PaymentPolicyPage() {
                 </div>
 
                 <div className="p-6 bg-black text-white border-4 border-black brutalist-shadow-yellow">
-                  <h3 className="text-lg font-bold uppercase mb-3 text-yellow-400">Email Notifications</h3>
+                  <h3 className="text-lg font-bold uppercase mb-3 text-green-400">Email Notifications</h3>
                   <p className="leading-relaxed">
                     We will email you immediately when a payment fails and before each retry attempt. Please update your payment information promptly to avoid service interruption.
                   </p>
@@ -256,7 +256,7 @@ export default function PaymentPolicyPage() {
 
             {/* Taxes */}
             <div>
-              <div className="p-8 bg-yellow-400 border-4 border-black brutalist-shadow">
+              <div className="p-8 bg-green-400 border-4 border-black brutalist-shadow">
                 <h2 className="text-2xl font-bold uppercase mb-4">TAXES & VAT</h2>
                 <p className="text-gray-900 leading-relaxed mb-4">
                   <span className="font-bold">Prices are exclusive of taxes.</span> Depending on your location, applicable taxes (VAT, GST, sales tax) may be added to your invoice.
@@ -273,11 +273,11 @@ export default function PaymentPolicyPage() {
             {/* Disputes */}
             <div>
               <div className="p-6 bg-black text-white border-4 border-black brutalist-shadow-yellow">
-                <h2 className="text-2xl font-bold uppercase mb-4 text-yellow-400">
+                <h2 className="text-2xl font-bold uppercase mb-4 text-green-400">
                   PAYMENT DISPUTES & CHARGEBACKS
                 </h2>
                 <p className="leading-relaxed mb-4">
-                  <span className="font-bold">Contact us first:</span> If you see an unexpected charge, please contact us at support@voicecraft.ai before initiating a chargeback. We can often resolve issues quickly.
+                  <span className="font-bold">Contact us first:</span> If you see an unexpected charge, please contact us at support@courseify.ai before initiating a chargeback. We can often resolve issues quickly.
                 </p>
                 <p className="leading-relaxed mb-4">
                   <span className="font-bold">Right to dispute:</span> In accordance with Visa and Mastercard regulations, you have the right to dispute transactions with your card issuer.
@@ -315,7 +315,7 @@ export default function PaymentPolicyPage() {
 
             {/* Contact */}
             <div>
-              <div className="p-8 bg-yellow-50 border-4 border-black text-center">
+              <div className="p-8 bg-green-50 border-4 border-black text-center">
                 <h2 className="text-2xl font-bold uppercase mb-4">PAYMENT QUESTIONS?</h2>
                 <p className="text-gray-700 mb-6">
                   Contact our billing team for payment-related inquiries
@@ -329,8 +329,8 @@ export default function PaymentPolicyPage() {
                   </p>
                   <p>
                     <span className="font-bold">Support:</span>{" "}
-                    <a href="mailto:support@voicecraft.ai" className="underline hover:no-underline">
-                      support@voicecraft.ai
+                    <a href="mailto:support@courseify.ai" className="underline hover:no-underline">
+                      support@courseify.ai
                     </a>
                   </p>
                 </div>

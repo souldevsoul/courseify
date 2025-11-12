@@ -27,7 +27,7 @@ export default function RefundPolicyPage() {
       <section className="py-20 border-b-8 border-black">
         <Container maxWidth="xl">
           <div className="max-w-4xl mx-auto">
-            <div className="inline-flex items-center gap-3 px-6 py-3 bg-yellow-400 border-4 border-black mb-8">
+            <div className="inline-flex items-center gap-3 px-6 py-3 bg-green-400 border-4 border-black mb-8">
               <RiRefundLine className="w-6 h-6" />
               <span className="text-sm font-bold uppercase tracking-wider">Refund Policy</span>
             </div>
@@ -52,7 +52,7 @@ export default function RefundPolicyPage() {
             <div>
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center">
-                  <RiRefundLine className="w-6 h-6 text-yellow-400" />
+                  <RiRefundLine className="w-6 h-6 text-green-400" />
                 </div>
                 <h2 className="text-3xl font-bold uppercase">1. General Refund Policy</h2>
               </div>
@@ -68,7 +68,7 @@ export default function RefundPolicyPage() {
                   </p>
                 </div>
 
-                <div className="p-6 bg-yellow-50 border-4 border-black">
+                <div className="p-6 bg-green-50 border-4 border-black">
                   <h3 className="text-lg font-bold uppercase mb-3">14-Day Free Trial</h3>
                   <p className="text-gray-700 leading-relaxed">
                     All Pro plan subscriptions include a 14-day free trial. You can cancel at any time during this trial period without being charged. No refund is necessary as no payment has been processed.
@@ -81,7 +81,7 @@ export default function RefundPolicyPage() {
             <div>
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center">
-                  <RiCheckLine className="w-6 h-6 text-yellow-400" />
+                  <RiCheckLine className="w-6 h-6 text-green-400" />
                 </div>
                 <h2 className="text-3xl font-bold uppercase">2. Eligible for Refund</h2>
               </div>
@@ -112,7 +112,7 @@ export default function RefundPolicyPage() {
                   </ul>
                 </div>
 
-                <div className="p-6 bg-yellow-50 border-4 border-black">
+                <div className="p-6 bg-green-50 border-4 border-black">
                   <h3 className="text-lg font-bold uppercase mb-3">Billing Errors</h3>
                   <p className="text-gray-700 leading-relaxed mb-3">
                     You are eligible for a refund if:
@@ -146,36 +146,36 @@ export default function RefundPolicyPage() {
             <div>
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center">
-                  <RiTimeLine className="w-6 h-6 text-yellow-400" />
+                  <RiTimeLine className="w-6 h-6 text-green-400" />
                 </div>
                 <h2 className="text-3xl font-bold uppercase">3. Not Eligible for Refund</h2>
               </div>
 
               <div className="p-6 bg-black text-white border-4 border-black brutalist-shadow-yellow">
-                <h3 className="text-lg font-bold uppercase mb-4 text-yellow-400">The Following Are NOT Eligible:</h3>
+                <h3 className="text-lg font-bold uppercase mb-4 text-green-400">The Following Are NOT Eligible:</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
-                    <span className="text-yellow-400 font-bold">•</span>
+                    <span className="text-green-400 font-bold">•</span>
                     <span>Change of mind after using the service</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-yellow-400 font-bold">•</span>
+                    <span className="text-green-400 font-bold">•</span>
                     <span>Dissatisfaction with AI-generated voice quality (subjective opinion)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-yellow-400 font-bold">•</span>
+                    <span className="text-green-400 font-bold">•</span>
                     <span>Already used character credits (partial refunds not available)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-yellow-400 font-bold">•</span>
+                    <span className="text-green-400 font-bold">•</span>
                     <span>Cancellation after the refund eligibility period has passed</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-yellow-400 font-bold">•</span>
+                    <span className="text-green-400 font-bold">•</span>
                     <span>Violation of our Terms of Service resulting in account termination</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-yellow-400 font-bold">•</span>
+                    <span className="text-green-400 font-bold">•</span>
                     <span>Third-party API costs incurred (we pass through costs from Replicate)</span>
                   </li>
                 </ul>
@@ -186,7 +186,7 @@ export default function RefundPolicyPage() {
             <div>
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center">
-                  <RiMailLine className="w-6 h-6 text-yellow-400" />
+                  <RiMailLine className="w-6 h-6 text-green-400" />
                 </div>
                 <h2 className="text-3xl font-bold uppercase">4. How to Request a Refund</h2>
               </div>
@@ -196,8 +196,8 @@ export default function RefundPolicyPage() {
                   <h3 className="text-lg font-bold uppercase mb-3">Step 1: Contact Support</h3>
                   <p className="text-gray-700 leading-relaxed mb-3">
                     Email our support team at{" "}
-                    <a href="mailto:support@voicecraft.ai" className="font-bold underline hover:no-underline">
-                      support@voicecraft.ai
+                    <a href="mailto:support@courseify.ai" className="font-bold underline hover:no-underline">
+                      support@courseify.ai
                     </a>{" "}
                     with the subject line "Refund Request"
                   </p>
@@ -206,7 +206,7 @@ export default function RefundPolicyPage() {
                   </p>
                 </div>
 
-                <div className="p-6 bg-yellow-50 border-4 border-black">
+                <div className="p-6 bg-green-50 border-4 border-black">
                   <h3 className="text-lg font-bold uppercase mb-3">Step 2: Review Process</h3>
                   <p className="text-gray-700 leading-relaxed">
                     Our team will review your request within 2-3 business days. We may contact you for additional information or to attempt to resolve any technical issues.
@@ -227,7 +227,7 @@ export default function RefundPolicyPage() {
 
             {/* Cancellation */}
             <div>
-              <div className="p-8 bg-yellow-400 border-4 border-black brutalist-shadow">
+              <div className="p-8 bg-green-400 border-4 border-black brutalist-shadow">
                 <h2 className="text-2xl font-bold uppercase mb-4">CANCELLATION VS. REFUND</h2>
                 <p className="text-gray-900 leading-relaxed mb-4">
                   <span className="font-bold">Cancellation:</span> You can cancel your subscription at any time through your account settings. You will retain access until the end of your current billing period, but no refund will be issued for the remaining time.
@@ -241,7 +241,7 @@ export default function RefundPolicyPage() {
             {/* Enterprise */}
             <div>
               <div className="p-6 bg-black text-white border-4 border-black brutalist-shadow-yellow">
-                <h2 className="text-2xl font-bold uppercase mb-4 text-yellow-400">
+                <h2 className="text-2xl font-bold uppercase mb-4 text-green-400">
                   ENTERPRISE CUSTOMERS
                 </h2>
                 <p className="text-white leading-relaxed">
@@ -260,8 +260,8 @@ export default function RefundPolicyPage() {
                 <div className="space-y-2">
                   <p>
                     <span className="font-bold">Email:</span>{" "}
-                    <a href="mailto:support@voicecraft.ai" className="underline hover:no-underline">
-                      support@voicecraft.ai
+                    <a href="mailto:support@courseify.ai" className="underline hover:no-underline">
+                      support@courseify.ai
                     </a>
                   </p>
                   <p>

@@ -82,9 +82,9 @@ export function ReEstimateDialog({
 
         <div className="space-y-6 py-4">
           {/* Info */}
-          <div className="rounded-md border-4 border-yellow-500 bg-yellow-50 p-4">
+          <div className="rounded-md border-4 border-green-500 bg-green-50 p-4">
             <div className="flex items-start gap-3">
-              <RiErrorWarningLine className="h-5 w-5 flex-shrink-0 text-yellow-600" />
+              <RiErrorWarningLine className="h-5 w-5 flex-shrink-0 text-green-600" />
               <div>
                 <Text variant="body" className="font-bold text-yellow-900">
                   This will generate a new estimate

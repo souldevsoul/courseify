@@ -28,7 +28,7 @@ const StatCard = React.forwardRef<HTMLDivElement, StatCardProps>(
           {/* Icon */}
           {Icon && (
             <div className="flex justify-center mb-4">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-yellow-50 border-2 border-black">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-green-50 border-2 border-black">
                 <Icon className="w-6 h-6 text-black" />
               </div>
             </div>

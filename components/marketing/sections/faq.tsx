@@ -61,7 +61,7 @@ const FAQ = React.forwardRef<HTMLElement, FAQProps>(
                       className="border-b border-slate-200"
                     >
                       <AccordionPrimitive.Header>
-                        <AccordionPrimitive.Trigger className="flex w-full items-center justify-between py-5 text-left text-lg font-bold text-slate-900 hover:text-yellow-500 transition-colors group uppercase">
+                        <AccordionPrimitive.Trigger className="flex w-full items-center justify-between py-5 text-left text-lg font-bold text-slate-900 hover:text-green-500 transition-colors group uppercase">
                           {item.question}
                           <ChevronDown className="h-5 w-5 shrink-0 text-slate-500 transition-transform duration-200 group-data-[state=open]:rotate-180" />
                         </AccordionPrimitive.Trigger>

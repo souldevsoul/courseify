@@ -180,7 +180,7 @@ export function VoiceGenerator({ className }: VoiceGeneratorProps) {
         <div className="space-y-8">
           {/* Header */}
           <div className="flex items-center gap-3">
-            <div className="inline-flex items-center justify-center w-12 h-12 bg-yellow-400 border-4 border-black">
+            <div className="inline-flex items-center justify-center w-12 h-12 bg-green-400 border-4 border-black">
               <Mic className="w-6 h-6 text-black" />
             </div>
             <div>

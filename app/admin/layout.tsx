@@ -34,14 +34,14 @@ export default function AdminLayout({
           </Heading>
         </div>
 
-        <div className="border-b-4 border-black bg-purple-50 p-4">
+        <div className="border-b-4 border-black bg-blue-50 p-4">
           <div className="flex items-center gap-2">
-            <RiShieldCheckLine className="h-5 w-5 text-purple-600" />
-            <Text variant="caption" className="text-xs font-bold uppercase text-purple-900">
+            <RiShieldCheckLine className="h-5 w-5 text-blue-600" />
+            <Text variant="caption" className="text-xs font-bold uppercase text-blue-900">
               ADMIN PORTAL
             </Text>
           </div>
-          <Text variant="body" className="mt-1 text-sm font-bold text-purple-800">
+          <Text variant="body" className="mt-1 text-sm font-bold text-blue-800">
             Platform Management
           </Text>
         </div>
@@ -53,7 +53,7 @@ export default function AdminLayout({
               <Link
                 key={item.name}
                 href={item.href}
-                className="flex items-center space-x-3 border-2 border-transparent px-4 py-3 font-medium transition-all hover:border-black hover:bg-purple-400"
+                className="flex items-center space-x-3 border-2 border-transparent px-4 py-3 font-medium transition-all hover:border-black hover:bg-blue-400"
               >
                 <Icon className="h-5 w-5" />
                 <span className="text-sm uppercase">{item.name}</span>

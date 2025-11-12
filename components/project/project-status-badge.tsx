@@ -52,14 +52,14 @@ const STATUS_CONFIG: Record<ProjectStatus, StatusConfig> = {
     variant: "primary",
     icon: RiLoader4Line,
     description: "AI is generating cost and time estimates for your project.",
-    color: "bg-purple-100 text-purple-900 border-purple-500",
+    color: "bg-blue-100 text-blue-900 border-blue-500",
   },
   waiting_for_estimate_accept: {
     label: "ESTIMATE READY",
     variant: "warning",
     icon: RiTimeLine,
     description: "Estimate is ready. Review and accept to proceed.",
-    color: "bg-yellow-100 text-yellow-900 border-yellow-500",
+    color: "bg-yellow-100 text-yellow-900 border-green-500",
   },
   waiting_for_assignment: {
     label: "AWAITING EXPERT",

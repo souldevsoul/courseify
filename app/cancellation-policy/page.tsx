@@ -26,7 +26,7 @@ export default function CancellationPolicyPage() {
       <section className="py-20 border-b-8 border-black">
         <Container maxWidth="xl">
           <div className="max-w-4xl mx-auto">
-            <div className="inline-flex items-center gap-3 px-6 py-3 bg-yellow-400 border-4 border-black mb-8">
+            <div className="inline-flex items-center gap-3 px-6 py-3 bg-green-400 border-4 border-black mb-8">
               <RiCloseLine className="w-6 h-6" />
               <span className="text-sm font-bold uppercase tracking-wider">Cancellation Policy</span>
             </div>
@@ -50,7 +50,7 @@ export default function CancellationPolicyPage() {
             <div>
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center">
-                  <RiCloseLine className="w-6 h-6 text-yellow-400" />
+                  <RiCloseLine className="w-6 h-6 text-green-400" />
                 </div>
                 <h2 className="text-3xl font-bold uppercase">1. How to Cancel</h2>
               </div>
@@ -78,12 +78,12 @@ export default function CancellationPolicyPage() {
                   </ol>
                 </div>
 
-                <div className="p-6 bg-yellow-50 border-4 border-black">
+                <div className="p-6 bg-green-50 border-4 border-black">
                   <h3 className="text-lg font-bold uppercase mb-3">Cancel Via Email</h3>
                   <p className="text-gray-700 leading-relaxed mb-3">
                     Alternatively, send an email to{" "}
-                    <a href="mailto:support@voicecraft.ai" className="font-bold underline hover:no-underline">
-                      support@voicecraft.ai
+                    <a href="mailto:support@courseify.ai" className="font-bold underline hover:no-underline">
+                      support@courseify.ai
                     </a>{" "}
                     with:
                   </p>
@@ -109,7 +109,7 @@ export default function CancellationPolicyPage() {
             <div>
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center">
-                  <RiTimeLine className="w-6 h-6 text-yellow-400" />
+                  <RiTimeLine className="w-6 h-6 text-green-400" />
                 </div>
                 <h2 className="text-3xl font-bold uppercase">2. What Happens After Cancellation</h2>
               </div>
@@ -133,7 +133,7 @@ export default function CancellationPolicyPage() {
                   </ul>
                 </div>
 
-                <div className="p-6 bg-yellow-50 border-4 border-black">
+                <div className="p-6 bg-green-50 border-4 border-black">
                   <h3 className="text-lg font-bold uppercase mb-3">Access Retention</h3>
                   <p className="text-gray-700 leading-relaxed mb-3">
                     <span className="font-bold">You keep full access</span> to all features until the end of your current billing period.
@@ -144,26 +144,26 @@ export default function CancellationPolicyPage() {
                 </div>
 
                 <div className="p-6 bg-black text-white border-4 border-black brutalist-shadow-yellow">
-                  <h3 className="text-lg font-bold uppercase mb-3 text-yellow-400">After Billing Period Ends</h3>
+                  <h3 className="text-lg font-bold uppercase mb-3 text-green-400">After Billing Period Ends</h3>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-2">
-                      <span className="text-yellow-400 font-bold">•</span>
+                      <span className="text-green-400 font-bold">•</span>
                       <span>Your account downgrades to Free tier</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-yellow-400 font-bold">•</span>
+                      <span className="text-green-400 font-bold">•</span>
                       <span>Pro features are disabled</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-yellow-400 font-bold">•</span>
+                      <span className="text-green-400 font-bold">•</span>
                       <span>Character limits reset to Free tier limits</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-yellow-400 font-bold">•</span>
+                      <span className="text-green-400 font-bold">•</span>
                       <span>Voice clones remain accessible (up to Free tier limit)</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="text-yellow-400 font-bold">•</span>
+                      <span className="text-green-400 font-bold">•</span>
                       <span>Historical generated audio is deleted after 30 days</span>
                     </li>
                   </ul>
@@ -175,7 +175,7 @@ export default function CancellationPolicyPage() {
             <div>
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center">
-                  <RiAlertLine className="w-6 h-6 text-yellow-400" />
+                  <RiAlertLine className="w-6 h-6 text-green-400" />
                 </div>
                 <h2 className="text-3xl font-bold uppercase">3. Cancellation Scenarios</h2>
               </div>
@@ -188,7 +188,7 @@ export default function CancellationPolicyPage() {
                   </p>
                 </div>
 
-                <div className="p-6 bg-yellow-50 border-4 border-black">
+                <div className="p-6 bg-green-50 border-4 border-black">
                   <h3 className="text-lg font-bold uppercase mb-3">Monthly Subscription</h3>
                   <p className="text-gray-700 leading-relaxed">
                     Cancel anytime. You keep access until the end of your current month. No refund for unused portion of the month (see Refund Policy for exceptions).
@@ -202,7 +202,7 @@ export default function CancellationPolicyPage() {
                   </p>
                 </div>
 
-                <div className="p-6 bg-yellow-50 border-4 border-black">
+                <div className="p-6 bg-green-50 border-4 border-black">
                   <h3 className="text-lg font-bold uppercase mb-3">Enterprise Plans</h3>
                   <p className="text-gray-700 leading-relaxed">
                     Enterprise customers should refer to their specific contract terms. Contact your account manager or email enterprise@voicecraft.ai for cancellation procedures.
@@ -213,7 +213,7 @@ export default function CancellationPolicyPage() {
 
             {/* Reactivation */}
             <div>
-              <div className="p-8 bg-yellow-400 border-4 border-black brutalist-shadow">
+              <div className="p-8 bg-green-400 border-4 border-black brutalist-shadow">
                 <h2 className="text-2xl font-bold uppercase mb-4">REACTIVATING YOUR SUBSCRIPTION</h2>
                 <p className="text-gray-900 leading-relaxed mb-4">
                   Changed your mind? You can reactivate your subscription at any time before your billing period ends by visiting Settings → Subscription → Reactivate.
@@ -227,21 +227,21 @@ export default function CancellationPolicyPage() {
             {/* Data Retention */}
             <div>
               <div className="p-6 bg-black text-white border-4 border-black brutalist-shadow-yellow">
-                <h2 className="text-2xl font-bold uppercase mb-4 text-yellow-400">
+                <h2 className="text-2xl font-bold uppercase mb-4 text-green-400">
                   DATA RETENTION AFTER CANCELLATION
                 </h2>
                 <div className="space-y-3">
                   <p className="leading-relaxed">
-                    <span className="font-bold text-yellow-400">Account Data:</span> Retained for 90 days, then deleted if subscription not renewed
+                    <span className="font-bold text-green-400">Account Data:</span> Retained for 90 days, then deleted if subscription not renewed
                   </p>
                   <p className="leading-relaxed">
-                    <span className="font-bold text-yellow-400">Voice Clones:</span> Retained for 90 days, accessible if you resubscribe
+                    <span className="font-bold text-green-400">Voice Clones:</span> Retained for 90 days, accessible if you resubscribe
                   </p>
                   <p className="leading-relaxed">
-                    <span className="font-bold text-yellow-400">Generated Audio:</span> Automatically deleted 30 days after cancellation
+                    <span className="font-bold text-green-400">Generated Audio:</span> Automatically deleted 30 days after cancellation
                   </p>
                   <p className="leading-relaxed">
-                    <span className="font-bold text-yellow-400">Billing History:</span> Retained for 7 years for legal/tax compliance
+                    <span className="font-bold text-green-400">Billing History:</span> Retained for 7 years for legal/tax compliance
                   </p>
                 </div>
               </div>
@@ -257,8 +257,8 @@ export default function CancellationPolicyPage() {
                 <div className="space-y-2">
                   <p>
                     <span className="font-bold">Email:</span>{" "}
-                    <a href="mailto:support@voicecraft.ai" className="underline hover:no-underline">
-                      support@voicecraft.ai
+                    <a href="mailto:support@courseify.ai" className="underline hover:no-underline">
+                      support@courseify.ai
                     </a>
                   </p>
                   <p>

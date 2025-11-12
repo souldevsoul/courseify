@@ -26,20 +26,20 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-6">
         <nav className="flex items-center justify-between h-20">
           <a href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-purple-600 rounded flex items-center justify-center">
+            <div className="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
               <RiGraduationCapLine className="w-5 h-5 text-white" />
             </div>
             <span className="text-xl font-bold">Courseify</span>
           </a>
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link, index) => (
-              <a key={index} href={link.href} className="text-sm font-medium text-gray-700 hover:text-purple-700 transition-colors">
+              <a key={index} href={link.href} className="text-sm font-medium text-gray-700 hover:text-blue-700 transition-colors">
                 {link.label}
               </a>
             ))}
           </div>
           <div className="hidden md:flex items-center gap-4">
-            <button onClick={() => window.location.href = '/dashboard'} className="bg-purple-600 text-white hover:bg-purple-700 font-medium px-6 py-2 rounded transition-colors">
+            <button onClick={() => window.location.href = '/dashboard'} className="bg-blue-600 text-white hover:bg-blue-700 font-medium px-6 py-2 rounded transition-colors">
               Get Started
             </button>
           </div>
@@ -51,11 +51,11 @@ export function Navbar() {
           <div className="md:hidden border-t border-gray-200 py-4">
             <div className="flex flex-col gap-4">
               {navLinks.map((link, index) => (
-                <a key={index} href={link.href} className="text-sm font-medium text-gray-700 hover:text-purple-700 transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>
+                <a key={index} href={link.href} className="text-sm font-medium text-gray-700 hover:text-blue-700 transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>
                   {link.label}
                 </a>
               ))}
-              <button className="bg-purple-600 text-white hover:bg-purple-700 font-medium px-6 py-3 rounded transition-colors w-full" onClick={() => { window.location.href = '/dashboard'; setMobileMenuOpen(false); }}>
+              <button className="bg-blue-600 text-white hover:bg-blue-700 font-medium px-6 py-3 rounded transition-colors w-full" onClick={() => { window.location.href = '/dashboard'; setMobileMenuOpen(false); }}>
                 Get Started
               </button>
             </div>

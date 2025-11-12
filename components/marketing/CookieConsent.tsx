@@ -100,7 +100,7 @@ export function CookieConsent() {
                   </div>
                   <button
                     onClick={() => setShowSettings(false)}
-                    className="w-10 h-10 bg-black text-yellow-400 flex items-center justify-center hover:bg-gray-900 transition-colors"
+                    className="w-10 h-10 bg-black text-green-400 flex items-center justify-center hover:bg-gray-900 transition-colors"
                     aria-label="Close settings"
                   >
                     <RiCloseLine className="w-6 h-6" />
@@ -109,7 +109,7 @@ export function CookieConsent() {
 
                 <div className="space-y-4 mb-6">
                   {/* Necessary Cookies */}
-                  <div className="flex items-start gap-4 p-4 border-4 border-black bg-yellow-50">
+                  <div className="flex items-start gap-4 p-4 border-4 border-black bg-green-50">
                     <input
                       type="checkbox"
                       checked={true}
@@ -160,7 +160,7 @@ export function CookieConsent() {
                 <div className="flex flex-wrap gap-4">
                   <Button
                     onClick={handleSavePreferences}
-                    className="gap-2 bg-black text-yellow-400 hover:bg-gray-900 border-4 border-black font-bold uppercase brutalist-shadow"
+                    className="gap-2 bg-black text-green-400 hover:bg-gray-900 border-4 border-black font-bold uppercase brutalist-shadow"
                   >
                     <RiCheckLine className="w-5 h-5" />
                     Save Preferences
@@ -180,7 +180,7 @@ export function CookieConsent() {
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
                   {/* Icon */}
                   <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-yellow-400 border-4 border-black flex items-center justify-center">
+                    <div className="w-16 h-16 bg-green-400 border-4 border-black flex items-center justify-center">
                       <span className="text-4xl">🍪</span>
                     </div>
                   </div>
@@ -193,7 +193,7 @@ export function CookieConsent() {
                     <p className="text-gray-700 text-sm md:text-base">
                       We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic.
                       By clicking "Accept All", you consent to our use of cookies.{' '}
-                      <a href="/cookie-policy" className="underline hover:text-yellow-600">
+                      <a href="/cookie-policy" className="underline hover:text-green-600">
                         Learn more
                       </a>
                     </p>
@@ -204,7 +204,7 @@ export function CookieConsent() {
                     <Button
                       onClick={handleAcceptAll}
                       size="lg"
-                      className="gap-2 bg-black text-yellow-400 hover:bg-gray-900 border-4 border-black font-bold uppercase brutalist-shadow whitespace-nowrap"
+                      className="gap-2 bg-black text-green-400 hover:bg-gray-900 border-4 border-black font-bold uppercase brutalist-shadow whitespace-nowrap"
                     >
                       <RiCheckLine className="w-5 h-5" />
                       Accept All

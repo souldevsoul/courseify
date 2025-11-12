@@ -66,7 +66,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
               {logo || (
                 <>
                   <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center brutalist-shadow-yellow">
-                    <RiMic2Fill className="w-7 h-7 text-yellow-400" />
+                    <RiMic2Fill className="w-7 h-7 text-green-400" />
                   </div>
                   <span className="text-xl font-bold uppercase tracking-tight">{logoText}</span>
                 </>
@@ -79,7 +79,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                 <a
                   key={index}
                   href={link.href}
-                  className="text-sm font-bold uppercase tracking-wider hover:text-yellow-400 transition-colors"
+                  className="text-sm font-bold uppercase tracking-wider hover:text-green-400 transition-colors"
                 >
                   {link.label}
                 </a>
@@ -91,7 +91,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
               {ctaButton && (
                 <button
                   onClick={ctaButton.onClick}
-                  className="bg-yellow-400 text-black hover:bg-yellow-300 border-4 border-black font-bold uppercase px-6 py-2 transition-colors"
+                  className="bg-green-400 text-black hover:bg-yellow-300 border-4 border-black font-bold uppercase px-6 py-2 transition-colors"
                 >
                   {ctaButton.href ? (
                     <a href={ctaButton.href}>{ctaButton.text}</a>
@@ -124,7 +124,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                   <a
                     key={index}
                     href={link.href}
-                    className="text-sm font-bold uppercase tracking-wider hover:text-yellow-400 transition-colors py-2"
+                    className="text-sm font-bold uppercase tracking-wider hover:text-green-400 transition-colors py-2"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {link.label}
@@ -132,7 +132,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                 ))}
                 {ctaButton && (
                   <button
-                    className="bg-yellow-400 text-black hover:bg-yellow-300 border-4 border-black font-bold uppercase px-6 py-3 transition-colors w-full"
+                    className="bg-green-400 text-black hover:bg-yellow-300 border-4 border-black font-bold uppercase px-6 py-3 transition-colors w-full"
                     onClick={() => {
                       ctaButton.onClick?.()
                       setMobileMenuOpen(false)

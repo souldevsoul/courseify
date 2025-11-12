@@ -271,7 +271,7 @@ export default function TermsPage() {
       <section className="py-20 border-b-8 border-black">
         <Container maxWidth="xl">
           <div className="max-w-4xl mx-auto">
-            <div className="inline-flex items-center gap-3 px-6 py-3 bg-yellow-400 border-4 border-black mb-8">
+            <div className="inline-flex items-center gap-3 px-6 py-3 bg-green-400 border-4 border-black mb-8">
               <RiFileTextLine className="w-6 h-6" />
               <span className="text-sm font-bold uppercase tracking-wider">Terms of Service</span>
             </div>
@@ -289,10 +289,10 @@ export default function TermsPage() {
       </section>
 
       {/* Quick Summary */}
-      <section className="py-16 bg-black border-b-8 border-yellow-400">
+      <section className="py-16 bg-black border-b-8 border-green-400">
         <Container maxWidth="xl">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold uppercase mb-8 text-yellow-400">
+            <h2 className="text-3xl font-bold uppercase mb-8 text-green-400">
               THE KEY POINTS
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
@@ -348,7 +348,7 @@ export default function TermsPage() {
                   <div className="mb-8">
                     <div className="flex items-center gap-4 mb-4">
                       <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center">
-                        <Icon className="w-6 h-6 text-yellow-400" />
+                        <Icon className="w-6 h-6 text-green-400" />
                       </div>
                       <h2 className="text-3xl font-bold uppercase">{section.title}</h2>
                     </div>
@@ -359,7 +359,7 @@ export default function TermsPage() {
                       <div
                         key={itemIndex}
                         className={`p-6 border-4 border-black ${
-                          itemIndex % 2 === 0 ? "bg-white brutalist-shadow" : "bg-yellow-50"
+                          itemIndex % 2 === 0 ? "bg-white brutalist-shadow" : "bg-green-50"
                         }`}
                       >
                         {('subtitle' in item) && item.subtitle && (
@@ -379,7 +379,7 @@ export default function TermsPage() {
                 <div className="mb-8">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center">
-                      <RiScalesLine className="w-6 h-6 text-yellow-400" />
+                      <RiScalesLine className="w-6 h-6 text-green-400" />
                     </div>
                     <h2 className="text-3xl font-bold uppercase">{section.title}</h2>
                   </div>
@@ -389,7 +389,7 @@ export default function TermsPage() {
                   {section.content.map((item, itemIndex) => (
                     <div
                       key={itemIndex}
-                      className="p-6 bg-yellow-50 border-4 border-black"
+                      className="p-6 bg-green-50 border-4 border-black"
                     >
                       {('subtitle' in item) && item.subtitle && (
                         <h3 className="text-lg font-bold uppercase mb-3">{item.subtitle}</h3>
@@ -406,7 +406,7 @@ export default function TermsPage() {
               <div className="mb-8">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center">
-                    <RiFileTextLine className="w-6 h-6 text-yellow-400" />
+                    <RiFileTextLine className="w-6 h-6 text-green-400" />
                   </div>
                   <h2 className="text-3xl font-bold uppercase">13. Miscellaneous</h2>
                 </div>
@@ -420,7 +420,7 @@ export default function TermsPage() {
                   </p>
                 </div>
 
-                <div className="p-6 bg-yellow-50 border-4 border-black">
+                <div className="p-6 bg-green-50 border-4 border-black">
                   <h3 className="text-lg font-bold uppercase mb-3">Severability</h3>
                   <p className="text-gray-700 leading-relaxed">
                     If any provision of these Terms is found to be invalid or unenforceable, that provision shall be enforced to the maximum extent possible, and the remaining provisions shall remain in full force and effect.
@@ -434,7 +434,7 @@ export default function TermsPage() {
                   </p>
                 </div>
 
-                <div className="p-6 bg-yellow-50 border-4 border-black">
+                <div className="p-6 bg-green-50 border-4 border-black">
                   <h3 className="text-lg font-bold uppercase mb-3">Assignment</h3>
                   <p className="text-gray-700 leading-relaxed">
                     You may not assign or transfer these Terms or your rights and obligations hereunder without our prior written consent. We may assign these Terms to any affiliate or in connection with a merger, acquisition, or sale of assets.
@@ -454,13 +454,13 @@ export default function TermsPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-24 bg-black border-t-8 border-yellow-400">
+      <section className="py-24 bg-black border-t-8 border-green-400">
         <Container maxWidth="xl">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="w-20 h-20 bg-yellow-400 border-4 border-yellow-400 flex items-center justify-center mx-auto mb-6">
+            <div className="w-20 h-20 bg-green-400 border-4 border-green-400 flex items-center justify-center mx-auto mb-6">
               <RiMailLine className="w-10 h-10 text-black" />
             </div>
-            <h2 className="text-4xl font-bold uppercase mb-6 text-yellow-400">
+            <h2 className="text-4xl font-bold uppercase mb-6 text-green-400">
               QUESTIONS ABOUT THESE TERMS?
             </h2>
             <p className="text-xl text-white mb-8">
@@ -484,10 +484,10 @@ export default function TermsPage() {
                   <span className="font-bold uppercase text-sm">Support:</span>
                   <br />
                   <a
-                    href="mailto:support@voicecraft.ai"
+                    href="mailto:support@courseify.ai"
                     className="text-lg font-bold text-black underline hover:no-underline"
                   >
-                    support@voicecraft.ai
+                    support@courseify.ai
                   </a>
                 </div>
                 <div>

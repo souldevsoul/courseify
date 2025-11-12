@@ -147,9 +147,9 @@ export function WorkReviewCard({
           <Separator className="bg-black" />
 
           {/* Instructions */}
-          <div className="rounded-md border-4 border-yellow-500 bg-yellow-50 p-4">
+          <div className="rounded-md border-4 border-green-500 bg-green-50 p-4">
             <div className="flex items-start gap-3">
-              <RiErrorWarningLine className="h-5 w-5 flex-shrink-0 text-yellow-600" />
+              <RiErrorWarningLine className="h-5 w-5 flex-shrink-0 text-green-600" />
               <div className="flex-1">
                 <Heading variant="h3" className="text-sm font-bold text-yellow-900">
                   REVIEW THE WORK
@@ -212,7 +212,7 @@ export function WorkReviewCard({
                       onMouseLeave={() => setHoveredRating(0)}
                     >
                       {isFilled ? (
-                        <RiStarFill className="h-10 w-10 text-yellow-400" />
+                        <RiStarFill className="h-10 w-10 text-green-400" />
                       ) : (
                         <RiStarLine className="h-10 w-10 text-slate-300" />
                       )}
@@ -256,7 +256,7 @@ export function WorkReviewCard({
                 </Text>
                 {expertRating && (
                   <div className="flex items-center gap-1">
-                    <RiStarFill className="h-4 w-4 text-yellow-400" />
+                    <RiStarFill className="h-4 w-4 text-green-400" />
                     <Text variant="caption" className="text-sm font-bold">
                       {expertRating.toFixed(1)}
                     </Text>

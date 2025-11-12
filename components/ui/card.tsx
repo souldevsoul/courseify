@@ -65,7 +65,7 @@ const Card = React.forwardRef<HTMLDivElement, CardProps>(
     const hoverClasses = {
       none: '',
       lift: 'hover:-translate-y-2 hover:shadow-2xl transition-all duration-300',
-      glow: 'hover:shadow-[0_0_30px_rgba(234,179,8,0.6)] hover:border-yellow-400 transition-all duration-300',
+      glow: 'hover:shadow-[0_0_30px_rgba(234,179,8,0.6)] hover:border-green-400 transition-all duration-300',
     }
 
     const config = variantStyles[variant]

@@ -98,23 +98,23 @@ export default function AdminDashboard() {
       {/* Stats Grid */}
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         {/* Total Projects */}
-        <Card variant="outlined" className="border-4 border-purple-500 bg-purple-50">
+        <Card variant="outlined" className="border-4 border-blue-500 bg-blue-50">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-bold uppercase text-purple-900">
+            <CardTitle className="text-sm font-bold uppercase text-blue-900">
               TOTAL PROJECTS
             </CardTitle>
-            <RiFolder3Line className="h-6 w-6 text-purple-600" />
+            <RiFolder3Line className="h-6 w-6 text-blue-600" />
           </CardHeader>
           <CardContent>
-            <h2 className="text-3xl font-bold text-purple-900">
+            <h2 className="text-3xl font-bold text-blue-900">
               {stats.totalProjects}
             </h2>
             <div className="mt-2 flex items-center gap-2">
-              <Text variant="caption" className="text-xs text-purple-800">
+              <Text variant="caption" className="text-xs text-blue-800">
                 {stats.activeProjects} active
               </Text>
-              <Text variant="caption" className="text-xs text-purple-600">•</Text>
-              <Text variant="caption" className="text-xs text-purple-800">
+              <Text variant="caption" className="text-xs text-blue-600">•</Text>
+              <Text variant="caption" className="text-xs text-blue-800">
                 {stats.completedProjects} completed
               </Text>
             </div>
@@ -186,7 +186,7 @@ export default function AdminDashboard() {
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           <Card variant="outlined" className="border-4 border-black hover:shadow-[4px_4px_0_0_#000] transition-shadow cursor-pointer">
             <CardContent className="flex flex-col items-center justify-center p-6 text-center">
-              <RiFolder3Line className="h-12 w-12 text-purple-600" />
+              <RiFolder3Line className="h-12 w-12 text-blue-600" />
               <h3 className="mt-4 text-sm font-bold uppercase tracking-tight">
                 MANAGE PROJECTS
               </h3>

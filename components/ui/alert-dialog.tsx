@@ -103,7 +103,7 @@ const AlertDialogAction = React.forwardRef<
   <AlertDialogPrimitive.Action
     ref={ref}
     className={cn(
-      "inline-flex h-10 items-center justify-center border-2 border-black bg-yellow-400 px-4 py-2 text-sm font-bold uppercase transition-colors hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
+      "inline-flex h-10 items-center justify-center border-2 border-black bg-green-400 px-4 py-2 text-sm font-bold uppercase transition-colors hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
       className
     )}
     {...props}
@@ -118,7 +118,7 @@ const AlertDialogCancel = React.forwardRef<
   <AlertDialogPrimitive.Cancel
     ref={ref}
     className={cn(
-      "inline-flex h-10 items-center justify-center border-2 border-black bg-white px-4 py-2 text-sm font-bold uppercase transition-colors hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 sm:mt-0",
+      "inline-flex h-10 items-center justify-center border-2 border-black bg-white px-4 py-2 text-sm font-bold uppercase transition-colors hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 sm:mt-0",
       className
     )}
     {...props}

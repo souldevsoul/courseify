@@ -31,7 +31,7 @@ export function AppHeader({ user }: AppHeaderProps) {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
           <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center brutalist-shadow-yellow">
-            <RiMic2Fill className="w-7 h-7 text-yellow-400" />
+            <RiMic2Fill className="w-7 h-7 text-green-400" />
           </div>
           <span className="text-xl font-bold uppercase tracking-tight">VOICECRAFT</span>
         </Link>
@@ -46,7 +46,7 @@ export function AppHeader({ user }: AppHeaderProps) {
               <Button
                 variant="outline"
                 size="md"
-                className="border-4 border-black font-bold uppercase hover:bg-yellow-50"
+                className="border-4 border-black font-bold uppercase hover:bg-green-50"
               >
                 <RiUserLine className="mr-2 h-4 w-4" />
                 {user.name || "User"}
@@ -95,7 +95,7 @@ export function AppHeader({ user }: AppHeaderProps) {
         ) : (
           <Button
             size="md"
-            className="bg-yellow-400 text-black hover:bg-yellow-300 border-4 border-black font-bold uppercase"
+            className="bg-green-400 text-black hover:bg-yellow-300 border-4 border-black font-bold uppercase"
             asChild
           >
             <Link href="/dashboard">Get Started</Link>
