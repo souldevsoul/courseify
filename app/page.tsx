@@ -3,26 +3,26 @@
 import * as React from "react"
 import Image from "next/image"
 import { Button, Heading, Text } from "@/components/ui"
-import { Waveform, AudioPlayer } from "@/components/voicecraft"
 import { Footer } from "@/components/marketing/layout/footer"
 import { NewsletterPopup } from "@/components/marketing/NewsletterPopup"
 import {
   RiSparklingLine,
-  RiMicLine,
-  RiMic2Fill,
+  RiBookOpenLine,
+  RiVideoLine,
   RiFlashlightLine,
   RiShieldCheckLine,
   RiGlobalLine,
-  RiHeadphoneLine,
   RiArrowRightLine,
   RiPlayCircleLine,
   RiCheckLine,
   RiCloseLine,
   RiStarFill,
-  RiLineChartLine,
-  RiUserLine,
+  RiLightbulbLine,
+  RiPresentationLine,
+  RiQuestionLine,
   RiAwardLine,
-  RiTimerLine,
+  RiGroupLine,
+  RiLineChartLine,
 } from "react-icons/ri"
 
 export default function Home() {
@@ -40,9 +40,6 @@ export default function Home() {
     { category: "Online Platform", title: "Course Dashboard", image: "/images/examples/laptop-courses-1762952358770.png" },
     { category: "Collaborative", title: "Group Learning Sessions", image: "/images/examples/group-learning-1762952370364.png" },
     { category: "Achievement", title: "Certificate of Success", image: "/images/examples/certificate-success-1762952403470.png" },
-    { category: "Mobile Learning", title: "Learn Anywhere", image: "/images/examples/mobile-learning-1762952413395.png" },
-    { category: "Home Office", title: "Personal Study Space", image: "/images/examples/home-office-study-1762952439198.png" },
-    { category: "Mentorship", title: "Virtual Mentoring", image: "/images/examples/virtual-mentor-1762952453185.png" },
   ]
 
   React.useEffect(() => {
@@ -56,186 +53,201 @@ export default function Home() {
   const features = [
     {
       icon: RiSparklingLine,
-      title: "POWERED BY KOKORO-82M",
-      description: "Most popular voice model with 56M+ runs. Battle-tested AI technology delivering natural-sounding speech at massive scale.",
+      title: "AI Course Generation",
+      description: "Enter any topic and AI creates complete course curriculum with modules, lessons, and assessments. Professional structure in minutes.",
     },
     {
-      icon: RiMicLine,
-      title: "VOICE CLONING",
-      description: "Clone voices with Minimax technology. Quick training from 10 seconds to 5 minutes of audio. 300+ preset voices available.",
+      icon: RiVideoLine,
+      title: "Video Lessons",
+      description: "AI-generated video content with professional narration. Transform text lessons into engaging video courses automatically.",
     },
     {
-      icon: RiFlashlightLine,
-      title: "LIGHTNING FAST",
-      description: "Real-time voice synthesis in seconds. Minimax 2.6 Turbo optimized for low latency. Generate hours of content instantly.",
+      icon: RiPresentationLine,
+      title: "Interactive Content",
+      description: "Create quizzes, assignments, and interactive exercises. AI generates questions based on your lesson content.",
     },
     {
-      icon: RiShieldCheckLine,
-      title: "SECURE & PRIVATE",
-      description: "Your voice data is encrypted end-to-end and never shared. Full GDPR compliance. Enterprise-grade security.",
+      icon: RiGroupLine,
+      title: "Student Management",
+      description: "Track enrollments, progress, and performance. Automated grading and detailed analytics for every student.",
     },
     {
-      icon: RiGlobalLine,
-      title: "50+ LANGUAGES",
-      description: "Multilingual support powered by Minimax and XTTS-v2. Native accents, natural intonation, cross-language voice transfer.",
+      icon: RiAwardLine,
+      title: "Certificates",
+      description: "Automatic certificate generation upon course completion. Customizable templates with your branding.",
     },
     {
-      icon: RiHeadphoneLine,
-      title: "STUDIO QUALITY",
-      description: "Professional 48kHz audio output. Emotion control, pitch adjustment, speed control. MP3, WAV, FLAC formats supported.",
+      icon: RiLineChartLine,
+      title: "Analytics",
+      description: "Comprehensive insights into student engagement, completion rates, and course performance metrics.",
     },
   ]
 
   // Pricing data
   const pricingPlans = [
     {
-      name: "STARTER",
-      price: "$0",
-      description: "Perfect for trying out VoiceCraft",
+      name: "Creator",
+      price: "$39",
+      period: "/month",
+      description: "Perfect for individual course creators",
       features: [
-        { text: "10,000 characters/month", included: true },
-        { text: "5 preset voices", included: true },
-        { text: "MP3 downloads", included: true },
-        { text: "Voice cloning", included: false },
-        { text: "Commercial use", included: false },
-        { text: "Priority support", included: false },
+        { text: "5 active courses", included: true },
+        { text: "AI course generation", included: true },
+        { text: "Video lessons", included: true },
+        { text: "100 students", included: true },
+        { text: "Basic analytics", included: true },
+        { text: "Certificates", included: false },
+        { text: "Custom branding", included: false },
       ],
-      ctaText: "GET STARTED FREE",
+      ctaText: "Start Free Trial",
       popular: false,
     },
     {
-      name: "PRO",
-      price: "$29",
-      description: "For professionals and content creators",
+      name: "Professional",
+      price: "$99",
+      period: "/month",
+      description: "For educators and small teams",
       features: [
-        { text: "100,000 characters/month", included: true },
-        { text: "50+ preset voices", included: true },
-        { text: "WAV & MP3 downloads", included: true },
-        { text: "3 voice clones", included: true },
-        { text: "Commercial use", included: true },
-        { text: "Priority support", included: true },
-        { text: "API access", included: false },
+        { text: "Unlimited courses", included: true },
+        { text: "AI course generation", included: true },
+        { text: "HD video lessons", included: true },
+        { text: "500 students", included: true },
+        { text: "Advanced analytics", included: true },
+        { text: "Custom certificates", included: true },
+        { text: "Custom branding", included: true },
+        { text: "Email support", included: true },
       ],
-      ctaText: "START FREE TRIAL",
+      ctaText: "Start Free Trial",
       popular: true,
     },
     {
-      name: "ENTERPRISE",
-      price: "CUSTOM",
-      description: "For teams and organizations",
+      name: "Enterprise",
+      price: "Custom",
+      period: "",
+      description: "For organizations and institutions",
       features: [
-        { text: "Unlimited characters", included: true },
-        { text: "All preset voices", included: true },
-        { text: "All audio formats", included: true },
-        { text: "Unlimited voice clones", included: true },
-        { text: "Commercial use", included: true },
-        { text: "Dedicated support", included: true },
-        { text: "Full API access", included: true },
+        { text: "Unlimited everything", included: true },
+        { text: "White-label platform", included: true },
+        { text: "API access", included: true },
         { text: "Custom integrations", included: true },
-        { text: "SLA guarantee", included: true },
+        { text: "SSO authentication", included: true },
+        { text: "Dedicated support", included: true },
+        { text: "Custom features", included: true },
+        { text: "Training & onboarding", included: true },
       ],
-      ctaText: "CONTACT SALES",
+      ctaText: "Contact Sales",
       popular: false,
     },
   ]
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-pink-50">
       {/* Header */}
-      <header className="sticky top-0 z-50 border-b-4 border-black bg-white">
+      <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-purple-200">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center brutalist-shadow-yellow">
-              <RiMic2Fill className="w-7 h-7 text-green-400" />
+            <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-lg">
+              <RiBookOpenLine className="w-7 h-7 text-white" />
             </div>
-            <span className="text-xl font-bold uppercase tracking-tight">VOICECRAFT</span>
+            <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Courseify</span>
           </div>
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-sm font-bold uppercase tracking-wider hover:text-green-400 transition-colors">Features</a>
-            <a href="#pricing" className="text-sm font-bold uppercase tracking-wider hover:text-green-400 transition-colors">Pricing</a>
-            <a href="/about" className="text-sm font-bold uppercase tracking-wider hover:text-green-400 transition-colors">About</a>
-            <a href="/contact" className="text-sm font-bold uppercase tracking-wider hover:text-green-400 transition-colors">Contact</a>
+            <a href="#features" className="text-sm font-semibold text-slate-700 hover:text-purple-600 transition-colors">Features</a>
+            <a href="#pricing" className="text-sm font-semibold text-slate-700 hover:text-purple-600 transition-colors">Pricing</a>
+            <a href="/about" className="text-sm font-semibold text-slate-700 hover:text-purple-600 transition-colors">About</a>
           </nav>
           <Button
             size="md"
-            className="bg-green-400 text-black hover:bg-yellow-300 border-4 border-black font-bold uppercase"
+            className="bg-gradient-to-r from-purple-500 to-pink-600 text-white hover:from-purple-600 hover:to-pink-700 shadow-lg hover:shadow-xl transition-all font-semibold"
             onClick={() => window.location.href = '/dashboard'}
           >
-            Get Started
+            Create Course
           </Button>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-white via-green-50 to-white border-b-8 border-black min-h-[90vh] flex items-center">
+      <section className="relative overflow-hidden min-h-[90vh] flex items-center">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-1/4 -left-24 w-96 h-96 bg-purple-300/20 rounded-full blur-3xl" />
+          <div className="absolute bottom-1/4 -right-24 w-96 h-96 bg-pink-300/20 rounded-full blur-3xl" />
+        </div>
+
         <div className="max-w-7xl mx-auto px-6 py-24 relative z-10">
           <div className="text-center space-y-12">
-            {/* Badge */}
-            <div className={`inline-flex items-center gap-3 px-6 py-3 bg-green-400 border-4 border-black brutalist-shadow transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}>
-              <RiSparklingLine className="w-6 h-6" />
-              <Text variant="body-sm" className="font-bold uppercase tracking-wider">AI-POWERED VOICE SYNTHESIS</Text>
+            <div className={`inline-flex items-center gap-3 px-6 py-3 bg-white/80 backdrop-blur-sm rounded-full shadow-lg border border-purple-200 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}>
+              <RiSparklingLine className="w-5 h-5 text-purple-600" />
+              <Text variant="body-sm" className="font-semibold text-slate-700">AI-Powered Course Creation</Text>
             </div>
 
-            {/* Big Revealing Text */}
             <div className="space-y-6">
-              <h1 className="text-6xl md:text-8xl lg:text-9xl font-black uppercase leading-none">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
                 <span className={`block transition-all duration-700 delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                  <span className="text-black">YOUR</span>{" "}
-                  <span className="text-green-400 [-webkit-text-stroke:3px_black] [text-stroke:3px_black]">VOICE</span>
+                  <span className="text-slate-900">Create Online Courses</span>
                 </span>
                 <span className={`block transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                  <span className="text-black">YOUR</span>{" "}
-                  <span className="text-green-400 [-webkit-text-stroke:3px_black] [text-stroke:3px_black]">STYLE</span>
+                  <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">In Minutes</span>
                 </span>
                 <span className={`block transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                  <span className="text-black">IN</span>{" "}
-                  <span className="text-green-400 [-webkit-text-stroke:3px_black] [text-stroke:3px_black]">SECONDS</span>
+                  <span className="text-slate-900">With AI</span>
                 </span>
               </h1>
             </div>
 
-            {/* Subtitle */}
             <div className={`transition-all duration-700 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-              <Text variant="lead" className="text-gray-900 max-w-3xl mx-auto text-xl md:text-2xl font-medium">
-                Clone voices, generate speech, create content. Professional AI voice synthesis powered by cutting-edge machine learning.
+              <Text variant="lead" className="text-slate-600 max-w-3xl mx-auto text-xl md:text-2xl">
+                Transform your expertise into professional online courses. AI generates curriculum, videos, quizzes, and more. No technical skills required.
               </Text>
             </div>
 
-            {/* CTA Buttons */}
             <div className={`flex flex-wrap justify-center gap-6 pt-4 transition-all duration-700 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
               <Button
                 size="xl"
-                className="gap-3 bg-black text-green-400 hover:bg-gray-900 border-4 border-black font-bold uppercase brutalist-shadow text-lg px-12 py-8"
+                className="gap-3 bg-gradient-to-r from-purple-500 to-pink-600 text-white hover:from-purple-600 hover:to-pink-700 shadow-xl hover:shadow-2xl transition-all font-semibold text-lg px-12 py-8 rounded-2xl"
                 onClick={() => window.location.href = '/dashboard'}
               >
                 <RiArrowRightLine className="w-6 h-6" />
-                Start Free Now
+                Create Your First Course
               </Button>
               <Button
                 size="xl"
-                variant="secondary"
-                className="gap-3 bg-white text-black hover:bg-gray-100 border-4 border-black font-bold uppercase text-lg px-12 py-8"
+                className="gap-3 bg-white text-slate-700 hover:bg-slate-50 shadow-lg hover:shadow-xl transition-all font-semibold text-lg px-12 py-8 rounded-2xl border border-slate-200"
                 onClick={() => window.location.href = '/demo'}
               >
-                <RiMic2Fill className="w-6 h-6" />
-                Try Demo
+                <RiPlayCircleLine className="w-6 h-6" />
+                See Examples
               </Button>
+            </div>
+
+            <div className={`flex flex-wrap justify-center items-center gap-8 pt-12 text-sm text-slate-600 transition-all duration-700 delay-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+              <div className="flex items-center gap-2">
+                <RiCheckLine className="w-5 h-5 text-emerald-500" />
+                <span>10,000+ Courses Created</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <RiCheckLine className="w-5 h-5 text-emerald-500" />
+                <span>50,000+ Students Enrolled</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <RiCheckLine className="w-5 h-5 text-emerald-500" />
+                <span>5-Minute Setup</span>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Course Examples Carousel */}
-      <section className="relative bg-white py-20 border-b-8 border-black">
+      <section className="relative bg-white py-20 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black uppercase mb-4">
-              Learning That Works
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-slate-900">
+              See What You Can Create
             </h2>
-            <p className="text-gray-700 text-lg font-medium">See how our platform transforms education</p>
+            <p className="text-slate-600 text-lg">Professional courses created with Courseify</p>
           </div>
 
-          <div className="relative h-96 rounded-2xl overflow-hidden border-4 border-black brutalist-shadow">
+          <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl">
             {courseExamples.map((example, index) => (
               <div
                 key={index}
@@ -245,31 +257,31 @@ export default function Home() {
               >
                 <Image
                   src={example.image}
-                  alt={`${example.category}: ${example.title}`}
+                  alt={example.title}
                   fill
                   className="object-cover"
                   priority={index === 0}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-center justify-center">
-                  <div className="text-center text-white space-y-4">
-                    <div className="inline-block px-4 py-2 bg-green-400/90 border-4 border-black mb-4">
-                      <span className="text-sm font-bold uppercase tracking-wider text-black">{example.category}</span>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end justify-center pb-12">
+                  <div className="text-center text-white space-y-2">
+                    <div className="inline-block px-4 py-1 bg-purple-500/90 backdrop-blur-sm rounded-full text-sm font-semibold mb-2">
+                      {example.category}
                     </div>
-                    <h3 className="text-5xl font-black uppercase">{example.title}</h3>
+                    <h3 className="text-4xl md:text-5xl font-bold">{example.title}</h3>
                   </div>
                 </div>
               </div>
             ))}
 
-            {/* Carousel indicators */}
             <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
               {courseExamples.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentCourse(index)}
-                  className={`w-3 h-3 border-2 border-black transition-all ${
-                    index === currentCourse ? 'w-8 bg-green-400' : 'bg-white'
+                  className={`h-2 rounded-full transition-all ${
+                    index === currentCourse ? 'w-8 bg-purple-500' : 'w-2 bg-white/60'
                   }`}
+                  aria-label={`View course ${index + 1}`}
                 />
               ))}
             </div>
@@ -278,40 +290,32 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-24 bg-white">
+      <section id="features" className="py-24 bg-gradient-to-br from-purple-50 to-pink-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-3 px-6 py-3 bg-black border-4 border-black mb-6">
-              <RiSparklingLine className="w-6 h-6 text-green-400" />
-              <Text variant="body-sm" className="text-green-400 font-bold uppercase tracking-wider">Features</Text>
+            <div className="inline-flex items-center gap-3 px-6 py-3 bg-purple-100 rounded-full mb-6">
+              <RiSparklingLine className="w-5 h-5 text-purple-600" />
+              <Text variant="body-sm" className="text-purple-700 font-semibold">Features</Text>
             </div>
-            <Heading variant="h2" className="mb-4 uppercase text-4xl md:text-5xl lg:text-6xl">EVERYTHING YOU NEED</Heading>
-            <Text variant="body-lg" className="text-gray-600 max-w-3xl mx-auto">
-              Powerful features designed for creators, businesses, and developers
+            <Heading variant="h2" className="mb-4 text-4xl md:text-5xl text-slate-900">Everything You Need</Heading>
+            <Text variant="body-lg" className="text-slate-600 max-w-3xl mx-auto">
+              Complete course creation platform powered by AI
             </Text>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {features.map((feature, index) => {
               const Icon = feature.icon
-              const bgColors = ["bg-white", "bg-black", "bg-green-400"]
-              const textColors = ["text-black", "text-green-400", "text-black"]
-              const borderColors = ["border-black", "border-black", "border-black"]
-              const shadowColors = ["brutalist-shadow", "brutalist-shadow-yellow", "brutalist-shadow"]
-
-              const colorIndex = index % 3
-
               return (
-                <div key={index} className={`p-8 ${bgColors[colorIndex]} border-4 ${borderColors[colorIndex]} ${shadowColors[colorIndex]}`}>
-                  <div className={`w-16 h-16 ${colorIndex === 1 ? "bg-green-400" : "bg-black"} flex items-center justify-center mb-6`}>
-                    <Icon className={`w-8 h-8 ${colorIndex === 1 ? "text-black" : "text-green-400"}`} />
+                <div
+                  key={index}
+                  className="group p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-100 hover:border-purple-200"
+                >
+                  <div className="w-14 h-14 bg-gradient-to-br from-purple-400 to-pink-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <Icon className="w-7 h-7 text-white" />
                   </div>
-                  <Heading variant="h4" className={`mb-4 ${textColors[colorIndex]} uppercase`}>
-                    {feature.title}
-                  </Heading>
-                  <Text variant="body" className={colorIndex === 1 ? "text-white" : "text-gray-600"}>
-                    {feature.description}
-                  </Text>
+                  <h3 className="text-xl font-bold text-slate-900 mb-3">{feature.title}</h3>
+                  <p className="text-slate-600 leading-relaxed">{feature.description}</p>
                 </div>
               )
             })}
@@ -323,75 +327,63 @@ export default function Home() {
       <section id="pricing" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-3 px-6 py-3 bg-green-400 border-4 border-black mb-6">
-              <Text variant="body-sm" className="text-black font-bold uppercase tracking-wider">Pricing</Text>
-            </div>
-            <Heading variant="h2" className="mb-4 uppercase text-4xl md:text-5xl lg:text-6xl">CHOOSE YOUR PLAN</Heading>
-            <Text variant="body-lg" className="text-gray-600 max-w-3xl mx-auto">
-              Start free, upgrade when you need more. All plans include our core features.
-            </Text>
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-slate-900">
+              Simple Pricing for Creators
+            </h2>
+            <p className="text-slate-600 text-lg max-w-2xl mx-auto">
+              Start free, upgrade as you grow your course business
+            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {pricingPlans.map((plan, index) => (
               <div
                 key={index}
-                className={`p-8 border-4 border-black ${
+                className={`relative p-8 rounded-3xl border-2 transition-all duration-300 ${
                   plan.popular
-                    ? "bg-black brutalist-shadow-yellow"
-                    : "bg-white brutalist-shadow"
+                    ? 'border-purple-500 bg-white shadow-2xl scale-105'
+                    : 'border-slate-200 bg-white shadow-lg hover:shadow-xl'
                 }`}
               >
                 {plan.popular && (
-                  <div className="inline-flex items-center px-4 py-2 bg-green-400 border-4 border-green-400 mb-6">
-                    <Text variant="caption" className="text-black font-bold uppercase tracking-wider">Most Popular</Text>
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-6 py-1 bg-gradient-to-r from-purple-500 to-pink-600 text-white text-sm font-bold rounded-full">
+                    MOST POPULAR
                   </div>
                 )}
-                <Heading variant="h3" className={`mb-2 uppercase ${plan.popular ? "text-green-400" : "text-black"}`}>
-                  {plan.name}
-                </Heading>
-                <div className="mb-6">
-                  <span className={`text-5xl font-bold uppercase ${plan.popular ? "text-green-400" : "text-black"}`}>
-                    {plan.price}
-                  </span>
-                  {plan.price !== "CUSTOM" && (
-                    <span className={`text-lg font-bold uppercase ${plan.popular ? "text-white" : "text-gray-600"}`}>/mo</span>
-                  )}
+
+                <div className="text-center mb-8">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-2">{plan.name}</h3>
+                  <div className="flex items-end justify-center gap-1 mb-2">
+                    <span className="text-5xl font-bold text-slate-900">{plan.price}</span>
+                    {plan.period && <span className="text-slate-600 text-lg mb-2">{plan.period}</span>}
+                  </div>
+                  <p className="text-slate-600 text-sm">{plan.description}</p>
                 </div>
-                <Text variant="body" className={`mb-8 ${plan.popular ? "text-white" : "text-gray-600"}`}>
-                  {plan.description}
-                </Text>
+
                 <ul className="space-y-4 mb-8">
-                  {plan.features.map((feature, i) => (
-                    <li key={i} className="flex items-start gap-3">
+                  {plan.features.map((feature, featureIndex) => (
+                    <li key={featureIndex} className="flex items-start gap-3">
                       {feature.included ? (
-                        <RiCheckLine className={`w-5 h-5 flex-shrink-0 ${plan.popular ? "text-green-400" : "text-black"}`} />
+                        <RiCheckLine className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
                       ) : (
-                        <RiCloseLine className={`w-5 h-5 flex-shrink-0 ${plan.popular ? "text-gray-600" : "text-gray-400"}`} />
+                        <RiCloseLine className="w-5 h-5 text-slate-300 flex-shrink-0 mt-0.5" />
                       )}
-                      <Text
-                        variant="body-sm"
-                        className={`${
-                          feature.included
-                            ? plan.popular ? "text-white" : "text-black"
-                            : plan.popular ? "text-gray-600" : "text-gray-400"
-                        } font-medium`}
-                      >
+                      <span className={feature.included ? 'text-slate-700' : 'text-slate-400'}>
                         {feature.text}
-                      </Text>
+                      </span>
                     </li>
                   ))}
                 </ul>
+
                 <Button
-                  size="lg"
-                  className={`w-full gap-3 border-4 border-black font-bold uppercase ${
+                  className={`w-full py-6 font-semibold rounded-xl transition-all ${
                     plan.popular
-                      ? "bg-green-400 text-black hover:bg-yellow-300"
-                      : "bg-black text-green-400 hover:bg-gray-900"
+                      ? 'bg-gradient-to-r from-purple-500 to-pink-600 text-white hover:from-purple-600 hover:to-pink-700 shadow-lg hover:shadow-xl'
+                      : 'bg-slate-900 text-white hover:bg-slate-800'
                   }`}
+                  onClick={() => window.location.href = plan.ctaText === 'Contact Sales' ? '/contact' : '/dashboard'}
                 >
                   {plan.ctaText}
-                  <RiArrowRightLine className="w-5 h-5" />
                 </Button>
               </div>
             ))}
@@ -399,43 +391,36 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-24 bg-black border-t-8 border-green-400">
+      {/* CTA Section */}
+      <section className="py-24 bg-gradient-to-br from-purple-600 to-pink-700 text-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <div className="inline-flex items-center gap-3 px-6 py-3 bg-green-400 border-4 border-green-400 mb-8">
-            <RiSparklingLine className="w-6 h-6 text-black" />
-            <Text variant="body-sm" className="text-black font-bold uppercase tracking-wider">Ready to Start?</Text>
-          </div>
-          <Heading variant="h1" className="mb-6 text-green-400 uppercase text-5xl md:text-6xl lg:text-7xl">
-            TRANSFORM YOUR VOICE CONTENT
-          </Heading>
-          <Text variant="body-lg" className="text-white mb-12 max-w-2xl mx-auto">
-            Join thousands of creators and businesses using VoiceCraft to create professional voice content in seconds. Start your free trial today—no credit card required.
-          </Text>
-          <div className="flex flex-wrap justify-center gap-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            Ready to Share Your Knowledge?
+          </h2>
+          <p className="text-xl text-purple-100 mb-12 max-w-2xl mx-auto">
+            Join 10,000+ course creators using Courseify to build and sell online courses. Start free today.
+          </p>
+          <div className="flex flex-wrap justify-center gap-6">
             <Button
               size="xl"
-              className="gap-3 bg-green-400 text-black hover:bg-yellow-300 border-4 border-green-400 font-bold uppercase brutalist-shadow-yellow"
+              className="gap-3 bg-white text-purple-600 hover:bg-purple-50 shadow-2xl font-bold text-lg px-12 py-8 rounded-2xl"
               onClick={() => window.location.href = '/dashboard'}
             >
-              <RiArrowRightLine className="w-5 h-5" />
-              Start Free Trial
+              <RiBookOpenLine className="w-6 h-6" />
+              Create Your Course Free
             </Button>
             <Button
               size="xl"
-              variant="secondary"
-              className="gap-3 bg-white text-black hover:bg-gray-100 border-4 border-white font-bold uppercase"
+              className="gap-3 bg-purple-700/50 backdrop-blur text-white hover:bg-purple-700/70 border-2 border-white/30 font-semibold text-lg px-12 py-8 rounded-2xl"
               onClick={() => window.location.href = '/contact'}
             >
-              Schedule a Demo
+              Talk to Sales
             </Button>
           </div>
         </div>
       </section>
 
       <Footer />
-
-      {/* Newsletter Popup */}
       <NewsletterPopup />
     </div>
   )
