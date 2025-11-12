@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+import Image from "next/image"
 import { Button, Heading, Text } from "@/components/ui"
 import { Waveform, AudioPlayer } from "@/components/voicecraft"
 import { Footer } from "@/components/marketing/layout/footer"
@@ -26,9 +27,29 @@ import {
 
 export default function Home() {
   const [isVisible, setIsVisible] = React.useState(false)
+  const [currentCourse, setCurrentCourse] = React.useState(0)
 
   React.useEffect(() => {
     setIsVisible(true)
+  }, [])
+
+  // Course examples carousel
+  const courseExamples = [
+    { category: "Content Creation", title: "Video Recording Studio", image: "/images/examples/video-recording-1762952293704.png" },
+    { category: "Interactive Learning", title: "Digital Whiteboard Teaching", image: "/images/examples/whiteboard-teaching-1762952347522.png" },
+    { category: "Online Platform", title: "Course Dashboard", image: "/images/examples/laptop-courses-1762952358770.png" },
+    { category: "Collaborative", title: "Group Learning Sessions", image: "/images/examples/group-learning-1762952370364.png" },
+    { category: "Achievement", title: "Certificate of Success", image: "/images/examples/certificate-success-1762952403470.png" },
+    { category: "Mobile Learning", title: "Learn Anywhere", image: "/images/examples/mobile-learning-1762952413395.png" },
+    { category: "Home Office", title: "Personal Study Space", image: "/images/examples/home-office-study-1762952439198.png" },
+    { category: "Mentorship", title: "Virtual Mentoring", image: "/images/examples/virtual-mentor-1762952453185.png" },
+  ]
+
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentCourse((prev) => (prev + 1) % courseExamples.length)
+    }, 4000)
+    return () => clearInterval(interval)
   }, [])
 
   // Features data
