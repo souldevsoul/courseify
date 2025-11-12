@@ -225,46 +225,54 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Microphone Lineup */}
-      <section className="relative bg-gradient-to-br from-white via-green-50 to-white pb-20 -mb-8">
+      {/* Course Examples Carousel */}
+      <section className="relative bg-white py-20 border-b-8 border-black">
         <div className="max-w-7xl mx-auto px-6">
-          <div className={`flex justify-center items-end gap-4 md:gap-8 lg:gap-12 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <img
-              src="/images/test-mic-vintage-square-nobg.png"
-              alt="Vintage Square Microphone"
-              className="w-24 md:w-32 lg:w-40 h-auto transition-all duration-300 hover:scale-110"
-              style={{ filter: 'drop-shadow(0 0 40px rgba(250, 204, 21, 0.4))' }}
-            />
-            <img
-              src="/images/mic-modern-condenser-nobg.png"
-              alt="Modern Condenser Microphone"
-              className="w-20 md:w-28 lg:w-36 h-auto transition-all duration-300 hover:scale-110"
-              style={{ filter: 'drop-shadow(0 0 40px rgba(250, 204, 21, 0.4))' }}
-            />
-            <img
-              src="/images/mic-futuristic-cube-nobg.png"
-              alt="Futuristic Cube Microphone"
-              className="w-28 md:w-36 lg:w-44 h-auto transition-all duration-300 hover:scale-110"
-              style={{ filter: 'drop-shadow(0 0 40px rgba(250, 204, 21, 0.4))' }}
-            />
-            <img
-              src="/images/mic-classic-broadcast-nobg.png"
-              alt="Classic Broadcast Microphone"
-              className="w-22 md:w-30 lg:w-38 h-auto transition-all duration-300 hover:scale-110"
-              style={{ filter: 'drop-shadow(0 0 40px rgba(250, 204, 21, 0.4))' }}
-            />
-            <img
-              src="/images/mic-hexagonal-geometric-nobg.png"
-              alt="Hexagonal Geometric Microphone"
-              className="w-24 md:w-32 lg:w-40 h-auto transition-all duration-300 hover:scale-110"
-              style={{ filter: 'drop-shadow(0 0 40px rgba(250, 204, 21, 0.4))' }}
-            />
-            <img
-              src="/images/mic-triangular-prism-nobg.png"
-              alt="Triangular Prism Microphone"
-              className="w-22 md:w-30 lg:w-38 h-auto transition-all duration-300 hover:scale-110"
-              style={{ filter: 'drop-shadow(0 0 40px rgba(250, 204, 21, 0.4))' }}
-            />
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-black uppercase mb-4">
+              Learning That Works
+            </h2>
+            <p className="text-gray-700 text-lg font-medium">See how our platform transforms education</p>
+          </div>
+
+          <div className="relative h-96 rounded-2xl overflow-hidden border-4 border-black brutalist-shadow">
+            {courseExamples.map((example, index) => (
+              <div
+                key={index}
+                className={`absolute inset-0 transition-opacity duration-1000 ${
+                  index === currentCourse ? 'opacity-100' : 'opacity-0'
+                }`}
+              >
+                <Image
+                  src={example.image}
+                  alt={`${example.category}: ${example.title}`}
+                  fill
+                  className="object-cover"
+                  priority={index === 0}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-center justify-center">
+                  <div className="text-center text-white space-y-4">
+                    <div className="inline-block px-4 py-2 bg-green-400/90 border-4 border-black mb-4">
+                      <span className="text-sm font-bold uppercase tracking-wider text-black">{example.category}</span>
+                    </div>
+                    <h3 className="text-5xl font-black uppercase">{example.title}</h3>
+                  </div>
+                </div>
+              </div>
+            ))}
+
+            {/* Carousel indicators */}
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+              {courseExamples.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentCourse(index)}
+                  className={`w-3 h-3 border-2 border-black transition-all ${
+                    index === currentCourse ? 'w-8 bg-green-400' : 'bg-white'
+                  }`}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </section>
