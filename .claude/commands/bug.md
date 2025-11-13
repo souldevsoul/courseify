@@ -64,7 +64,7 @@ You are helping a developer fix a bug in the Courseify application. Follow these
      - Add comment explaining WHY: `// Reason: Third-party component requires this color`
 
    - If error is **real** (code violates design system):
-     - Fix it now following Courseify design system
+     - Fix it now following LogoSmith design system
      - Use coral/orange/lime/green colors only
      - Fix any accessibility issues
      - Fix any broken links

@@ -74,7 +74,7 @@ You are helping a developer implement a new feature in the Courseify application
 
    **Review errors carefully:**
    - **False positives?** Document with inline comments explaining why
-   - **Real violations?** Fix them following Courseify design system
+   - **Real violations?** Fix them following LogoSmith design system
    - **Unsure?** Ask for clarification before proceeding
 
    **Manual checks:**
@@ -85,7 +85,7 @@ You are helping a developer implement a new feature in the Courseify application
    - [ ] No console errors in browser
    - [ ] Loading states display correctly
    - [ ] Error handling works (test error scenarios)
-   - [ ] Design system colors used (coral/orange/lime, no indigo/blue/purple)
+   - [ ] Design system colors used (blue/emerald/violet, no yellow/orange/teal)
 
 6. **Documentation**
    - Add comments for complex logic
@@ -99,7 +99,7 @@ You are helping a developer implement a new feature in the Courseify application
 ✅ Follow existing code patterns
 ✅ Use TypeScript strictly (no `any` types)
 ✅ Add proper error handling
-✅ Use design system colors (Coral, Rose, Lime for PetPortrait)
+✅ Use design system colors (Blue, Emerald, Violet for Courseify)
 ✅ Make components reusable
 ✅ Add loading and error states
 ✅ Test thoroughly

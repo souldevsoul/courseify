@@ -1,6 +1,6 @@
 # Code Review Command
 
-You are helping review code changes in the Courseify application before they go to production. Provide a thorough, constructive review.
+You are helping review code changes in the LogoSmith application before they go to production. Provide a thorough, constructive review.
 
 ## Review Areas
 

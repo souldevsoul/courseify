@@ -1,6 +1,6 @@
 # Testing Command
 
-You are helping test the Courseify application systematically. Follow this comprehensive testing guide.
+You are helping test the LogoSmith application systematically. Follow this comprehensive testing guide.
 
 ## Testing Levels
 
