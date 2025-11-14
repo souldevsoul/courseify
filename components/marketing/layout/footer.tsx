@@ -20,7 +20,7 @@ export function Footer() {
           {/* Company Info */}
           <div>
             <h3 className="text-2xl font-bold uppercase mb-6 text-green-400">
-              VoiceCraft
+              Coursify
             </h3>
             <p className="text-gray-300 mb-4 leading-relaxed">
               Professional AI voice synthesis platform powered by the world's most trusted models.
@@ -48,7 +48,7 @@ export function Footer() {
             {/* Social Links */}
             <div className="flex items-center gap-4">
               <a
-                href="https://twitter.com/voicecraft"
+                href="https://twitter.com/coursify"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white text-black flex items-center justify-center hover:bg-green-400 transition-colors"
@@ -57,7 +57,7 @@ export function Footer() {
                 <RiTwitterXFill className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com/company/voicecraft"
+                href="https://linkedin.com/company/coursify"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white text-black flex items-center justify-center hover:bg-green-400 transition-colors"
@@ -66,7 +66,7 @@ export function Footer() {
                 <RiLinkedinBoxFill className="w-5 h-5" />
               </a>
               <a
-                href="https://github.com/voicecraft"
+                href="https://github.com/coursify"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white text-black flex items-center justify-center hover:bg-green-400 transition-colors"
@@ -166,10 +166,10 @@ export function Footer() {
                 <div>
                   <div className="text-sm font-bold uppercase text-gray-400 mb-1">Email</div>
                   <a
-                    href="mailto:support@courseify.ai"
+                    href="mailto:support@coursify.ai"
                     className="text-white hover:text-green-400 transition-colors"
                   >
-                    support@courseify.ai
+                    support@coursify.ai
                   </a>
                 </div>
               </li>
@@ -190,7 +190,7 @@ export function Footer() {
                 <div>
                   <div className="text-sm font-bold uppercase text-gray-400 mb-1">Address</div>
                   <address className="text-white not-italic">
-                    VoiceCraft, Inc.
+                    Coursify, Inc.
                     <br />
                     123 Voice Street, Suite 100
                     <br />
@@ -216,7 +216,7 @@ export function Footer() {
               </h5>
               <div className="text-sm text-gray-300 space-y-1">
                 <p>
-                  <span className="font-bold">Legal Name:</span> VoiceCraft, Inc.
+                  <span className="font-bold">Legal Name:</span> Coursify, Inc.
                 </p>
                 <p>
                   <span className="font-bold">Registration Number:</span> 12-3456789
@@ -249,7 +249,7 @@ export function Footer() {
           <div className="pt-6 border-t-2 border-gray-800">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
               <p>
-                © {currentYear} VoiceCraft, Inc. All rights reserved.
+                © {currentYear} Coursify, Inc. All rights reserved.
               </p>
               <p className="text-center md:text-right">
                 Card payments processed securely. We do not store your credit card information.

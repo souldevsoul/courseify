@@ -1,6 +1,6 @@
 # Feature Implementation Command
 
-You are helping a developer implement a new feature in the Courseify application. Follow these steps to ensure a high-quality implementation.
+You are helping a developer implement a new feature in the Coursify application. Follow these steps to ensure a high-quality implementation.
 
 ## IMPORTANT: Run Setup First
 
@@ -99,7 +99,7 @@ You are helping a developer implement a new feature in the Courseify application
 ✅ Follow existing code patterns
 ✅ Use TypeScript strictly (no `any` types)
 ✅ Add proper error handling
-✅ Use design system colors (Blue, Emerald, Violet for Courseify)
+✅ Use design system colors (Blue, Emerald, Violet for Coursify)
 ✅ Make components reusable
 ✅ Add loading and error states
 ✅ Test thoroughly

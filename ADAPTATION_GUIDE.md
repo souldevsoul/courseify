@@ -1,4 +1,4 @@
-# Courseify - VoiceCraft Adaptation Guide
+# Coursify - Coursify Adaptation Guide
 
 ## 📋 Overview
 **From:** Voice cloning → **To:** AI course creation platform
@@ -13,7 +13,7 @@
 --accent: #CA8A04;     /* Yellow 600 - Interactive */
 ```
 
-**VoiceCraft Colors (to replace):**
+**Coursify Colors (to replace):**
 ```css
 --primary: #7C3AED;    /* Purple 600 */
 --secondary: #3B82F6;  /* Blue 500 */
@@ -23,7 +23,7 @@
 - **Primary:** Poppins (700 Bold, 600 SemiBold, 400 Regular) - Educational, friendly
 - **Secondary:** Inter (500 Medium for UI)
 
-**VoiceCraft Typography (to replace):**
+**Coursify Typography (to replace):**
 - Primary: Space Grotesk
 - Secondary: Inter Variable
 
@@ -32,7 +32,7 @@ Lightbulb with play button → represents video learning and knowledge
 
 **AI Prompt:**
 ```
-Modern educational logo for Courseify course creation platform. Symbol shows glowing lightbulb with play button inside, suggesting video learning. Gradient from yellow (#EAB308) to orange (#F97316). Bright, inspiring, educational. Vector style, white background.
+Modern educational logo for Coursify course creation platform. Symbol shows glowing lightbulb with play button inside, suggesting video learning. Gradient from yellow (#EAB308) to orange (#F97316). Bright, inspiring, educational. Vector style, white background.
 ```
 
 ## 🗄️ Database Schema
@@ -392,7 +392,7 @@ const tiers = [
 
 ```bash
 # Replace brand name
-find . -type f \( -name "*.tsx" -o -name "*.ts" \) -exec sed -i '' 's/VoiceCraft/Courseify/g' {} +
+find . -type f \( -name "*.tsx" -o -name "*.ts" \) -exec sed -i '' 's/Coursify/Coursify/g' {} +
 
 # Replace core concepts
 find . -type f \( -name "*.tsx" -o -name "*.ts" \) -exec sed -i '' 's/voice/course/g' {} +

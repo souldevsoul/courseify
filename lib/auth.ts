@@ -6,7 +6,6 @@ import { PrismaAdapter } from "@auth/prisma-adapter"
 import { prisma } from "@/lib/prisma"
 import bcrypt from "bcryptjs"
 import type { Adapter } from "next-auth/adapters"
-import { grantInitialCredits } from "@/lib/credits"
 
 export const authOptions: NextAuthOptions = {
   adapter: PrismaAdapter(prisma) as Adapter,
@@ -99,13 +98,7 @@ export const authOptions: NextAuthOptions = {
   },
   events: {
     async createUser({ user }) {
-      // Grant initial credits to new users
-      try {
-        await grantInitialCredits(user.id)
-        console.log(`Granted initial credits to user: ${user.id}`)
-      } catch (error) {
-        console.error('Failed to grant initial credits:', error)
-      }
+      console.log(`New user created: ${user.id}`)
     },
   },
   secret: process.env.NEXTAUTH_SECRET,

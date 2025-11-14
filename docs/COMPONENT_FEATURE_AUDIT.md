@@ -1,4 +1,4 @@
-# VoiceCraft - Component & Feature Audit
+# Coursify - Component & Feature Audit
 **Date:** 2025-11-09
 **Purpose:** Complete inventory and implementation plan for 3 user types
 
@@ -34,7 +34,7 @@
 
 ## ✅ Existing Components
 
-### Base UI (VoiceCraft Brutalist Design)
+### Base UI (Coursify Brutalist Design)
 - ✅ `Button` - All variants (primary, secondary, outline, ghost)
 - ✅ `Card` - All variants (default, elevated, outlined, ghost, gradient)
 - ✅ `Badge` - Status badges (default, primary, success, warning, danger)
@@ -53,7 +53,7 @@
 - ✅ `Popover` - Floating content
 - ✅ `Typography` - Text components (Heading, Text)
 
-### VoiceCraft Specific
+### Coursify Specific
 - ✅ `AudioPlayer` - Complete audio player with waveform
 - ✅ `VoiceGenerator` - Voice generation interface
 - ✅ `VoiceSelector` - Voice selection grid
@@ -618,7 +618,7 @@ model ProjectMessage {
 
 ## 🎨 Design System Checklist
 
-All components must follow VoiceCraft Brutalist design:
+All components must follow Coursify Brutalist design:
 
 - ✅ Black borders (2px or 4px)
 - ✅ Yellow (#EAB308) primary accent

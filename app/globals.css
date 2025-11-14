@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* VoiceCraft Design System - Bold Black & White with Yellow Highlights */
+/* Coursify Design System - Creative Educational Platform */
 
 :root {
   /* Colors - Monochrome Base */
@@ -18,28 +18,39 @@
   --color-gray-100: #F5F5F5;
   --color-gray-50: #FAFAFA;
 
-  /* Colors - Yellow Highlight */
-  --color-yellow-500: #EAB308;
-  --color-yellow-400: #FACC15;
-  --color-yellow-300: #FDE047;
-  --color-yellow-600: #CA8A04;
-  --color-yellow-700: #A16207;
+  /* Colors - Coursify Brand (Purple/Fuchsia/Pink/Rose) */
+  --color-purple-500: #A855F7;   /* Primary - Creative, inspiring */
+  --color-purple-600: #9333EA;
+  --color-purple-700: #7E22CE;
+  --color-purple-400: #C084FC;
+  --color-purple-300: #D8B4FE;
+
+  --color-fuchsia-500: #EC4899;  /* Secondary - Engaging */
+  --color-fuchsia-600: #DB2777;
+  --color-fuchsia-400: #F472B6;
+
+  --color-pink-500: #F43F5E;     /* Accent - Passionate */
+  --color-pink-600: #E11D48;
+  --color-pink-400: #FB7185;
+
+  --color-rose-500: #F43F5E;
+  --color-rose-600: #E11D48;
 
   /* Semantic Colors */
   --color-background: #FFFFFF;
-  --color-foreground: #000000;
-  --color-primary: #EAB308;        /* Yellow */
-  --color-primary-hover: #CA8A04;
-  --color-secondary: #171717;      /* Dark Gray */
-  --color-accent: #FACC15;         /* Bright Yellow */
+  --color-foreground: #0A0A0A;
+  --color-primary: #A855F7;        /* Purple */
+  --color-primary-hover: #9333EA;
+  --color-secondary: #EC4899;      /* Fuchsia */
+  --color-accent: #F43F5E;         /* Pink */
   --color-muted: #737373;          /* Mid Gray */
   --color-border: #E5E5E5;         /* Light Gray */
 
-  /* Gradients - Black to White with Yellow */
-  --gradient-primary: linear-gradient(135deg, #000000 0%, #EAB308 100%);
-  --gradient-hero: linear-gradient(135deg, #EAB308 0%, #FACC15 50%, #FDE047 100%);
-  --gradient-mesh: radial-gradient(at 0% 0%, #EAB308 0%, transparent 50%),
-                   radial-gradient(at 100% 100%, #000000 0%, transparent 50%);
+  /* Gradients - Purple to Pink */
+  --gradient-primary: linear-gradient(135deg, #A855F7 0%, #EC4899 100%);
+  --gradient-hero: linear-gradient(135deg, #A855F7 0%, #EC4899 50%, #F43F5E 100%);
+  --gradient-mesh: radial-gradient(at 0% 0%, #A855F7 0%, transparent 50%),
+                   radial-gradient(at 100% 100%, #EC4899 0%, transparent 50%);
 
   /* Spacing (8pt grid) */
   --space-1: 0.25rem;   /* 4px */
@@ -61,15 +72,15 @@
   --radius-2xl: 1.5rem;    /* 24px */
   --radius-full: 9999px;
 
-  /* Shadows - Bold black shadows */
-  --shadow-sm: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-  --shadow-md: 0 4px 8px -1px rgba(0, 0, 0, 0.15),
-               0 2px 4px -1px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 20px -3px rgba(0, 0, 0, 0.2),
-               0 4px 8px -2px rgba(0, 0, 0, 0.1);
-  --shadow-xl: 0 20px 30px -5px rgba(0, 0, 0, 0.25),
-               0 10px 15px -5px rgba(0, 0, 0, 0.1);
-  --shadow-yellow: 0 0 20px rgba(234, 179, 8, 0.5);
+  /* Shadows - Soft professional shadows */
+  --shadow-sm: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 8px -1px rgba(0, 0, 0, 0.1),
+               0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 20px -3px rgba(0, 0, 0, 0.1),
+               0 4px 8px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 30px -5px rgba(0, 0, 0, 0.15),
+               0 10px 15px -5px rgba(0, 0, 0, 0.05);
+  --shadow-purple: 0 0 30px rgba(168, 85, 247, 0.3);
 
   /* Typography - Stack Sans Headline */
   --font-display: 'Stack Sans Headline', system-ui, -apple-system, sans-serif;
@@ -115,12 +126,23 @@
   --color-gray-100: var(--color-gray-100);
   --color-gray-50: var(--color-gray-50);
 
-  /* Yellow accent */
-  --color-yellow-700: var(--color-yellow-700);
-  --color-yellow-600: var(--color-yellow-600);
-  --color-yellow-500: var(--color-yellow-500);
-  --color-yellow-400: var(--color-yellow-400);
-  --color-yellow-300: var(--color-yellow-300);
+  /* Coursify brand colors */
+  --color-purple-700: var(--color-purple-700);
+  --color-purple-600: var(--color-purple-600);
+  --color-purple-500: var(--color-purple-500);
+  --color-purple-400: var(--color-purple-400);
+  --color-purple-300: var(--color-purple-300);
+
+  --color-fuchsia-600: var(--color-fuchsia-600);
+  --color-fuchsia-500: var(--color-fuchsia-500);
+  --color-fuchsia-400: var(--color-fuchsia-400);
+
+  --color-pink-600: var(--color-pink-600);
+  --color-pink-500: var(--color-pink-500);
+  --color-pink-400: var(--color-pink-400);
+
+  --color-rose-600: var(--color-rose-600);
+  --color-rose-500: var(--color-rose-500);
 
   /* Semantic colors */
   --color-primary: var(--color-primary);
@@ -218,10 +240,10 @@ h1, h2, h3, h4, h5, h6 {
 
 @keyframes glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(234, 179, 8, 0.5);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
   }
   50% {
-    box-shadow: 0 0 40px rgba(234, 179, 8, 0.8);
+    box-shadow: 0 0 40px rgba(168, 85, 247, 0.6);
   }
 }
 
@@ -298,7 +320,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hover-glow:hover {
-  box-shadow: var(--shadow-yellow);
+  box-shadow: var(--shadow-purple);
 }
 
 /* Gradient Background */
@@ -331,25 +353,19 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: var(--shadow-xl);
 }
 
-.shadow-yellow {
-  box-shadow: var(--shadow-yellow);
+.shadow-purple {
+  box-shadow: var(--shadow-purple);
 }
 
-/* Bold Border Utilities */
-.border-bold {
-  border-width: 3px;
-  border-color: var(--color-black);
+/* Border Utilities */
+.border-purple {
+  border-color: var(--color-purple-500);
 }
 
-.border-yellow {
-  border-color: var(--color-yellow-500);
+.border-fuchsia {
+  border-color: var(--color-fuchsia-500);
 }
 
-/* Custom Utilities */
-.brutalist-shadow {
-  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
-}
-
-.brutalist-shadow-yellow {
-  box-shadow: 8px 8px 0px 0px rgba(234, 179, 8, 1);
+.border-pink {
+  border-color: var(--color-pink-500);
 }

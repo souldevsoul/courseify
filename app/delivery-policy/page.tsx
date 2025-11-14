@@ -11,7 +11,7 @@ export default function DeliveryPolicyPage() {
   return (
     <main className="min-h-screen bg-white">
       <Header
-        logoText="VoiceCraft"
+        logoText="Coursify"
         navLinks={[
           { label: "Features", href: "/features" },
           { label: "Pricing", href: "/pricing" },
@@ -34,7 +34,7 @@ export default function DeliveryPolicyPage() {
               DELIVERY POLICY
             </h1>
             <p className="text-xl text-gray-700 mb-6">
-              VoiceCraft is a digital service platform. Understand how we deliver our services to you.
+              Coursify is a digital service platform. Understand how we deliver our services to you.
             </p>
             <p className="text-sm font-bold uppercase text-gray-900">
               Last Updated: {lastUpdated}
@@ -59,7 +59,7 @@ export default function DeliveryPolicyPage() {
                 <div className="p-6 bg-white border-4 border-black brutalist-shadow">
                   <h3 className="text-lg font-bold uppercase mb-3">Digital Service Delivery</h3>
                   <p className="text-gray-700 leading-relaxed mb-4">
-                    VoiceCraft is a 100% digital service platform. We do not ship physical goods. All services are delivered electronically via our web application and API.
+                    Coursify is a 100% digital service platform. We do not ship physical goods. All services are delivered electronically via our web application and API.
                   </p>
                   <p className="text-gray-700 leading-relaxed">
                     There are no shipping addresses, tracking numbers, or physical delivery logistics involved with our service.
@@ -71,7 +71,7 @@ export default function DeliveryPolicyPage() {
                   <ul className="space-y-2 text-gray-700">
                     <li className="flex items-start gap-2">
                       <span className="text-black font-bold">•</span>
-                      <span>Instant access to VoiceCraft web application</span>
+                      <span>Instant access to Coursify web application</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-black font-bold">•</span>
@@ -154,7 +154,7 @@ export default function DeliveryPolicyPage() {
                 <div className="p-6 bg-white border-4 border-black brutalist-shadow">
                   <h3 className="text-lg font-bold uppercase mb-3">Global Service</h3>
                   <p className="text-gray-700 leading-relaxed mb-4">
-                    VoiceCraft services are available worldwide. You can access our platform from anywhere with an internet connection.
+                    Coursify services are available worldwide. You can access our platform from anywhere with an internet connection.
                   </p>
                   <p className="text-gray-700 leading-relaxed">
                     <span className="font-bold">Requirements:</span> Internet connection, modern web browser (Chrome, Firefox, Safari, Edge), valid payment method.
@@ -181,7 +181,7 @@ export default function DeliveryPolicyPage() {
                     </li>
                   </ul>
                   <p className="text-gray-700 leading-relaxed mt-3">
-                    Contact <a href="mailto:support@courseify.ai" className="font-bold underline hover:no-underline">support@courseify.ai</a> to verify service availability in your region.
+                    Contact <a href="mailto:support@coursify.ai" className="font-bold underline hover:no-underline">support@coursify.ai</a> to verify service availability in your region.
                   </p>
                 </div>
               </div>
@@ -220,7 +220,7 @@ export default function DeliveryPolicyPage() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-black font-bold">•</span>
-                      <span>Real-time status updates at status.voicecraft.ai</span>
+                      <span>Real-time status updates at status.coursify.ai</span>
                     </li>
                   </ul>
                 </div>
@@ -278,7 +278,7 @@ export default function DeliveryPolicyPage() {
                   </li>
                 </ul>
                 <p className="text-gray-900 leading-relaxed mt-4">
-                  Contact: <a href="mailto:enterprise@voicecraft.ai" className="underline hover:no-underline font-bold">enterprise@voicecraft.ai</a>
+                  Contact: <a href="mailto:support@coursify.ai" className="underline hover:no-underline font-bold">support@coursify.ai</a>
                 </p>
               </div>
             </div>
@@ -307,11 +307,11 @@ export default function DeliveryPolicyPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="font-bold text-green-400">4.</span>
-                    <span>Check status.voicecraft.ai for any ongoing service issues</span>
+                    <span>Check status.coursify.ai for any ongoing service issues</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="font-bold text-green-400">5.</span>
-                    <span>Contact support@courseify.ai immediately - we'll resolve within 24 hours</span>
+                    <span>Contact support@coursify.ai immediately - we'll resolve within 24 hours</span>
                   </li>
                 </ol>
               </div>
@@ -327,8 +327,8 @@ export default function DeliveryPolicyPage() {
                 <div className="space-y-2">
                   <p>
                     <span className="font-bold">Email:</span>{" "}
-                    <a href="mailto:support@courseify.ai" className="underline hover:no-underline">
-                      support@courseify.ai
+                    <a href="mailto:support@coursify.ai" className="underline hover:no-underline">
+                      support@coursify.ai
                     </a>
                   </p>
                   <p>
@@ -339,8 +339,8 @@ export default function DeliveryPolicyPage() {
                   </p>
                   <p>
                     <span className="font-bold">Status Page:</span>{" "}
-                    <a href="https://status.voicecraft.ai" className="underline hover:no-underline" target="_blank" rel="noopener noreferrer">
-                      status.voicecraft.ai
+                    <a href="https://status.coursify.ai" className="underline hover:no-underline" target="_blank" rel="noopener noreferrer">
+                      status.coursify.ai
                     </a>
                   </p>
                 </div>

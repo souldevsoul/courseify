@@ -198,7 +198,7 @@ export default function FeaturesPage() {
     <main className="min-h-screen bg-white">
       {/* Header */}
       <Header
-        logoText="VoiceCraft"
+        logoText="Coursify"
         navLinks={[
           { label: "Features", href: "/features" },
           { label: "Pricing", href: "/pricing" },
@@ -352,7 +352,7 @@ export default function FeaturesPage() {
               READY TO GET STARTED?
             </h2>
             <p className="text-xl text-white mb-12">
-              Join thousands of creators and businesses using VoiceCraft. Start your free trial today—no credit card required.
+              Join thousands of creators and businesses using Coursify. Start your free trial today—no credit card required.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button

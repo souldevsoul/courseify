@@ -6,7 +6,7 @@ export default function CookiePolicyPage() {
   return (
     <main className="min-h-screen bg-white">
       <Header
-        logoText="VoiceCraft"
+        logoText="Coursify"
         navLinks={[
           { label: "Features", href: "/#features" },
           { label: "Pricing", href: "/#pricing" },
@@ -38,7 +38,7 @@ export default function CookiePolicyPage() {
                   Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently and provide information to website owners.
                 </p>
                 <p>
-                  VoiceCraft uses cookies and similar tracking technologies to track activity on our service and store certain information. This Cookie Policy explains what cookies are, how we use them, and your choices regarding their use.
+                  Coursify uses cookies and similar tracking technologies to track activity on our service and store certain information. This Cookie Policy explains what cookies are, how we use them, and your choices regarding their use.
                 </p>
               </section>
 
@@ -143,8 +143,8 @@ export default function CookiePolicyPage() {
                   If you have questions about our use of cookies, please contact us:
                 </p>
                 <div className="mt-4 p-6 border-4 border-black bg-white">
-                  <p><strong>Email:</strong> privacy@voicecraft.ai</p>
-                  <p><strong>Address:</strong> VoiceCraft, Inc., 123 Voice Street, Suite 100, San Francisco, CA 94105, United States</p>
+                  <p><strong>Email:</strong> support@coursify.ai</p>
+                  <p><strong>Address:</strong> Coursify, Inc., 123 Voice Street, Suite 100, San Francisco, CA 94105, United States</p>
                 </div>
               </section>
             </div>

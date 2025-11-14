@@ -11,7 +11,7 @@ export default function CancellationPolicyPage() {
   return (
     <main className="min-h-screen bg-white">
       <Header
-        logoText="VoiceCraft"
+        logoText="Coursify"
         navLinks={[
           { label: "Features", href: "/features" },
           { label: "Pricing", href: "/pricing" },
@@ -34,7 +34,7 @@ export default function CancellationPolicyPage() {
               CANCELLATION POLICY
             </h1>
             <p className="text-xl text-gray-700 mb-6">
-              You can cancel your VoiceCraft subscription at any time. No questions asked, no hassle.
+              You can cancel your Coursify subscription at any time. No questions asked, no hassle.
             </p>
             <p className="text-sm font-bold uppercase text-gray-900">
               Last Updated: {lastUpdated}
@@ -61,7 +61,7 @@ export default function CancellationPolicyPage() {
                   <ol className="space-y-3 text-gray-700">
                     <li className="flex items-start gap-3">
                       <span className="font-bold text-black">1.</span>
-                      <span>Log in to your VoiceCraft account</span>
+                      <span>Log in to your Coursify account</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="font-bold text-black">2.</span>
@@ -82,8 +82,8 @@ export default function CancellationPolicyPage() {
                   <h3 className="text-lg font-bold uppercase mb-3">Cancel Via Email</h3>
                   <p className="text-gray-700 leading-relaxed mb-3">
                     Alternatively, send an email to{" "}
-                    <a href="mailto:support@courseify.ai" className="font-bold underline hover:no-underline">
-                      support@courseify.ai
+                    <a href="mailto:support@coursify.ai" className="font-bold underline hover:no-underline">
+                      support@coursify.ai
                     </a>{" "}
                     with:
                   </p>
@@ -205,7 +205,7 @@ export default function CancellationPolicyPage() {
                 <div className="p-6 bg-green-50 border-4 border-black">
                   <h3 className="text-lg font-bold uppercase mb-3">Enterprise Plans</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Enterprise customers should refer to their specific contract terms. Contact your account manager or email enterprise@voicecraft.ai for cancellation procedures.
+                    Enterprise customers should refer to their specific contract terms. Contact your account manager or email support@coursify.ai for cancellation procedures.
                   </p>
                 </div>
               </div>
@@ -257,8 +257,8 @@ export default function CancellationPolicyPage() {
                 <div className="space-y-2">
                   <p>
                     <span className="font-bold">Email:</span>{" "}
-                    <a href="mailto:support@courseify.ai" className="underline hover:no-underline">
-                      support@courseify.ai
+                    <a href="mailto:support@coursify.ai" className="underline hover:no-underline">
+                      support@coursify.ai
                     </a>
                   </p>
                   <p>

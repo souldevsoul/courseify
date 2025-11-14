@@ -1,4 +1,4 @@
-# VoiceCraft - Complete User Flows & Technical Specifications
+# Coursify - Complete User Flows & Technical Specifications
 
 ## Table of Contents
 1. [Dashboard Pages Overview](#dashboard-pages-overview)

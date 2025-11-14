@@ -112,7 +112,7 @@ function SignUpForm() {
               <RiCheckLine className="w-10 h-10 text-green-400" />
             </div>
             <h2 className="text-3xl font-black uppercase mb-4">
-              Welcome to VoiceCraft!
+              Welcome to Coursify!
             </h2>
             <p className="text-lg mb-6">
               Your account has been created successfully. You received{" "}
@@ -186,7 +186,7 @@ function SignUpForm() {
                 <Input
                   id="email"
                   type="email"
-                  placeholder="support@courseify.ai"
+                  placeholder="support@coursify.ai"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required

@@ -363,6 +363,11 @@ module.exports = {
         return {
           Literal(node) {
             if (typeof node.value === 'string') {
+              // Skip CSS class names (aspect-square, etc)
+              if (node.value.includes('aspect-') || node.value.includes('className')) {
+                return;
+              }
+
               Object.entries(providerPatterns).forEach(([provider, pattern]) => {
                 if (pattern.test(node.value) && provider !== configuredProvider) {
                   context.report({

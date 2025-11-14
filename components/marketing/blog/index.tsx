@@ -1,2 +1,2 @@
-// Blog Components - VoiceCraft Design System
+// Blog Components - Coursify Design System
 export { BlogGrid, type BlogGridProps } from "./blog-grid"

@@ -1,6 +1,6 @@
 # Bug Fix Command
 
-You are helping a developer fix a bug in the Courseify application. Follow these systematic steps to ensure a proper fix without cutting corners.
+You are helping a developer fix a bug in the Coursify application. Follow these systematic steps to ensure a proper fix without cutting corners.
 
 ## IMPORTANT: Run Setup First
 

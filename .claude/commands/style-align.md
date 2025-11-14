@@ -1,6 +1,6 @@
 # Style Alignment Command
 
-You are helping a developer align a page or component to Courseify's design system. This is for cases where the functionality works, but the visual style doesn't match the brand.
+You are helping a developer align a page or component to Coursify's design system. This is for cases where the functionality works, but the visual style doesn't match the brand.
 
 ## IMPORTANT: Run Setup First
 
@@ -10,7 +10,7 @@ You are helping a developer align a page or component to Courseify's design syst
 
 ## Your Task
 
-Fix visual/style inconsistencies to match Courseify's design system.
+Fix visual/style inconsistencies to match Coursify's design system.
 
 ---
 
@@ -23,7 +23,7 @@ Fix visual/style inconsistencies to match Courseify's design system.
 
 ---
 
-## Step 2: Courseify Design System Reference
+## Step 2: Coursify Design System Reference
 
 ### Brand Colors (ONLY USE THESE!)
 
@@ -251,7 +251,7 @@ npm run lint:product
 
 ## Example: Aligning a Pricing Card
 
-### Before (VoiceCraft style - brutalist, yellow)
+### Before (Coursify style - brutalist, yellow)
 ```tsx
 <div className="border-4 border-black shadow-[0_8px_0_0_#000] rounded p-6">
   <h3 className="text-2xl font-black mb-2">Free</h3>

@@ -1,6 +1,6 @@
 import { createTheme, MantineColorsTuple } from '@mantine/core';
 
-// VoiceCraft Brand Colors - Brutalist Black/White/Yellow
+// Coursify Brand Colors - Brutalist Black/White/Yellow
 const primaryYellow: MantineColorsTuple = [
   '#fef9c3',
   '#fef08a',

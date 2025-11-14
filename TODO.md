@@ -1,4 +1,4 @@
-# TODO.md - Courseify
+# TODO.md - Coursify
 
 AI Course Creation Platform - Task breakdown. **Time:** 20-26 hours
 
@@ -7,7 +7,7 @@ AI Course Creation Platform - Task breakdown. **Time:** 20-26 hours
 ## PHASE 1: BRANDING & SETUP (2h)
 
 - [ ] Update Tailwind config: Purple (#A855F7), Fuchsia (#EC4899), Rose (#F43F5E)
-- [ ] Replace "VoiceCraft" → "Courseify" across all pages
+- [ ] Replace "Coursify" → "Coursify" across all pages
 - [ ] Update favicon and meta tags
 - [ ] Update app/layout.tsx with new branding
 
@@ -77,7 +77,7 @@ AI Course Creation Platform - Task breakdown. **Time:** 20-26 hours
 
 ## PHASE 6: IMAGES & ASSETS (2h)
 
-- [ ] Generate Courseify logo (graduation cap + AI) using Recraft V3
+- [ ] Generate Coursify logo (graduation cap + AI) using Recraft V3
 - [ ] Generate hero video (course creation process) using Luma
 - [ ] Generate 6 category examples (business, tech, creative, etc.)
 - [ ] Generate UI mockups (builder, player, analytics)

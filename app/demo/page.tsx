@@ -1,7 +1,7 @@
 import { Container } from "@/components/ui/container"
 import { Header } from "@/components/marketing/layout/header"
 import { Footer } from "@/components/marketing/layout/footer"
-import { VoiceGenerator } from "@/components/voicecraft"
+import { CourseTopicForm, CoursePreview } from "@/components/coursify"
 import { ArrowLeft } from "lucide-react"
 
 export default function DemoPage() {
@@ -9,7 +9,7 @@ export default function DemoPage() {
     <main className="min-h-screen bg-white">
       {/* Header */}
       <Header
-        logoText="VoiceCraft"
+        logoText="Coursify"
         navLinks={[
           { label: "Features", href: "/#features" },
           { label: "Pricing", href: "/#pricing" },
@@ -39,7 +39,7 @@ export default function DemoPage() {
               <span className="text-sm font-bold uppercase tracking-wider">Live Demo</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold uppercase mb-6 leading-tight">
-              Try VoiceCraft
+              Try Coursify
             </h1>
             <p className="text-xl text-gray-700 max-w-2xl">
               Experience AI-powered voice synthesis in action. Generate professional voice content from text in seconds.
@@ -47,7 +47,14 @@ export default function DemoPage() {
           </div>
 
           {/* Voice Generator */}
-          <VoiceGenerator />
+          <div className="space-y-8">
+            <CourseTopicForm />
+            <CoursePreview
+              title="Sample Course"
+              description="This is a preview of what your AI-generated course structure will look like."
+              modules={[]}
+            />
+          </div>
 
           {/* Info Cards */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -141,7 +148,7 @@ export default function DemoPage() {
             </p>
             <a
               href="/signup"
-              className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold uppercase bg-green-400 text-black border-4 border-black hover:bg-yellow-300 transition-all hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]"
+              className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold uppercase bg-green-400 text-black border-4 border-black hover:bg-purple-300 transition-all hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]"
             >
               Create Free Account
             </a>

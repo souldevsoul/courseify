@@ -1,4 +1,4 @@
-# VoiceCraft Component Inventory & Requirements
+# Coursify Component Inventory & Requirements
 
 ## Current Component Status
 
@@ -18,7 +18,7 @@
 - **input** ✅ - Text input component
 - **typography** ✅ - Text component with variants (h1-h4, body, caption, lead)
 
-#### VoiceCraft-Specific Components
+#### Coursify-Specific Components
 - **audio-player** ✅ - Complete audio player with waveform, controls, download
 - **generation-progress** ✅ - Multi-step progress indicator for voice generation
 - **voice-clone-uploader** ✅ - File upload component for voice samples

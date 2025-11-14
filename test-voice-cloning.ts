@@ -1,5 +1,5 @@
 /**
- * VoiceCraft Voice Cloning Test Script
+ * Coursify Voice Cloning Test Script
  *
  * This script tests the complete voice cloning flow:
  * 1. Upload audio to Replicate
@@ -95,7 +95,7 @@ async function testVoiceGeneration(voiceId: string, text: string) {
 }
 
 async function testViaAPI() {
-  console.log('\n🌐 Step 4: Testing via VoiceCraft API endpoints...');
+  console.log('\n🌐 Step 4: Testing via Coursify API endpoints...');
 
   const baseUrl = 'http://localhost:3000';
 
@@ -187,7 +187,7 @@ async function testViaAPI() {
 }
 
 async function runCompleteTest() {
-  console.log('🚀 VoiceCraft Voice Cloning - Complete Integration Test\n');
+  console.log('🚀 Coursify Voice Cloning - Complete Integration Test\n');
   console.log('=' .repeat(60));
 
   try {
@@ -213,9 +213,9 @@ async function runCompleteTest() {
     console.log('   Voice ID:', voiceId);
     console.log('   Generated Audio:', audioOutput);
 
-    // Test 2: VoiceCraft API endpoints
+    // Test 2: Coursify API endpoints
     console.log('\n' + '='.repeat(60));
-    console.log('TEST 2: VoiceCraft API Endpoints');
+    console.log('TEST 2: Coursify API Endpoints');
     console.log('='.repeat(60));
 
     const apiResults = await testViaAPI();

@@ -105,7 +105,7 @@ OR disable for entire file at the top:
 
 For real issues, I'll help you fix them following the design system:
 
-**Courseify Design System:**
+**Coursify Design System:**
 - **Primary:** Coral/Orange (#FF7F50, orange-500)
 - **Secondary:** Rose (#F43F5E, rose-500)
 - **Accent:** Lime (#84CC16, lime-500)

@@ -1,4 +1,4 @@
-# IMAGES_SCRIPT.md - Courseify
+# IMAGES_SCRIPT.md - Coursify
 
 Image generation guide for AI course creation platform.
 
@@ -54,7 +54,7 @@ Image generation guide for AI course creation platform.
 ### Logo Main (Recraft V3 SVG)
 ```
 Model: recraft-ai/recraft-v3-svg
-Prompt: "Logo for 'Courseify'. Graduation cap icon with AI circuit pattern. Purple (#A855F7) to fuchsia (#EC4899) gradient. Modern, educational, innovative. Vector style."
+Prompt: "Logo for 'Coursify'. Graduation cap icon with AI circuit pattern. Purple (#A855F7) to fuchsia (#EC4899) gradient. Modern, educational, innovative. Vector style."
 Parameters: { "style": "digital_illustration", "size": "1024x1024" }
 ```
 

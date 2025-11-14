@@ -11,7 +11,7 @@ export default function RefundPolicyPage() {
   return (
     <main className="min-h-screen bg-white">
       <Header
-        logoText="VoiceCraft"
+        logoText="Coursify"
         navLinks={[
           { label: "Features", href: "/features" },
           { label: "Pricing", href: "/pricing" },
@@ -35,7 +35,7 @@ export default function RefundPolicyPage() {
               REFUND & RETURN POLICY
             </h1>
             <p className="text-xl text-gray-700 mb-6">
-              Our commitment to customer satisfaction. Understand our refund and return policy for VoiceCraft services.
+              Our commitment to customer satisfaction. Understand our refund and return policy for Coursify services.
             </p>
             <p className="text-sm font-bold uppercase text-gray-900">
               Last Updated: {lastUpdated}
@@ -61,7 +61,7 @@ export default function RefundPolicyPage() {
                 <div className="p-6 bg-white border-4 border-black brutalist-shadow">
                   <h3 className="text-lg font-bold uppercase mb-3">Digital Service</h3>
                   <p className="text-gray-700 leading-relaxed mb-4">
-                    VoiceCraft is a digital service platform. Once voice generation or voice cloning services are rendered, they cannot be "returned" in the traditional sense as they are immediately consumed digital services.
+                    Coursify is a digital service platform. Once voice generation or voice cloning services are rendered, they cannot be "returned" in the traditional sense as they are immediately consumed digital services.
                   </p>
                   <p className="text-gray-700 leading-relaxed">
                     However, we stand behind the quality of our service and offer refunds under specific circumstances outlined below.
@@ -196,8 +196,8 @@ export default function RefundPolicyPage() {
                   <h3 className="text-lg font-bold uppercase mb-3">Step 1: Contact Support</h3>
                   <p className="text-gray-700 leading-relaxed mb-3">
                     Email our support team at{" "}
-                    <a href="mailto:support@courseify.ai" className="font-bold underline hover:no-underline">
-                      support@courseify.ai
+                    <a href="mailto:support@coursify.ai" className="font-bold underline hover:no-underline">
+                      support@coursify.ai
                     </a>{" "}
                     with the subject line "Refund Request"
                   </p>
@@ -260,8 +260,8 @@ export default function RefundPolicyPage() {
                 <div className="space-y-2">
                   <p>
                     <span className="font-bold">Email:</span>{" "}
-                    <a href="mailto:support@courseify.ai" className="underline hover:no-underline">
-                      support@courseify.ai
+                    <a href="mailto:support@coursify.ai" className="underline hover:no-underline">
+                      support@coursify.ai
                     </a>
                   </p>
                   <p>

@@ -1,4 +1,4 @@
-// Marketing Cards - VoiceCraft Design System
+// Marketing Cards - Coursify Design System
 export { FeatureCard, type FeatureCardProps } from "./feature-card"
 export { PricingCard, type PricingCardProps, type PricingFeature } from "./pricing-card"
 export { TestimonialCard, type TestimonialCardProps } from "./testimonial-card"

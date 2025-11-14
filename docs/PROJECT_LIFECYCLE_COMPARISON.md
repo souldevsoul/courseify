@@ -1,13 +1,13 @@
-# Project Lifecycle Comparison: VoiceCraft vs ReelMatic
+# Project Lifecycle Comparison: Coursify vs ReelMatic
 
 **Date:** 2025-11-09
-**Purpose:** Identify gaps and missing features in VoiceCraft project lifecycle compared to ReelMatic
+**Purpose:** Identify gaps and missing features in Coursify project lifecycle compared to ReelMatic
 
 ---
 
 ## Executive Summary
 
-VoiceCraft has **basic project management** with estimation and assignment capabilities, but is missing several critical workflow features that ReelMatic has implemented, particularly around:
+Coursify has **basic project management** with estimation and assignment capabilities, but is missing several critical workflow features that ReelMatic has implemented, particularly around:
 - ✅ **Estimate acceptance workflow** - User must explicitly accept/reject estimates
 - ✅ **Credit reservation system** - Reserve credits when estimate is accepted
 - ✅ **Work submission and review** - Executor submits work, user reviews
@@ -18,7 +18,7 @@ VoiceCraft has **basic project management** with estimation and assignment capab
 
 ## Status Flow Comparison
 
-### VoiceCraft Current Status Flow
+### Coursify Current Status Flow
 
 ```
 DRAFT → ESTIMATING → READY → IN_PROGRESS → COMPLETED
@@ -66,7 +66,7 @@ DRAFT → ESTIMATING → WAITING_FOR_ESTIMATE_ACCEPT → ESTIMATE_ACCEPTED
 
 ## API Endpoints Comparison
 
-### ✅ VoiceCraft HAS (6 endpoints)
+### ✅ Coursify HAS (6 endpoints)
 
 | Endpoint | Method | Purpose | Status |
 |----------|--------|---------|--------|
@@ -80,7 +80,7 @@ DRAFT → ESTIMATING → WAITING_FOR_ESTIMATE_ACCEPT → ESTIMATE_ACCEPTED
 | `/api/projects/[id]/audios` | POST | Add audios to project | ✅ Implemented |
 | `/api/projects/[id]/audios/[audioId]` | DELETE | Remove audio from project | ✅ Implemented |
 
-### ❌ VoiceCraft MISSING (7 critical endpoints)
+### ❌ Coursify MISSING (7 critical endpoints)
 
 | Endpoint | Method | Purpose | Priority | ReelMatic Has? |
 |----------|--------|---------|----------|----------------|
@@ -96,7 +96,7 @@ DRAFT → ESTIMATING → WAITING_FOR_ESTIMATE_ACCEPT → ESTIMATE_ACCEPTED
 
 ## Database Schema Comparison
 
-### VoiceCraft Project Model
+### Coursify Project Model
 
 ```prisma
 model Project {
@@ -138,23 +138,23 @@ model Project {
 model Project {
   id                String   @id @default(cuid())
   userId            String
-  title             String                    // ✅ VoiceCraft uses "name"
-  description       String?  @db.Text         // ✅ VoiceCraft has this
+  title             String                    // ✅ Coursify uses "name"
+  description       String?  @db.Text         // ✅ Coursify has this
   request           String?  @db.Text         // ❌ MISSING - detailed user request
   status            String   @default("DRAFT")
 
   // Estimation
-  estimatedCost     Int?                      // ✅ VoiceCraft has (as Float)
+  estimatedCost     Int?                      // ✅ Coursify has (as Float)
   actualCost        Int?                      // ❌ MISSING
   estimatedVideos   Int?                      // ❌ MISSING
-  estimateBreakdown Json?                     // ✅ VoiceCraft has as "estimationData"
+  estimateBreakdown Json?                     // ✅ Coursify has as "estimationData"
 
   // Assignment
-  assignedEditorId  String?                   // ✅ VoiceCraft has as "expertId"
+  assignedEditorId  String?                   // ✅ Coursify has as "expertId"
   assignedAt        DateTime?                 // ❌ MISSING
 
   // Additional fields
-  // ... similar to VoiceCraft
+  // ... similar to Coursify
 }
 ```
 
@@ -182,7 +182,7 @@ ReelMatic has a **complete credit reservation and payment system**:
    - Create credit ledger entry to return credits to user
    - Update status to `REFUNDED`
 
-**VoiceCraft Status:** ❌ **NOT IMPLEMENTED**
+**Coursify Status:** ❌ **NOT IMPLEMENTED**
 - No credit reservation on estimate acceptance
 - No credit payment on completion
 - No refund system
@@ -192,7 +192,7 @@ ReelMatic has a **complete credit reservation and payment system**:
 
 ## User Actions Comparison
 
-### ✅ VoiceCraft User Can Do:
+### ✅ Coursify User Can Do:
 
 1. ✅ Create project
 2. ✅ Get AI estimation
@@ -201,7 +201,7 @@ ReelMatic has a **complete credit reservation and payment system**:
 5. ✅ Update project details
 6. ✅ Delete project
 
-### ❌ VoiceCraft User CANNOT Do (but should):
+### ❌ Coursify User CANNOT Do (but should):
 
 1. ❌ **Accept or reject estimate** - Goes directly from estimation to ready
 2. ❌ **See if they have enough credits** - No credit check
@@ -215,12 +215,12 @@ ReelMatic has a **complete credit reservation and payment system**:
 
 ## Admin/Expert Actions Comparison
 
-### ✅ VoiceCraft Admin Can Do:
+### ✅ Coursify Admin Can Do:
 
 1. ✅ View all projects
 2. ✅ Assign experts
 
-### ❌ VoiceCraft Admin CANNOT Do (but should):
+### ❌ Coursify Admin CANNOT Do (but should):
 
 1. ❌ **See unassigned projects queue** - No filter/view for `WAITING_FOR_ASSIGNMENT`
 2. ❌ **Request re-estimation** - No scope change handling
@@ -228,11 +228,11 @@ ReelMatic has a **complete credit reservation and payment system**:
 4. ❌ **Manually adjust status** - Status changes are code-driven only
 5. ❌ **View credit transaction log** - No credit integration
 
-### ✅ VoiceCraft Expert Can Do:
+### ✅ Coursify Expert Can Do:
 
 Currently, experts are defined in schema but have no special permissions/actions.
 
-### ❌ VoiceCraft Expert CANNOT Do (but should):
+### ❌ Coursify Expert CANNOT Do (but should):
 
 1. ❌ **View assigned projects** - No expert dashboard/view
 2. ❌ **Submit work** - No submission endpoint
@@ -248,7 +248,7 @@ Currently, experts are defined in schema but have no special permissions/actions
 - ✅ In-app notifications
 - ✅ Real-time updates via WebSocket
 
-### VoiceCraft Has:
+### Coursify Has:
 - ❌ No notification system implemented
 - ⚠️ TODOs in code: "Send notification email to expert"
 
@@ -382,7 +382,7 @@ model CreditLedger {
 
 ## Conclusion
 
-VoiceCraft has the **foundation** for project management with estimation and assignment, but is missing **critical workflow features** for a complete project lifecycle:
+Coursify has the **foundation** for project management with estimation and assignment, but is missing **critical workflow features** for a complete project lifecycle:
 
 ### ✅ What Works:
 - Basic project CRUD
@@ -402,6 +402,6 @@ VoiceCraft has the **foundation** for project management with estimation and ass
 
 ---
 
-**Document Owner:** VoiceCraft Development Team
+**Document Owner:** Coursify Development Team
 **Last Updated:** 2025-11-09
 **Comparison Source:** ReelMatic `docs/PROJECT_LIFECYCLE.md`

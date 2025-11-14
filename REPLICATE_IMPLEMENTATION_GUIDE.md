@@ -1,8 +1,8 @@
-# VoiceCraft - Replicate Implementation Guide
+# Coursify - Replicate Implementation Guide
 ## Updated: November 2025
 
 ## Overview
-This guide outlines the implementation plan for VoiceCraft using Replicate's voice synthesis and cloning models, with the latest and most popular options as of November 2025.
+This guide outlines the implementation plan for Coursify using Replicate's voice synthesis and cloning models, with the latest and most popular options as of November 2025.
 
 ---
 
@@ -309,7 +309,7 @@ English (en), Spanish (es), French (fr), German (de), Italian (it), Portuguese (
 
 ## 🎯 Recommended Implementation Strategy
 
-### **For VoiceCraft Production:**
+### **For Coursify Production:**
 
 #### **Phase 1: MVP (Quick Launch)**
 Use **Kokoro-82M**:

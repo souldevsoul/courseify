@@ -1,4 +1,4 @@
-# LANDING_PAGE_CONTENT.md - Courseify
+# LANDING_PAGE_CONTENT.md - Coursify
 
 AI Course Creation Platform - Landing page UX content.
 

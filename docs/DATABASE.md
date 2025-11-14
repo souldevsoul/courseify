@@ -1,8 +1,8 @@
-# 🗄️ VoiceCraft Database
+# 🗄️ Coursify Database
 
 **Last Updated:** 2025-11-09
 
-Complete reference for VoiceCraft's database schema, migrations, and data management.
+Complete reference for Coursify's database schema, migrations, and data management.
 
 ---
 
@@ -864,7 +864,7 @@ async function main() {
   // Create test user
   const user = await prisma.user.create({
     data: {
-      email: 'demo@voicecraft.com',
+      email: 'demo@coursify.com',
       name: 'Demo User',
       emailVerified: new Date(),
       subscriptions: {

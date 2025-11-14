@@ -7,7 +7,6 @@ import { AppHeader } from "@/components/marketing/layout/app-header"
 type User = {
   name: string
   email: string
-  credits: number
 }
 
 export default function DashboardLayout({
@@ -32,7 +31,6 @@ export default function DashboardLayout({
             setUser({
               name: data.user.name || 'User',
               email: data.user.email,
-              credits: data.user.credits || 0,
             })
           }
         }

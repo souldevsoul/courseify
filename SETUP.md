@@ -1,4 +1,4 @@
-# VoiceCraft Setup Guide
+# Coursify Setup Guide
 
 ## Quick Start
 
@@ -48,7 +48,7 @@ The application will be available at http://localhost:3000
 ## Project Structure
 
 ```
-voicecraft/
+coursify/
 ├── app/
 │   ├── api/
 │   │   └── voices/
@@ -62,7 +62,7 @@ voicecraft/
 ├── components/
 │   ├── ui/                           # Base UI components (button, card, etc.)
 │   ├── marketing/                    # Marketing components (header, hero, etc.)
-│   └── voicecraft/                   # Voice synthesis components
+│   └── coursify/                   # Voice synthesis components
 │       ├── voice-generator.tsx       # Main voice generator component ⭐
 │       ├── audio-player.tsx          # Audio playback with waveform
 │       ├── voice-selector.tsx        # Voice selection interface
@@ -178,7 +178,7 @@ Generate speech from text using Minimax Speech-02-Turbo.
 
 ## Design System
 
-VoiceCraft uses a **brutalist black/white/yellow design system**.
+Coursify uses a **brutalist black/white/yellow design system**.
 
 ### Colors
 

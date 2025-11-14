@@ -1,6 +1,6 @@
-# Developer Setup Guide - Courseify
+# Developer Setup Guide - Coursify
 
-Welcome to Courseify! This guide will help you get started as a new developer on this project.
+Welcome to Coursify! This guide will help you get started as a new developer on this project.
 
 **This is a complete beginner-friendly guide with step-by-step instructions. Follow every step carefully.**
 
@@ -117,7 +117,7 @@ git --version
 #### Step 2.1: Request GitHub Access
 
 **What you need to tell your team lead:**
-> "Hi! I'm starting on Courseify. I need:
+> "Hi! I'm starting on Coursify. I need:
 > 1. Access to the GitHub repository
 > 2. Development API keys (Replicate, Vercel Blob, Database)
 > 3. Database connection URL for development
@@ -271,7 +271,7 @@ npm run dev
 **Open your browser:** http://localhost:3000
 
 **You should see:**
-- Courseify homepage
+- Coursify homepage
 - Warm colors (coral/orange/lime)
 - Rounded corners and friendly design
 - No console errors in browser DevTools (F12)
@@ -592,7 +592,7 @@ courseify/
 
 ## 🎨 Design System
 
-Courseify uses a **warm, playful, pet-friendly** design system:
+Coursify uses a **warm, playful, pet-friendly** design system:
 
 ### Colors (ONLY use these!)
 - **Primary**: Coral `#FF7F50` - Warm and inviting
@@ -689,7 +689,7 @@ npm run build
 
 ## 👥 Human-in-the-Loop System
 
-Courseify implements a Human-in-the-Loop approach where certain portraits can be assigned to human executors for manual review or enhancement.
+Coursify implements a Human-in-the-Loop approach where certain portraits can be assigned to human executors for manual review or enhancement.
 
 ### How It Works
 

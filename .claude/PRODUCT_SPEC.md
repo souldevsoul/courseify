@@ -1,10 +1,10 @@
-# Courseify - Complete Product Specification
+# Coursify - Complete Product Specification
 
 ## Brand Concept & Vision
 
-### What is Courseify?
+### What is Coursify?
 
-**Courseify** is an AI-powered course creation platform that bridges the gap between instant AI generation and expert human instructor refinement.
+**Coursify** is an AI-powered course creation platform that bridges the gap between instant AI generation and expert human instructor refinement.
 
 **The Core Innovation:**
 We combine the speed of AI with the quality of experienced educators through a seamless hybrid workflow and unified credit system.
@@ -254,7 +254,7 @@ rounded-full  - Badges, avatars
    - Generates course page
    - Creates student enrollment system
    - Sets up payment integration (if paid)
-   - Generates course URL (courseify.ai/course/[slug])
+   - Generates course URL (coursify.ai/course/[slug])
    ↓
 6. Course is live!
    ↓
@@ -607,4 +607,4 @@ model CreditTransaction {
 
 ---
 
-This is the complete specification for Courseify. Every flow, page, and technical detail is documented.
+This is the complete specification for Coursify. Every flow, page, and technical detail is documented.

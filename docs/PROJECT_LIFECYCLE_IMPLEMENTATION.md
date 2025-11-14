@@ -392,7 +392,7 @@ npx prisma db push # or migrate dev for migrations
 
 ## 🎨 UI Component Suggestions
 
-Using VoiceCraft's Brutalist Design:
+Using Coursify's Brutalist Design:
 
 ### Estimate Card
 ```tsx

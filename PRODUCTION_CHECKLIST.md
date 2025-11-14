@@ -1,4 +1,4 @@
-# VoiceCraft Production Deployment Checklist
+# Coursify Production Deployment Checklist
 
 ## ✅ Environment Variables Status
 
@@ -10,7 +10,7 @@
 | `REPLICATE_API_TOKEN` | ✅ SET | Voice cloning & generation | https://replicate.com/account/api-tokens |
 | `BLOB_READ_WRITE_TOKEN` | ⚠️ MISSING | Audio file storage | Vercel Dashboard → Storage |
 | `OPENAI_API_KEY` | ⚠️ MISSING | Project cost estimation | https://platform.openai.com/api-keys |
-| `NEXT_PUBLIC_APP_URL` | ⚠️ MISSING | API calls in server components | Your production domain (e.g., https://voicecraft.app) |
+| `NEXT_PUBLIC_APP_URL` | ⚠️ MISSING | API calls in server components | Your production domain (e.g., https://coursify.app) |
 
 ### Optional Variables (Needed for full features)
 
@@ -49,7 +49,7 @@ vercel env add OPENAI_API_KEY
 ```bash
 # Add your production domain
 vercel env add NEXT_PUBLIC_APP_URL
-# Enter: https://your-domain.com (or https://voicecraft-production-url.vercel.app)
+# Enter: https://your-domain.com (or https://coursify-production-url.vercel.app)
 # Select: Production
 ```
 

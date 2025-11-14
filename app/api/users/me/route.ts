@@ -12,7 +12,6 @@ export async function GET(request: NextRequest) {
         id: true,
         email: true,
         name: true,
-        credits: true,
         createdAt: true,
       }
     })

@@ -1,4 +1,4 @@
-# VoiceCraft - Voice Cloning & Usage Guide
+# Coursify - Voice Cloning & Usage Guide
 
 ## 🎯 Complete User Flow
 

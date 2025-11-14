@@ -1,4 +1,4 @@
-# VoiceCraft Deployment Status Report
+# Coursify Deployment Status Report
 
 **Generated:** November 9, 2025 - 9:15 PM UTC
 
@@ -38,7 +38,7 @@
 ### Current Status
 - **Branch:** `main`
 - **Latest Deployment:** ✅ **LIVE & READY**
-- **Production URL:** https://voicecraft-oo3qc3ed9-soultosoul.vercel.app
+- **Production URL:** https://coursify-oo3qc3ed9-soultosoul.vercel.app
 - **Deployment Time:** November 9, 2025 - 9:14 PM UTC
 - **Build Status:** ● Ready (completed in 54s)
 - **Organization:** soultosoul (team_Ke5O598bw2ZEUetxjUGDHYLU)

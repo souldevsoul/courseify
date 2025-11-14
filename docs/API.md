@@ -1,4 +1,4 @@
-# 🔌 VoiceCraft API Reference
+# 🔌 Coursify API Reference
 
 **Last Updated:** 2025-11-09
 
@@ -22,7 +22,7 @@ Complete reference for all API endpoints, request/response formats, and integrat
 
 ## Overview
 
-**Base URL:** `https://voicecraft.com/api` (production) or `http://localhost:3000/api` (development)
+**Base URL:** `https://coursify.com/api` (production) or `http://localhost:3000/api` (development)
 
 **Protocol:** HTTPS (required in production)
 
@@ -201,7 +201,7 @@ GET /api/voices
 **Example Request:**
 
 ```bash
-curl -X GET "https://voicecraft.com/api/voices?status=active&sortBy=name" \
+curl -X GET "https://coursify.com/api/voices?status=active&sortBy=name" \
   -H "Authorization: Bearer {token}"
 ```
 
@@ -221,7 +221,7 @@ curl -X GET "https://voicecraft.com/api/voices?status=active&sortBy=name" \
       "ageGroup": "adult",
       "style": "professional",
       "voiceId": "minimax_voice_abc123",
-      "sampleAudioUrl": "https://blob.voicecraft.com/samples/sample.mp3",
+      "sampleAudioUrl": "https://blob.coursify.com/samples/sample.mp3",
       "model": "speech-02-turbo",
       "isPublic": false,
       "isCloned": true,
@@ -258,7 +258,7 @@ POST /api/voices/clone
   "userId": "user_123",
   "name": "My Custom Voice",
   "description": "A warm, friendly voice",
-  "audioFileUrl": "https://blob.voicecraft.com/samples/my-sample.mp3",
+  "audioFileUrl": "https://blob.coursify.com/samples/my-sample.mp3",
   "model": "speech-02-turbo",
   "accuracy": 0.7,
   "noiseReduction": false,
@@ -290,13 +290,13 @@ POST /api/voices/clone
 **Example Request:**
 
 ```bash
-curl -X POST "https://voicecraft.com/api/voices/clone" \
+curl -X POST "https://coursify.com/api/voices/clone" \
   -H "Authorization: Bearer {token}" \
   -H "Content-Type: application/json" \
   -d '{
     "userId": "user_123",
     "name": "My Voice",
-    "audioFileUrl": "https://blob.voicecraft.com/sample.mp3",
+    "audioFileUrl": "https://blob.coursify.com/sample.mp3",
     "model": "speech-02-turbo",
     "language": "en-US"
   }'
@@ -314,7 +314,7 @@ curl -X POST "https://voicecraft.com/api/voices/clone" \
     "description": null,
     "language": "en-US",
     "model": "speech-02-turbo",
-    "sampleAudioUrl": "https://blob.voicecraft.com/sample.mp3",
+    "sampleAudioUrl": "https://blob.coursify.com/sample.mp3",
     "createdAt": "2025-01-09T10:35:00Z"
   },
   "metadata": {
@@ -373,7 +373,7 @@ POST /api/voices/generate
 
 ```json
 {
-  "text": "Hello, welcome to VoiceCraft!",
+  "text": "Hello, welcome to Coursify!",
   "voiceId": "Wise_Woman",
   "userId": "user_123",
   "emotion": "auto",
@@ -404,7 +404,7 @@ POST /api/voices/generate
 **Example Request:**
 
 ```bash
-curl -X POST "https://voicecraft.com/api/voices/generate" \
+curl -X POST "https://coursify.com/api/voices/generate" \
   -H "Authorization: Bearer {token}" \
   -H "Content-Type: application/json" \
   -d '{
@@ -486,7 +486,7 @@ GET /api/audios
 **Example Request:**
 
 ```bash
-curl -X GET "https://voicecraft.com/api/audios?status=ready&tags=podcast,narration&search=intro" \
+curl -X GET "https://coursify.com/api/audios?status=ready&tags=podcast,narration&search=intro" \
   -H "Authorization: Bearer {token}"
 ```
 
@@ -500,7 +500,7 @@ curl -X GET "https://voicecraft.com/api/audios?status=ready&tags=podcast,narrati
       "id": "aud_abc123",
       "userId": "user_123",
       "filename": "podcast-intro.mp3",
-      "audioUrl": "https://blob.voicecraft.com/audios/user_123/1704801234-podcast-intro.mp3",
+      "audioUrl": "https://blob.coursify.com/audios/user_123/1704801234-podcast-intro.mp3",
       "duration": 45.5,
       "fileSize": 1024000,
       "format": "mp3",
@@ -579,7 +579,7 @@ POST /api/audios/upload
 **Example Request:**
 
 ```bash
-curl -X POST "https://voicecraft.com/api/audios/upload" \
+curl -X POST "https://coursify.com/api/audios/upload" \
   -H "Authorization: Bearer {token}" \
   -F "file=@/path/to/audio.mp3" \
   -F 'metadata={"tags":["podcast"],"description":"Episode 1"}'
@@ -594,7 +594,7 @@ curl -X POST "https://voicecraft.com/api/audios/upload" \
     "id": "aud_new123",
     "userId": "user_123",
     "filename": "audio.mp3",
-    "audioUrl": "https://blob.voicecraft.com/audios/user_123/1704801500-audio-abc.mp3",
+    "audioUrl": "https://blob.coursify.com/audios/user_123/1704801500-audio-abc.mp3",
     "duration": null,
     "fileSize": 2048000,
     "format": "mp3",
@@ -606,9 +606,9 @@ curl -X POST "https://voicecraft.com/api/audios/upload" \
     "updatedAt": "2025-01-09T10:05:00Z"
   },
   "blob": {
-    "url": "https://blob.voicecraft.com/audios/user_123/1704801500-audio-abc.mp3",
+    "url": "https://blob.coursify.com/audios/user_123/1704801500-audio-abc.mp3",
     "pathname": "audios/user_123/1704801500-audio-abc.mp3",
-    "downloadUrl": "https://blob.voicecraft.com/audios/user_123/1704801500-audio-abc.mp3?download=1"
+    "downloadUrl": "https://blob.coursify.com/audios/user_123/1704801500-audio-abc.mp3?download=1"
   }
 }
 ```
@@ -714,7 +714,7 @@ GET /api/projects
 **Example Request:**
 
 ```bash
-curl -X GET "https://voicecraft.com/api/projects?status=in_progress&sortBy=deadline" \
+curl -X GET "https://coursify.com/api/projects?status=in_progress&sortBy=deadline" \
   -H "Authorization: Bearer {token}"
 ```
 
@@ -822,7 +822,7 @@ POST /api/projects
 **Example Request:**
 
 ```bash
-curl -X POST "https://voicecraft.com/api/projects" \
+curl -X POST "https://coursify.com/api/projects" \
   -H "Authorization: Bearer {token}" \
   -H "Content-Type: application/json" \
   -d '{
@@ -857,7 +857,7 @@ curl -X POST "https://voicecraft.com/api/projects" \
           "id": "aud_abc123",
           "filename": "intro.mp3",
           "duration": 30.0,
-          "audioUrl": "https://blob.voicecraft.com/..."
+          "audioUrl": "https://blob.coursify.com/..."
         },
         "createdAt": "2025-01-09T11:00:00Z"
       }
@@ -929,7 +929,7 @@ POST /api/projects/{id}/estimate
 **Example Request:**
 
 ```bash
-curl -X POST "https://voicecraft.com/api/projects/proj_abc123/estimate" \
+curl -X POST "https://coursify.com/api/projects/proj_abc123/estimate" \
   -H "Authorization: Bearer {token}" \
   -H "Content-Type: application/json" \
   -d '{
@@ -1012,7 +1012,7 @@ POST /api/projects/{id}/estimate/accept
 **Example Request:**
 
 ```bash
-curl -X POST "https://voicecraft.com/api/projects/proj_abc123/estimate/accept" \
+curl -X POST "https://coursify.com/api/projects/proj_abc123/estimate/accept" \
   -H "Authorization: Bearer {token}"
 ```
 
@@ -1080,7 +1080,7 @@ POST /api/projects/{id}/estimate/reject
 **Example Request:**
 
 ```bash
-curl -X POST "https://voicecraft.com/api/projects/proj_abc123/estimate/reject" \
+curl -X POST "https://coursify.com/api/projects/proj_abc123/estimate/reject" \
   -H "Authorization: Bearer {token}" \
   -H "Content-Type: application/json" \
   -d '{"reason": "Need to reduce scope"}'
@@ -1131,7 +1131,7 @@ POST /api/projects/{id}/assign
 **Example Request:**
 
 ```bash
-curl -X POST "https://voicecraft.com/api/projects/proj_abc123/assign" \
+curl -X POST "https://coursify.com/api/projects/proj_abc123/assign" \
   -H "Authorization: Bearer {token}" \
   -H "Content-Type: application/json" \
   -d '{
@@ -1205,7 +1205,7 @@ POST /api/projects/{id}/submit
 **Example Request:**
 
 ```bash
-curl -X POST "https://voicecraft.com/api/projects/proj_abc123/submit" \
+curl -X POST "https://coursify.com/api/projects/proj_abc123/submit" \
   -H "Authorization: Bearer {token}" \
   -H "Content-Type: application/json" \
   -d '{
@@ -1280,7 +1280,7 @@ POST /api/projects/{id}/approve
 **Example Request:**
 
 ```bash
-curl -X POST "https://voicecraft.com/api/projects/proj_abc123/approve" \
+curl -X POST "https://coursify.com/api/projects/proj_abc123/approve" \
   -H "Authorization: Bearer {token}" \
   -H "Content-Type: application/json" \
   -d '{
@@ -1355,7 +1355,7 @@ POST /api/projects/{id}/request-changes
 **Example Request:**
 
 ```bash
-curl -X POST "https://voicecraft.com/api/projects/proj_abc123/request-changes" \
+curl -X POST "https://coursify.com/api/projects/proj_abc123/request-changes" \
   -H "Authorization: Bearer {token}" \
   -H "Content-Type: application/json" \
   -d '{
@@ -1429,7 +1429,7 @@ POST /api/projects/{id}/re-estimate
 **Example Request:**
 
 ```bash
-curl -X POST "https://voicecraft.com/api/projects/proj_abc123/re-estimate" \
+curl -X POST "https://coursify.com/api/projects/proj_abc123/re-estimate" \
   -H "Authorization: Bearer {token}" \
   -H "Content-Type: application/json" \
   -d '{
@@ -1500,7 +1500,7 @@ POST /api/projects/{id}/refund
 **Example Request:**
 
 ```bash
-curl -X POST "https://voicecraft.com/api/projects/proj_abc123/refund" \
+curl -X POST "https://coursify.com/api/projects/proj_abc123/refund" \
   -H "Authorization: Bearer {token}" \
   -H "Content-Type: application/json" \
   -d '{

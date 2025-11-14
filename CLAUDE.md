@@ -1,18 +1,18 @@
-# CLAUDE.md - Courseify
+# CLAUDE.md - Coursify
 
 **AI Online Course Creation Platform**
 
-Transform VoiceCraft into Courseify - create complete online courses with AI-generated content, videos, and quizzes.
+Transform Coursify into Coursify - create complete online courses with AI-generated content, videos, and quizzes.
 
 ---
 
 ## ⚠️ CRITICAL LESSONS FROM CLIPMASTER (READ FIRST!)
 
-**When adapting VoiceCraft, apply these 7 lessons learned from ClipMaster transformation:**
+**When adapting Coursify, apply these 7 lessons learned from ClipMaster transformation:**
 
 ### 1. **DESIGN SYSTEM MUST BE COMPLETELY DIFFERENT**
 ❌ Don't just change colors - Transform the entire visual style!
-- VoiceCraft: Brutalist (black borders, sharp corners, yellow)
+- Coursify: Brutalist (black borders, sharp corners, yellow)
 - **Your project**: Create UNIQUE visual identity
 - **Action**: Don't keep border-4 border-black, brutalist-shadow
 - **Action**: Choose style: Modern (soft shadows), Minimalist (clean), Academic (serif), or Professional (corporate)
@@ -28,12 +28,12 @@ Transform VoiceCraft into Courseify - create complete online courses with AI-gen
 - **Action**: Update everywhere (Header, Footer, legal docs, meta tags)
 
 ### 4. **VISUAL ELEMENTS - COMPLETE REPLACEMENT**
-❌ Don't reuse VoiceCraft images!
+❌ Don't reuse Coursify images!
 - **Action**: Delete all microphone/waveform images
 - **Action**: Generate course-specific images (see IMAGES_SCRIPT.md)
 
 ### 5. **TYPOGRAPHY & SPACING**
-❌ Don't keep VoiceCraft font styles!
+❌ Don't keep Coursify font styles!
 - **Action**: Choose different font weights (semibold vs bold)
 - **Action**: Adjust uppercase transforms for your brand
 
@@ -42,7 +42,7 @@ Transform VoiceCraft into Courseify - create complete online courses with AI-gen
 - **Action**: Create unique motion design (smooth vs snappy)
 
 ### 7. **LAYOUT PATTERNS**
-❌ Don't copy VoiceCraft sections!
+❌ Don't copy Coursify sections!
 - **Action**: Redesign page flow for your product
 - **Action**: Add unique sections relevant to courses
 
@@ -69,7 +69,7 @@ Transform VoiceCraft into Courseify - create complete online courses with AI-gen
 ## 🎨 BRAND COLORS
 
 ```css
-/* NEW (Courseify) */
+/* NEW (Coursify) */
 --primary: #A855F7;    /* Purple 500 - Creative, educational */
 --secondary: #EC4899;  /* Fuchsia/Pink 500 - Engaging, inspiring */
 --accent: #F43F5E;     /* Rose 500 - Energetic, passionate */

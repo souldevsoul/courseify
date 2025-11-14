@@ -27,7 +27,7 @@ export interface HeaderProps extends React.HTMLAttributes<HTMLElement> {
 const Header = React.forwardRef<HTMLElement, HeaderProps>(
   ({
     logo,
-    logoText = "VoiceCraft",
+    logoText = "Coursify",
     navLinks = [],
     ctaButton,
     transparent = false,
@@ -91,7 +91,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
               {ctaButton && (
                 <button
                   onClick={ctaButton.onClick}
-                  className="bg-green-400 text-black hover:bg-yellow-300 border-4 border-black font-bold uppercase px-6 py-2 transition-colors"
+                  className="bg-green-400 text-black hover:bg-purple-300 border-4 border-black font-bold uppercase px-6 py-2 transition-colors"
                 >
                   {ctaButton.href ? (
                     <a href={ctaButton.href}>{ctaButton.text}</a>
@@ -132,7 +132,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                 ))}
                 {ctaButton && (
                   <button
-                    className="bg-green-400 text-black hover:bg-yellow-300 border-4 border-black font-bold uppercase px-6 py-3 transition-colors w-full"
+                    className="bg-green-400 text-black hover:bg-purple-300 border-4 border-black font-bold uppercase px-6 py-3 transition-colors w-full"
                     onClick={() => {
                       ctaButton.onClick?.()
                       setMobileMenuOpen(false)

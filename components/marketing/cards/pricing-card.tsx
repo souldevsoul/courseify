@@ -95,7 +95,7 @@ const PricingCard = React.forwardRef<HTMLDivElement, PricingCardProps>(
                   <Check className={cn(
                     "w-5 h-5 mt-0.5 flex-shrink-0",
                     feature.included
-                      ? isPremium ? "text-white" : "text-emerald-500"
+                      ? isPremium ? "text-white" : "text-green-500"
                       : "text-slate-300"
                   )} />
                   <span className={cn(

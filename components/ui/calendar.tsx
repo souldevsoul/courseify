@@ -33,9 +33,9 @@ function Calendar({
         head_cell:
           "text-slate-600 w-9 font-bold text-[0.8rem] uppercase",
         row: "flex w-full mt-2",
-        cell: "h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md [&:has([aria-selected].day-outside)]:bg-slate-100/50 [&:has([aria-selected])]:bg-yellow-100 first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20",
+        cell: "h-9 w-9 text-center text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md [&:has([aria-selected].day-outside)]:bg-slate-100/50 [&:has([aria-selected])]:bg-purple-100 first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20",
         day: cn(
-          "h-9 w-9 p-0 font-medium aria-selected:opacity-100 border-2 border-transparent hover:border-black hover:bg-yellow-100 transition-colors"
+          "h-9 w-9 p-0 font-medium aria-selected:opacity-100 border-2 border-transparent hover:border-black hover:bg-purple-100 transition-colors"
         ),
         day_range_end: "day-range-end",
         day_selected:
@@ -45,7 +45,7 @@ function Calendar({
           "day-outside text-slate-400 opacity-50 aria-selected:bg-slate-100/50 aria-selected:text-slate-500 aria-selected:opacity-30",
         day_disabled: "text-slate-400 opacity-50",
         day_range_middle:
-          "aria-selected:bg-yellow-100 aria-selected:text-black",
+          "aria-selected:bg-purple-100 aria-selected:text-black",
         day_hidden: "invisible",
         ...classNames,
       }}

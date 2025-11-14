@@ -1,8 +1,8 @@
-# Courseify - Brand Guide
+# Coursify - Brand Guide
 
 ## Brand Concept & Vision
 
-**Courseify** is an AI-powered course creation platform that bridges the gap between instant AI generation and expert human instructor refinement.
+**Coursify** is an AI-powered course creation platform that bridges the gap between instant AI generation and expert human instructor refinement.
 
 **The Core Innovation:**
 We combine the speed of AI with the quality of experienced educators through a seamless hybrid workflow and unified credit system.
@@ -46,7 +46,7 @@ bg-gradient-to-br from-blue-500 to-violet-500
 **Backgrounds:** White/Slate-50
 **Text:** Slate-900 (headings), Slate-600 (body)
 
-**NEVER Use (VoiceCraft/LogoSmith template colors):**
+**NEVER Use (Coursify/LogoSmith template colors):**
 - ❌ Yellow (`yellow-*`)
 - ❌ Orange (`orange-*`)
 - ❌ Teal (`teal-*`) - use Emerald instead
@@ -265,7 +265,7 @@ bg-violet-50 border-violet-500 text-violet-700
 
 ### Example 1: Pricing Card
 
-**Before (VoiceCraft/LogoSmith style):**
+**Before (Coursify/LogoSmith style):**
 ```tsx
 <div className="border-4 border-black shadow-[0_8px_0_0_#000] rounded p-6">
   <h3 className="text-2xl font-black mb-2">Pro Plan</h3>
@@ -276,7 +276,7 @@ bg-violet-50 border-violet-500 text-violet-700
 </div>
 ```
 
-**After (Courseify style):**
+**After (Coursify style):**
 ```tsx
 <div className="bg-white rounded-3xl shadow-soft-xl p-10 hover:shadow-glow-blue transition-all duration-300 border border-slate-100">
   <h3 className="text-3xl font-bold mb-4 text-slate-900">Pro Plan</h3>
@@ -302,7 +302,7 @@ bg-violet-50 border-violet-500 text-violet-700
 </div>
 ```
 
-**After (Courseify style):**
+**After (Coursify style):**
 ```tsx
 <div className="bg-white rounded-2xl shadow-soft-lg p-8 hover:shadow-glow-violet transition-all duration-300 border border-slate-100">
   <div className="flex items-center gap-3 mb-4">
@@ -447,5 +447,5 @@ Use this checklist when creating or reviewing components:
 ---
 
 **Last Updated:** 2025-01-12
-**For:** Courseify (AI Course Creation Platform)
+**For:** Coursify (AI Course Creation Platform)
 **Colors:** Blue #2563EB, Emerald #10B981, Violet #7C3AED

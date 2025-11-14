@@ -2,7 +2,6 @@ import { NextRequest, NextResponse } from "next/server"
 import { prisma } from "@/lib/prisma"
 import bcrypt from "bcryptjs"
 import { z } from "zod"
-import { createSubscription } from "@/lib/subscriptions"
 
 const RegisterSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -39,24 +38,16 @@ export async function POST(request: NextRequest) {
         name: validatedData.name,
         email: validatedData.email,
         password: hashedPassword,
-        credits: 1000, // Give 1000 credits ($10) to new users as welcome bonus
       },
       select: {
         id: true,
         name: true,
         email: true,
-        credits: true,
         createdAt: true,
       },
     })
 
-    // Create subscription based on selected plan
-    const startTrial = validatedData.plan === 'pro' // Start trial for Pro plan
-    await createSubscription(user.id, validatedData.plan, startTrial)
-
-    const message = validatedData.plan === 'pro'
-      ? "Account created successfully! Your 14-day Pro trial has started. You also received 1000 credits ($10) as a welcome bonus."
-      : "Account created successfully! You received 1000 credits ($10) as a welcome bonus."
+    const message = "Account created successfully! Welcome to Coursify."
 
     return NextResponse.json({
       success: true,

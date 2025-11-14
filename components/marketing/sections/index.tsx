@@ -1,4 +1,4 @@
-// Landing Page Sections - VoiceCraft Design System
+// Landing Page Sections - Coursify Design System
 export { Hero, type HeroProps } from "./hero"
 export { Features, type FeaturesProps } from "./features"
 export { Pricing, type PricingProps } from "./pricing"

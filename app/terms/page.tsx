@@ -21,10 +21,10 @@ export default function TermsPage() {
       icon: RiCheckLine,
       content: [
         {
-          text: "By accessing or using VoiceCraft ('Service', 'Platform', 'we', 'us', 'our'), you agree to be bound by these Terms of Service ('Terms'). If you do not agree to these Terms, you may not access or use the Service.",
+          text: "By accessing or using Coursify ('Service', 'Platform', 'we', 'us', 'our'), you agree to be bound by these Terms of Service ('Terms'). If you do not agree to these Terms, you may not access or use the Service.",
         },
         {
-          text: "These Terms constitute a legally binding agreement between you (whether personally or on behalf of an entity) and VoiceCraft, Inc. If you are using the Service on behalf of an organization, you represent and warrant that you have the authority to bind that organization to these Terms.",
+          text: "These Terms constitute a legally binding agreement between you (whether personally or on behalf of an entity) and Coursify, Inc. If you are using the Service on behalf of an organization, you represent and warrant that you have the authority to bind that organization to these Terms.",
         },
         {
           text: "We reserve the right to modify these Terms at any time. We will notify you of material changes via email or through the Service. Your continued use of the Service after such modifications constitutes your acceptance of the updated Terms.",
@@ -37,7 +37,7 @@ export default function TermsPage() {
       content: [
         {
           subtitle: "Account Creation",
-          text: "To use VoiceCraft, you must create an account by providing accurate, complete, and current information. You must be at least 13 years old (or 16 in the EU) to create an account. You are responsible for maintaining the confidentiality of your account credentials.",
+          text: "To use Coursify, you must create an account by providing accurate, complete, and current information. You must be at least 13 years old (or 16 in the EU) to create an account. You are responsible for maintaining the confidentiality of your account credentials.",
         },
         {
           subtitle: "Account Security",
@@ -105,7 +105,7 @@ export default function TermsPage() {
       content: [
         {
           subtitle: "Our IP",
-          text: "VoiceCraft, including all software, algorithms, designs, trademarks, logos, and content, is owned by VoiceCraft, Inc. and protected by copyright, trademark, and other intellectual property laws. You may not copy, modify, distribute, or create derivative works without our written permission.",
+          text: "Coursify, including all software, algorithms, designs, trademarks, logos, and content, is owned by Coursify, Inc. and protected by copyright, trademark, and other intellectual property laws. You may not copy, modify, distribute, or create derivative works without our written permission.",
         },
         {
           subtitle: "Your Content",
@@ -145,7 +145,7 @@ export default function TermsPage() {
       content: [
         {
           subtitle: "Subscription Plans",
-          text: "VoiceCraft offers free and paid subscription plans. Paid plans are billed monthly or annually in advance. Prices are listed on our Pricing page and may change with 30 days' notice to existing subscribers.",
+          text: "Coursify offers free and paid subscription plans. Paid plans are billed monthly or annually in advance. Prices are listed on our Pricing page and may change with 30 days' notice to existing subscribers.",
         },
         {
           subtitle: "Payment Processing",
@@ -218,7 +218,7 @@ export default function TermsPage() {
       title: "11. Indemnification",
       content: [
         {
-          text: "You agree to indemnify, defend, and hold harmless VoiceCraft, its affiliates, officers, directors, employees, and agents from any claims, liabilities, damages, losses, costs, or expenses (including reasonable attorneys' fees) arising from:",
+          text: "You agree to indemnify, defend, and hold harmless Coursify, its affiliates, officers, directors, employees, and agents from any claims, liabilities, damages, losses, costs, or expenses (including reasonable attorneys' fees) arising from:",
         },
         {
           text: "Your use of the Service; your content or generated audio; your violation of these Terms; your violation of any rights of third parties; your violation of applicable laws or regulations.",
@@ -241,7 +241,7 @@ export default function TermsPage() {
         },
         {
           subtitle: "Class Action Waiver",
-          text: "You agree that any arbitration or court proceeding shall be limited to the dispute between you and VoiceCraft individually. You waive the right to participate in class actions, class arbitrations, or representative actions.",
+          text: "You agree that any arbitration or court proceeding shall be limited to the dispute between you and Coursify individually. You waive the right to participate in class actions, class arbitrations, or representative actions.",
         },
         {
           subtitle: "Exceptions",
@@ -255,7 +255,7 @@ export default function TermsPage() {
     <main className="min-h-screen bg-white">
       {/* Header */}
       <Header
-        logoText="VoiceCraft"
+        logoText="Coursify"
         navLinks={[
           { label: "Features", href: "/features" },
           { label: "Pricing", href: "/pricing" },
@@ -279,7 +279,7 @@ export default function TermsPage() {
               TERMS & CONDITIONS
             </h1>
             <p className="text-xl text-gray-700 mb-6">
-              These Terms of Service govern your use of VoiceCraft. Please read them carefully before using our platform.
+              These Terms of Service govern your use of Coursify. Please read them carefully before using our platform.
             </p>
             <p className="text-sm font-bold uppercase text-gray-900">
               Last Updated: {lastUpdated}
@@ -416,7 +416,7 @@ export default function TermsPage() {
                 <div className="p-6 bg-white border-4 border-black brutalist-shadow">
                   <h3 className="text-lg font-bold uppercase mb-3">Entire Agreement</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    These Terms, together with our Privacy Policy and any other agreements referenced herein, constitute the entire agreement between you and VoiceCraft regarding the Service. They supersede all prior agreements and understandings.
+                    These Terms, together with our Privacy Policy and any other agreements referenced herein, constitute the entire agreement between you and Coursify regarding the Service. They supersede all prior agreements and understandings.
                   </p>
                 </div>
 
@@ -474,27 +474,27 @@ export default function TermsPage() {
                   <span className="font-bold uppercase text-sm">Email:</span>
                   <br />
                   <a
-                    href="mailto:legal@voicecraft.ai"
+                    href="mailto:support@coursify.ai"
                     className="text-lg font-bold text-black underline hover:no-underline"
                   >
-                    legal@voicecraft.ai
+                    support@coursify.ai
                   </a>
                 </div>
                 <div>
                   <span className="font-bold uppercase text-sm">Support:</span>
                   <br />
                   <a
-                    href="mailto:support@courseify.ai"
+                    href="mailto:support@coursify.ai"
                     className="text-lg font-bold text-black underline hover:no-underline"
                   >
-                    support@courseify.ai
+                    support@coursify.ai
                   </a>
                 </div>
                 <div>
                   <span className="font-bold uppercase text-sm">Mailing Address:</span>
                   <br />
                   <address className="text-gray-700 not-italic">
-                    VoiceCraft, Inc.
+                    Coursify, Inc.
                     <br />
                     123 Voice Street, Suite 100
                     <br />
@@ -507,7 +507,7 @@ export default function TermsPage() {
 
               <div className="mt-6 pt-6 border-t-4 border-black">
                 <p className="text-sm text-gray-600">
-                  By using VoiceCraft, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.
+                  By using Coursify, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.
                 </p>
               </div>
             </div>

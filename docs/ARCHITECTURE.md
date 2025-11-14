@@ -1,8 +1,8 @@
-# 🏗️ VoiceCraft Architecture
+# 🏗️ Coursify Architecture
 
 **Last Updated:** 2025-11-09
 
-This document describes the system architecture, design patterns, and core concepts of VoiceCraft.
+This document describes the system architecture, design patterns, and core concepts of Coursify.
 
 ---
 
@@ -23,7 +23,7 @@ This document describes the system architecture, design patterns, and core conce
 
 ## System Overview
 
-VoiceCraft is a full-stack AI voice synthesis platform built with a modern, scalable architecture:
+Coursify is a full-stack AI voice synthesis platform built with a modern, scalable architecture:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -190,7 +190,7 @@ See [DATABASE.md](DATABASE.md) for complete schema details.
 
 ### Voice Cloning & Generation
 
-VoiceCraft uses a two-step process for custom voice creation:
+Coursify uses a two-step process for custom voice creation:
 
 #### 1. Voice Cloning (Training)
 
@@ -878,7 +878,7 @@ eventSource.onmessage = (event) => {
 **Solution:** CloudFront or Cloudflare CDN
 
 ```typescript
-const cdnUrl = `https://cdn.voicecraft.com/audios/${filename}`
+const cdnUrl = `https://cdn.coursify.com/audios/${filename}`
 ```
 
 ### 4. Rate Limiting

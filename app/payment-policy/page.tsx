@@ -12,7 +12,7 @@ export default function PaymentPolicyPage() {
   return (
     <main className="min-h-screen bg-white">
       <Header
-        logoText="VoiceCraft"
+        logoText="Coursify"
         navLinks={[
           { label: "Features", href: "/features" },
           { label: "Pricing", href: "/pricing" },
@@ -35,7 +35,7 @@ export default function PaymentPolicyPage() {
               PAYMENT POLICY
             </h1>
             <p className="text-xl text-gray-700 mb-6">
-              Secure, transparent, and compliant payment processing. Understand how payments work on VoiceCraft.
+              Secure, transparent, and compliant payment processing. Understand how payments work on Coursify.
             </p>
             <p className="text-sm font-bold uppercase text-gray-900">
               Last Updated: {lastUpdated}
@@ -81,7 +81,7 @@ export default function PaymentPolicyPage() {
                 <div className="p-6 bg-green-50 border-4 border-black">
                   <h3 className="text-lg font-bold uppercase mb-3">Payment Processor</h3>
                   <p className="text-gray-700 leading-relaxed">
-                    All payments are processed securely through Stripe, a PCI DSS Level 1 compliant payment processor. VoiceCraft does not store your complete credit card information on our servers.
+                    All payments are processed securely through Stripe, a PCI DSS Level 1 compliant payment processor. Coursify does not store your complete credit card information on our servers.
                   </p>
                 </div>
               </div>
@@ -128,7 +128,7 @@ export default function PaymentPolicyPage() {
                     All prices are displayed in USD. If your bank or card is in a different currency, your financial institution will convert the charge at their current exchange rate.
                   </p>
                   <p className="text-gray-700 leading-relaxed">
-                    <span className="font-bold">Note:</span> Your bank may charge currency conversion fees. These fees are set by your bank, not by VoiceCraft.
+                    <span className="font-bold">Note:</span> Your bank may charge currency conversion fees. These fees are set by your bank, not by Coursify.
                   </p>
                 </div>
 
@@ -265,7 +265,7 @@ export default function PaymentPolicyPage() {
                   Tax rates are determined by your billing address and local regulations. If you are a business in the EU with a valid VAT number, you may be eligible for reverse charge mechanism.
                 </p>
                 <p className="text-gray-900 leading-relaxed">
-                  For questions about taxes, contact: <a href="mailto:billing@voicecraft.ai" className="underline hover:no-underline font-bold">billing@voicecraft.ai</a>
+                  For questions about taxes, contact: <a href="mailto:support@coursify.ai" className="underline hover:no-underline font-bold">support@coursify.ai</a>
                 </p>
               </div>
             </div>
@@ -277,7 +277,7 @@ export default function PaymentPolicyPage() {
                   PAYMENT DISPUTES & CHARGEBACKS
                 </h2>
                 <p className="leading-relaxed mb-4">
-                  <span className="font-bold">Contact us first:</span> If you see an unexpected charge, please contact us at support@courseify.ai before initiating a chargeback. We can often resolve issues quickly.
+                  <span className="font-bold">Contact us first:</span> If you see an unexpected charge, please contact us at support@coursify.ai before initiating a chargeback. We can often resolve issues quickly.
                 </p>
                 <p className="leading-relaxed mb-4">
                   <span className="font-bold">Right to dispute:</span> In accordance with Visa and Mastercard regulations, you have the right to dispute transactions with your card issuer.
@@ -323,14 +323,14 @@ export default function PaymentPolicyPage() {
                 <div className="space-y-2">
                   <p>
                     <span className="font-bold">Email:</span>{" "}
-                    <a href="mailto:billing@voicecraft.ai" className="underline hover:no-underline">
-                      billing@voicecraft.ai
+                    <a href="mailto:support@coursify.ai" className="underline hover:no-underline">
+                      support@coursify.ai
                     </a>
                   </p>
                   <p>
                     <span className="font-bold">Support:</span>{" "}
-                    <a href="mailto:support@courseify.ai" className="underline hover:no-underline">
-                      support@courseify.ai
+                    <a href="mailto:support@coursify.ai" className="underline hover:no-underline">
+                      support@coursify.ai
                     </a>
                   </p>
                 </div>

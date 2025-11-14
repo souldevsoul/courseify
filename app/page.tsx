@@ -149,7 +149,7 @@ export default function Home() {
             <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-lg">
               <RiBookOpenLine className="w-7 h-7 text-white" />
             </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Courseify</span>
+            <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Coursify</span>
           </div>
           <nav className="hidden md:flex items-center gap-8">
             <a href="#features" className="text-sm font-semibold text-slate-700 hover:text-purple-600 transition-colors">Features</a>
@@ -221,15 +221,15 @@ export default function Home() {
 
             <div className={`flex flex-wrap justify-center items-center gap-8 pt-12 text-sm text-slate-600 transition-all duration-700 delay-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
               <div className="flex items-center gap-2">
-                <RiCheckLine className="w-5 h-5 text-emerald-500" />
+                <RiCheckLine className="w-5 h-5 text-green-500" />
                 <span>10,000+ Courses Created</span>
               </div>
               <div className="flex items-center gap-2">
-                <RiCheckLine className="w-5 h-5 text-emerald-500" />
+                <RiCheckLine className="w-5 h-5 text-green-500" />
                 <span>50,000+ Students Enrolled</span>
               </div>
               <div className="flex items-center gap-2">
-                <RiCheckLine className="w-5 h-5 text-emerald-500" />
+                <RiCheckLine className="w-5 h-5 text-green-500" />
                 <span>5-Minute Setup</span>
               </div>
             </div>
@@ -244,7 +244,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-5xl font-bold mb-4 text-slate-900">
               See What You Can Create
             </h2>
-            <p className="text-slate-600 text-lg">Professional courses created with Courseify</p>
+            <p className="text-slate-600 text-lg">Professional courses created with Coursify</p>
           </div>
 
           <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl">
@@ -364,7 +364,7 @@ export default function Home() {
                   {plan.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start gap-3">
                       {feature.included ? (
-                        <RiCheckLine className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
+                        <RiCheckLine className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
                       ) : (
                         <RiCloseLine className="w-5 h-5 text-slate-300 flex-shrink-0 mt-0.5" />
                       )}
@@ -398,7 +398,7 @@ export default function Home() {
             Ready to Share Your Knowledge?
           </h2>
           <p className="text-xl text-purple-100 mb-12 max-w-2xl mx-auto">
-            Join 10,000+ course creators using Courseify to build and sell online courses. Start free today.
+            Join 10,000+ course creators using Coursify to build and sell online courses. Start free today.
           </p>
           <div className="flex flex-wrap justify-center gap-6">
             <Button

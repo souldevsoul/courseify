@@ -29,7 +29,7 @@ export default function BlogPage() {
     category: "Product Updates",
     date: "Nov 8, 2025",
     readTime: "8 min read",
-    author: "VoiceCraft Team",
+    author: "Coursify Team",
     image: "featured",
   }
 
@@ -67,7 +67,7 @@ export default function BlogPage() {
       category: "Product Updates",
       date: "Oct 28, 2025",
       readTime: "15 min read",
-      author: "VoiceCraft Team",
+      author: "Coursify Team",
       tag: "Popular",
     },
     {
@@ -121,7 +121,7 @@ export default function BlogPage() {
     <main className="min-h-screen bg-white">
       {/* Header */}
       <Header
-        logoText="VoiceCraft"
+        logoText="Coursify"
         navLinks={[
           { label: "Features", href: "/features" },
           { label: "Pricing", href: "/pricing" },
@@ -327,7 +327,7 @@ export default function BlogPage() {
                     <button
                       className={`w-full py-3 font-bold uppercase text-sm border-4 ${
                         colorIndex === 1
-                          ? "bg-green-400 text-black border-green-400 hover:bg-yellow-300"
+                          ? "bg-green-400 text-black border-green-400 hover:bg-purple-300"
                           : colorIndex === 2
                           ? "bg-black text-green-400 border-black hover:bg-gray-900"
                           : "bg-black text-green-400 border-black hover:bg-gray-900"

@@ -4,6 +4,7 @@ import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { Notifications } from '@mantine/notifications';
 import { mantineTheme } from '@/lib/mantine-theme';
 import { CookieConsent } from '@/components/marketing/CookieConsent';
+import { Toaster } from '@/components/ui/toaster';
 import "./globals.css";
 import '@mantine/core/styles.css';
 import '@mantine/notifications/styles.css';
@@ -21,8 +22,8 @@ const inter = Inter({
 // Font will be loaded through globals.css
 
 export const metadata: Metadata = {
-  title: "VoiceCraft - AI-Powered Voice Synthesis",
-  description: "Create professional voice content in seconds with AI-powered voice synthesis and cloning.",
+  title: "Coursify - AI-Powered Course Creation",
+  description: "Create complete online courses in minutes with AI-powered content generation, videos, and quizzes.",
 };
 
 export default function RootLayout({
@@ -41,6 +42,7 @@ export default function RootLayout({
       <body className={`${inter.variable} antialiased`}>
         <MantineProvider theme={mantineTheme} defaultColorScheme="light">
           <Notifications position="top-right" zIndex={1000} />
+          <Toaster />
           {children}
           <CookieConsent />
         </MantineProvider>

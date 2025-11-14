@@ -1,6 +1,6 @@
 # Pre-Production Checklist Command
 
-You are helping a developer prepare the Courseify application for production deployment. Follow this comprehensive checklist systematically.
+You are helping a developer prepare the Coursify application for production deployment. Follow this comprehensive checklist systematically.
 
 ## Phase 1: Code Quality & Testing
 

@@ -3,73 +3,49 @@ import { NextResponse } from "next/server"
 
 export default withAuth(
   function middleware(req) {
-    // Allow the request to proceed
+    // Custom middleware logic can go here
     return NextResponse.next()
   },
   {
     callbacks: {
-      authorized: ({ token, req }) => {
-        const path = req.nextUrl.pathname
+      authorized: ({ req, token }) => {
+        // Check if user is authenticated
+        const isAuthenticated = !!token
 
-        // Public paths that don't require authentication
-        const publicPaths = [
-          "/",
-          "/about",
-          "/features",
-          "/pricing",
-          "/demo",
-          "/contact",
-          "/blog",
-          "/terms",
-          "/privacy",
-          "/cookie-policy",
-          "/cancellation-policy",
-          "/delivery-policy",
-          "/refund-policy",
-          "/components",
-          "/auth/signin",
-          "/auth/signup",
-          "/auth/error",
-        ]
+        // Define protected paths
+        const isProtectedPath =
+          req.nextUrl.pathname.startsWith('/dashboard') ||
+          req.nextUrl.pathname.startsWith('/builder') ||
+          req.nextUrl.pathname.startsWith('/api/courses/generate') ||
+          req.nextUrl.pathname.startsWith('/api/lessons') ||
+          req.nextUrl.pathname.startsWith('/api/enrollments')
 
-        // Check if path starts with any public path
-        const isPublicPath = publicPaths.some(
-          (publicPath) =>
-            path === publicPath ||
-            path.startsWith(publicPath + "/") ||
-            path.startsWith("/blog/")
-        )
-
-        // API routes for authentication don't require auth
-        const isAuthApiRoute =
-          path.startsWith("/api/auth") ||
-          path === "/api/newsletter/subscribe"
-
-        // Allow public paths and auth API routes
-        if (isPublicPath || isAuthApiRoute) {
-          return true
+        // Allow access to protected paths only if authenticated
+        if (isProtectedPath) {
+          return isAuthenticated
         }
 
-        // All other paths require authentication
-        return !!token
+        // Allow access to public paths
+        return true
       },
     },
     pages: {
-      signIn: "/auth/signin",
+      signIn: '/auth/signin',
     },
   }
 )
 
-// Protect these routes
+// Configure which routes use this middleware
 export const config = {
   matcher: [
-    "/dashboard/:path*",
-    "/admin/:path*",
-    "/specialist/:path*",
-    "/api/audios/:path*",
-    "/api/voices/:path*",
-    "/api/projects/:path*",
-    "/api/users/:path*",
-    "/api/suno/:path*",
+    /*
+     * Match all request paths except for the ones starting with:
+     * - api/auth (NextAuth endpoints)
+     * - _next/static (static files)
+     * - _next/image (image optimization files)
+     * - favicon.ico (favicon file)
+     * - public folder
+     */
+    '/((?!api/auth|_next/static|_next/image|favicon.ico|.*\\.png$|.*\\.jpg$|.*\\.jpeg$|.*\\.gif$|.*\\.svg$).*)',
   ],
 }
