@@ -271,7 +271,7 @@ export default function TermsPage() {
       <section className="py-20 border-b-8 border-black">
         <Container maxWidth="xl">
           <div className="max-w-4xl mx-auto">
-            <div className="inline-flex items-center gap-3 px-6 py-3 bg-green-400 border-4 border-black mb-8">
+            <div className="inline-flex items-center gap-3 px-6 py-3 bg-purple-500 border-2 border-purple-200 rounded-xl mb-8">
               <RiFileTextLine className="w-6 h-6" />
               <span className="text-sm font-bold uppercase tracking-wider">Terms of Service</span>
             </div>
@@ -289,10 +289,10 @@ export default function TermsPage() {
       </section>
 
       {/* Quick Summary */}
-      <section className="py-16 bg-black border-b-8 border-green-400">
+      <section className="py-16 bg-black border-b-8 border-purple-500">
         <Container maxWidth="xl">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold uppercase mb-8 text-green-400">
+            <h2 className="text-3xl font-bold uppercase mb-8 text-purple-500">
               THE KEY POINTS
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
@@ -347,8 +347,8 @@ export default function TermsPage() {
                 <div key={sectionIndex} id={`section-${sectionIndex + 1}`}>
                   <div className="mb-8">
                     <div className="flex items-center gap-4 mb-4">
-                      <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center">
-                        <Icon className="w-6 h-6 text-green-400" />
+                      <div className="w-12 h-12 bg-black border-2 border-purple-200 rounded-xl flex items-center justify-center">
+                        <Icon className="w-6 h-6 text-purple-500" />
                       </div>
                       <h2 className="text-3xl font-bold uppercase">{section.title}</h2>
                     </div>
@@ -358,8 +358,8 @@ export default function TermsPage() {
                     {section.content.map((item, itemIndex) => (
                       <div
                         key={itemIndex}
-                        className={`p-6 border-4 border-black ${
-                          itemIndex % 2 === 0 ? "bg-white brutalist-shadow" : "bg-green-50"
+                        className={`p-6 border-2 border-purple-200 rounded-xl ${
+                          itemIndex % 2 === 0 ? "bg-white shadow-lg" : "bg-green-50"
                         }`}
                       >
                         {('subtitle' in item) && item.subtitle && (
@@ -378,8 +378,8 @@ export default function TermsPage() {
               <div key={sectionIndex + 8} id={`section-${sectionIndex + 9}`}>
                 <div className="mb-8">
                   <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center">
-                      <RiScalesLine className="w-6 h-6 text-green-400" />
+                    <div className="w-12 h-12 bg-black border-2 border-purple-200 rounded-xl flex items-center justify-center">
+                      <RiScalesLine className="w-6 h-6 text-purple-500" />
                     </div>
                     <h2 className="text-3xl font-bold uppercase">{section.title}</h2>
                   </div>
@@ -389,7 +389,7 @@ export default function TermsPage() {
                   {section.content.map((item, itemIndex) => (
                     <div
                       key={itemIndex}
-                      className="p-6 bg-green-50 border-4 border-black"
+                      className="p-6 bg-green-50 border-2 border-purple-200 rounded-xl"
                     >
                       {('subtitle' in item) && item.subtitle && (
                         <h3 className="text-lg font-bold uppercase mb-3">{item.subtitle}</h3>
@@ -405,43 +405,43 @@ export default function TermsPage() {
             <div id="section-13">
               <div className="mb-8">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center">
-                    <RiFileTextLine className="w-6 h-6 text-green-400" />
+                  <div className="w-12 h-12 bg-black border-2 border-purple-200 rounded-xl flex items-center justify-center">
+                    <RiFileTextLine className="w-6 h-6 text-purple-500" />
                   </div>
                   <h2 className="text-3xl font-bold uppercase">13. Miscellaneous</h2>
                 </div>
               </div>
 
               <div className="space-y-4">
-                <div className="p-6 bg-white border-4 border-black brutalist-shadow">
+                <div className="p-6 bg-white border-2 border-purple-200 rounded-xl shadow-lg">
                   <h3 className="text-lg font-bold uppercase mb-3">Entire Agreement</h3>
                   <p className="text-gray-700 leading-relaxed">
                     These Terms, together with our Privacy Policy and any other agreements referenced herein, constitute the entire agreement between you and Coursify regarding the Service. They supersede all prior agreements and understandings.
                   </p>
                 </div>
 
-                <div className="p-6 bg-green-50 border-4 border-black">
+                <div className="p-6 bg-green-50 border-2 border-purple-200 rounded-xl">
                   <h3 className="text-lg font-bold uppercase mb-3">Severability</h3>
                   <p className="text-gray-700 leading-relaxed">
                     If any provision of these Terms is found to be invalid or unenforceable, that provision shall be enforced to the maximum extent possible, and the remaining provisions shall remain in full force and effect.
                   </p>
                 </div>
 
-                <div className="p-6 bg-white border-4 border-black brutalist-shadow">
+                <div className="p-6 bg-white border-2 border-purple-200 rounded-xl shadow-lg">
                   <h3 className="text-lg font-bold uppercase mb-3">Waiver</h3>
                   <p className="text-gray-700 leading-relaxed">
                     No waiver of any term or provision of these Terms shall be deemed a further or continuing waiver of such term or any other term. Our failure to assert any right or provision under these Terms shall not constitute a waiver of such right or provision.
                   </p>
                 </div>
 
-                <div className="p-6 bg-green-50 border-4 border-black">
+                <div className="p-6 bg-green-50 border-2 border-purple-200 rounded-xl">
                   <h3 className="text-lg font-bold uppercase mb-3">Assignment</h3>
                   <p className="text-gray-700 leading-relaxed">
                     You may not assign or transfer these Terms or your rights and obligations hereunder without our prior written consent. We may assign these Terms to any affiliate or in connection with a merger, acquisition, or sale of assets.
                   </p>
                 </div>
 
-                <div className="p-6 bg-white border-4 border-black brutalist-shadow">
+                <div className="p-6 bg-white border-2 border-purple-200 rounded-xl shadow-lg">
                   <h3 className="text-lg font-bold uppercase mb-3">Force Majeure</h3>
                   <p className="text-gray-700 leading-relaxed">
                     We shall not be liable for any failure or delay in performance due to circumstances beyond our reasonable control, including acts of God, war, terrorism, riots, embargoes, acts of civil or military authorities, fire, floods, accidents, pandemics, strikes, or shortages of transportation, facilities, fuel, energy, labor, or materials.
@@ -454,20 +454,20 @@ export default function TermsPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-24 bg-black border-t-8 border-green-400">
+      <section className="py-24 bg-black border-t-8 border-purple-500">
         <Container maxWidth="xl">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="w-20 h-20 bg-green-400 border-4 border-green-400 flex items-center justify-center mx-auto mb-6">
+            <div className="w-20 h-20 bg-purple-500 border-4 border-purple-500 flex items-center justify-center mx-auto mb-6">
               <RiMailLine className="w-10 h-10 text-black" />
             </div>
-            <h2 className="text-4xl font-bold uppercase mb-6 text-green-400">
+            <h2 className="text-4xl font-bold uppercase mb-6 text-purple-500">
               QUESTIONS ABOUT THESE TERMS?
             </h2>
             <p className="text-xl text-white mb-8">
               If you have questions about these Terms of Service, please contact us.
             </p>
 
-            <div className="p-8 bg-white border-4 border-white brutalist-shadow-yellow">
+            <div className="p-8 bg-white border-4 border-white shadow-lg">
               <h3 className="text-2xl font-bold uppercase mb-4">CONTACT US</h3>
               <div className="space-y-3 text-left max-w-2xl mx-auto">
                 <div>
@@ -505,7 +505,7 @@ export default function TermsPage() {
                 </div>
               </div>
 
-              <div className="mt-6 pt-6 border-t-4 border-black">
+              <div className="mt-6 pt-6 border-t-2 border-purple-200">
                 <p className="text-sm text-gray-600">
                   By using Coursify, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.
                 </p>

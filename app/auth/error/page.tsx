@@ -35,13 +35,13 @@ function ErrorContent() {
         <div className="text-center mb-8">
           <Link href="/">
             <h1 className="text-4xl font-black uppercase">
-              VOICE<span className="text-green-400">CRAFT</span>
+              VOICE<span className="text-purple-500">CRAFT</span>
             </h1>
           </Link>
         </div>
 
         {/* Error Card */}
-        <div className="bg-white border-4 border-red-500 brutalist-shadow p-8">
+        <div className="bg-white border-4 border-red-500 shadow-lg p-8">
           <div className="text-center">
             <div className="w-16 h-16 bg-red-500 flex items-center justify-center mx-auto mb-6">
               <RiErrorWarningLine className="w-10 h-10 text-white" />
@@ -55,7 +55,7 @@ function ErrorContent() {
 
             <div className="space-y-4">
               <Button
-                className="w-full h-12 gap-3 bg-black text-green-400 hover:bg-gray-900 border-4 border-black font-bold uppercase"
+                className="w-full h-12 gap-3 bg-black text-purple-500 hover:bg-gray-900 border-2 border-purple-200 rounded-xl font-bold uppercase"
                 onClick={() => (window.location.href = "/auth/signin")}
               >
                 <RiArrowLeftLine className="w-5 h-5" />
@@ -65,7 +65,7 @@ function ErrorContent() {
               <Link href="/">
                 <Button
                   variant="secondary"
-                  className="w-full h-12 gap-3 bg-white text-black hover:bg-gray-100 border-4 border-black font-bold uppercase"
+                  className="w-full h-12 gap-3 bg-white text-black hover:bg-gray-100 border-2 border-purple-200 rounded-xl font-bold uppercase"
                 >
                   Back to Home
                 </Button>
@@ -80,7 +80,7 @@ function ErrorContent() {
             Need help?{" "}
             <Link
               href="/contact"
-              className="font-bold text-black hover:text-green-400 underline"
+              className="font-bold text-black hover:text-purple-500 underline"
             >
               Contact Support
             </Link>
@@ -98,7 +98,7 @@ export default function AuthErrorPage() {
         <div className="min-h-screen bg-white flex items-center justify-center">
           <div className="text-center">
             <div className="w-16 h-16 bg-black flex items-center justify-center mx-auto mb-4">
-              <RiErrorWarningLine className="w-10 h-10 text-green-400 animate-pulse" />
+              <RiErrorWarningLine className="w-10 h-10 text-purple-500 animate-pulse" />
             </div>
             <p className="text-gray-600 font-bold uppercase">Loading...</p>
           </div>

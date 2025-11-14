@@ -22,7 +22,7 @@ export default function CookiePolicyPage() {
         <Container maxWidth="2xl">
           <div className="prose prose-lg max-w-none">
             <div className="mb-8">
-              <div className="inline-flex items-center gap-3 px-6 py-3 bg-green-400 border-4 border-black mb-6">
+              <div className="inline-flex items-center gap-3 px-6 py-3 bg-purple-500 border-2 border-purple-200 rounded-xl mb-6">
                 <span className="text-sm font-bold uppercase tracking-wider">Legal</span>
               </div>
               <h1 className="text-5xl md:text-6xl font-bold uppercase mb-4 leading-tight">
@@ -57,7 +57,7 @@ export default function CookiePolicyPage() {
                 <h2 className="text-2xl font-bold uppercase mb-4 text-black">Types of Cookies We Use</h2>
 
                 <div className="space-y-6">
-                  <div className="p-6 border-4 border-black bg-green-50">
+                  <div className="p-6 border-2 border-purple-200 rounded-xl bg-green-50">
                     <h3 className="text-xl font-bold uppercase mb-3">Essential Cookies</h3>
                     <p className="mb-2"><strong>Purpose:</strong> Required for core website functionality</p>
                     <p className="mb-2"><strong>Examples:</strong></p>
@@ -69,7 +69,7 @@ export default function CookiePolicyPage() {
                     <p className="mt-2"><strong>Duration:</strong> Session or up to 1 year</p>
                   </div>
 
-                  <div className="p-6 border-4 border-black bg-white">
+                  <div className="p-6 border-2 border-purple-200 rounded-xl bg-white">
                     <h3 className="text-xl font-bold uppercase mb-3">Analytics Cookies</h3>
                     <p className="mb-2"><strong>Purpose:</strong> Help us improve our service</p>
                     <p className="mb-2"><strong>Third-party services:</strong></p>
@@ -81,7 +81,7 @@ export default function CookiePolicyPage() {
                     <p className="mt-2"><strong>Duration:</strong> Up to 2 years</p>
                   </div>
 
-                  <div className="p-6 border-4 border-black bg-green-50">
+                  <div className="p-6 border-2 border-purple-200 rounded-xl bg-green-50">
                     <h3 className="text-xl font-bold uppercase mb-3">Marketing Cookies</h3>
                     <p className="mb-2"><strong>Purpose:</strong> Personalize content and ads</p>
                     <p className="mb-2"><strong>Third-party services:</strong></p>
@@ -104,8 +104,8 @@ export default function CookiePolicyPage() {
                   <li><strong>Do Not Track:</strong> We respect Do Not Track signals from your browser</li>
                 </ul>
 
-                <div className="mt-6 p-6 border-4 border-black bg-black text-white">
-                  <h3 className="text-lg font-bold uppercase mb-3 text-green-400">Browser Cookie Settings</h3>
+                <div className="mt-6 p-6 border-2 border-purple-200 rounded-xl bg-black text-white">
+                  <h3 className="text-lg font-bold uppercase mb-3 text-purple-500">Browser Cookie Settings</h3>
                   <ul className="space-y-2 text-sm">
                     <li>Chrome: Settings → Privacy and security → Cookies and other site data</li>
                     <li>Firefox: Settings → Privacy & Security → Cookies and Site Data</li>
@@ -142,7 +142,7 @@ export default function CookiePolicyPage() {
                 <p>
                   If you have questions about our use of cookies, please contact us:
                 </p>
-                <div className="mt-4 p-6 border-4 border-black bg-white">
+                <div className="mt-4 p-6 border-2 border-purple-200 rounded-xl bg-white">
                   <p><strong>Email:</strong> support@coursify.ai</p>
                   <p><strong>Address:</strong> Coursify, Inc., 123 Voice Street, Suite 100, San Francisco, CA 94105, United States</p>
                 </div>

@@ -107,9 +107,9 @@ function SignUpForm() {
     return (
       <div className="min-h-screen bg-white flex items-center justify-center px-6 py-12">
         <div className="w-full max-w-md">
-          <div className="bg-green-400 border-4 border-black brutalist-shadow p-8 text-center">
+          <div className="bg-purple-500 border-2 border-purple-200 rounded-xl shadow-lg p-8 text-center">
             <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-4">
-              <RiCheckLine className="w-10 h-10 text-green-400" />
+              <RiCheckLine className="w-10 h-10 text-purple-500" />
             </div>
             <h2 className="text-3xl font-black uppercase mb-4">
               Welcome to Coursify!
@@ -132,7 +132,7 @@ function SignUpForm() {
         <div className="text-center mb-8">
           <Link href="/">
             <h1 className="text-4xl font-black uppercase">
-              VOICE<span className="text-green-400">CRAFT</span>
+              VOICE<span className="text-purple-500">CRAFT</span>
             </h1>
           </Link>
           <p className="text-gray-600 mt-2">Create your account</p>
@@ -140,7 +140,7 @@ function SignUpForm() {
 
         {/* Selected Plan Badge */}
         {selectedPlan === 'pro' && (
-          <div className="bg-green-400 border-4 border-black brutalist-shadow p-4 mb-6 text-center">
+          <div className="bg-purple-500 border-2 border-purple-200 rounded-xl shadow-lg p-4 mb-6 text-center">
             <p className="font-bold uppercase text-sm mb-1">Selected Plan</p>
             <p className="text-2xl font-black uppercase">PRO - 14-DAY FREE TRIAL</p>
             <p className="text-xs mt-1">No credit card required • Cancel anytime</p>
@@ -148,7 +148,7 @@ function SignUpForm() {
         )}
 
         {/* Sign Up Form */}
-        <div className="bg-white border-4 border-black brutalist-shadow p-8">
+        <div className="bg-white border-2 border-purple-200 rounded-xl shadow-lg p-8">
           <form onSubmit={handleSubmit} className="space-y-6">
             {error && (
               <div className="bg-red-100 border-4 border-red-500 p-4">
@@ -171,7 +171,7 @@ function SignUpForm() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
-                  className="pl-12 border-4 border-black h-14 text-lg"
+                  className="pl-12 border-2 border-purple-200 rounded-xl h-14 text-lg"
                   disabled={isLoading}
                 />
               </div>
@@ -190,7 +190,7 @@ function SignUpForm() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="pl-12 border-4 border-black h-14 text-lg"
+                  className="pl-12 border-2 border-purple-200 rounded-xl h-14 text-lg"
                   disabled={isLoading}
                 />
               </div>
@@ -210,7 +210,7 @@ function SignUpForm() {
                   onChange={(e) => setPassword(e.target.value)}
                   required
                   minLength={6}
-                  className="pl-12 border-4 border-black h-14 text-lg"
+                  className="pl-12 border-2 border-purple-200 rounded-xl h-14 text-lg"
                   disabled={isLoading}
                 />
               </div>
@@ -235,14 +235,14 @@ function SignUpForm() {
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
                   required
-                  className="pl-12 border-4 border-black h-14 text-lg"
+                  className="pl-12 border-2 border-purple-200 rounded-xl h-14 text-lg"
                   disabled={isLoading}
                 />
               </div>
             </div>
 
             {/* Welcome Bonus Info */}
-            <div className="bg-green-50 border-4 border-green-400 p-4">
+            <div className="bg-green-50 border-4 border-purple-500 p-4">
               <p className="text-sm font-bold text-center">
                 🎁 Get <span className="text-green-600">1000 FREE CREDITS</span> ($10) when you sign up!
               </p>
@@ -250,7 +250,7 @@ function SignUpForm() {
 
             <Button
               type="submit"
-              className="w-full h-14 text-lg gap-3 bg-black text-green-400 hover:bg-gray-900 border-4 border-black font-bold uppercase brutalist-shadow"
+              className="w-full h-14 text-lg gap-3 bg-black text-purple-500 hover:bg-gray-900 border-2 border-purple-200 rounded-xl font-bold uppercase shadow-lg"
               disabled={isLoading}
             >
               {isLoading ? "Creating Account..." : "Create Account"}
@@ -261,7 +261,7 @@ function SignUpForm() {
           {/* Divider */}
           <div className="relative my-8">
             <div className="absolute inset-0 flex items-center">
-              <div className="w-full border-t-4 border-black"></div>
+              <div className="w-full border-t-2 border-purple-200"></div>
             </div>
             <div className="relative flex justify-center">
               <span className="bg-white px-4 text-sm font-bold uppercase">
@@ -276,7 +276,7 @@ function SignUpForm() {
               Already have an account?{" "}
               <Link
                 href="/auth/signin"
-                className="font-bold text-black hover:text-green-400 underline"
+                className="font-bold text-black hover:text-purple-500 underline"
               >
                 Sign In
               </Link>
@@ -316,7 +316,7 @@ export default function SignUpPage() {
         <div className="min-h-screen bg-white flex items-center justify-center">
           <div className="text-center">
             <div className="w-16 h-16 bg-black flex items-center justify-center mx-auto mb-4 animate-pulse">
-              <RiUserLine className="w-10 h-10 text-green-400" />
+              <RiUserLine className="w-10 h-10 text-purple-500" />
             </div>
             <p className="text-gray-600 font-bold uppercase">Loading...</p>
           </div>

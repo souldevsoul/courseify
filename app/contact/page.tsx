@@ -102,7 +102,7 @@ export default function ContactPage() {
       <section className="py-20 border-b-8 border-black">
         <Container maxWidth="xl">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="inline-flex items-center gap-3 px-6 py-3 bg-green-400 border-4 border-black mb-8">
+            <div className="inline-flex items-center gap-3 px-6 py-3 bg-purple-500 border-2 border-purple-200 rounded-xl mb-8">
               <RiMailLine className="w-6 h-6" />
               <span className="text-sm font-bold uppercase tracking-wider">Contact Us</span>
             </div>
@@ -135,35 +135,35 @@ export default function ContactPage() {
                 method.color === "black"
                   ? "bg-black text-white"
                   : method.color === "yellow"
-                  ? "bg-green-400"
+                  ? "bg-purple-500"
                   : "bg-white"
               const shadowClass =
-                method.color === "black" ? "brutalist-shadow-yellow" : "brutalist-shadow"
+                method.color === "black" ? "shadow-lg" : "shadow-lg"
 
               return (
                 <div
                   key={index}
-                  className={`p-8 ${bgColor} border-4 border-black ${shadowClass}`}
+                  className={`p-8 ${bgColor} border-2 border-purple-200 rounded-xl ${shadowClass}`}
                 >
                   <div
                     className={`w-16 h-16 ${
-                      method.color === "white" ? "bg-black" : method.color === "black" ? "bg-green-400" : "bg-black"
+                      method.color === "white" ? "bg-black" : method.color === "black" ? "bg-purple-500" : "bg-black"
                     } flex items-center justify-center mb-6`}
                   >
                     <Icon
                       className={`w-8 h-8 ${
                         method.color === "white"
-                          ? "text-green-400"
+                          ? "text-purple-500"
                           : method.color === "black"
                           ? "text-black"
-                          : "text-green-400"
+                          : "text-purple-500"
                       }`}
                     />
                   </div>
 
                   <h3
                     className={`text-2xl font-bold uppercase mb-4 ${
-                      method.color === "black" ? "text-green-400" : "text-black"
+                      method.color === "black" ? "text-purple-500" : "text-black"
                     }`}
                   >
                     {method.title}
@@ -185,7 +185,7 @@ export default function ContactPage() {
                     <a
                       href={`mailto:${method.email}`}
                       className={`text-lg font-bold underline ${
-                        method.color === "black" ? "text-green-400" : "text-black"
+                        method.color === "black" ? "text-purple-500" : "text-black"
                       } hover:no-underline`}
                     >
                       {method.email}
@@ -224,7 +224,7 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div className="bg-white p-8 border-4 border-black brutalist-shadow">
+            <div className="bg-white p-8 border-2 border-purple-200 rounded-xl shadow-lg">
               <form className="space-y-6" onSubmit={(e) => { e.preventDefault(); alert("Form submission not yet implemented"); }}>
                 {/* Name */}
                 <div>
@@ -236,7 +236,7 @@ export default function ContactPage() {
                     id="name"
                     name="name"
                     required
-                    className="w-full px-4 py-3 border-4 border-black focus:outline-none focus:ring-4 focus:ring-green-400 font-medium"
+                    className="w-full px-4 py-3 border-2 border-purple-200 rounded-xl focus:outline-none focus:ring-4 focus:ring-purple-400 font-medium"
                     placeholder="John Doe"
                   />
                 </div>
@@ -251,7 +251,7 @@ export default function ContactPage() {
                     id="email"
                     name="email"
                     required
-                    className="w-full px-4 py-3 border-4 border-black focus:outline-none focus:ring-4 focus:ring-green-400 font-medium"
+                    className="w-full px-4 py-3 border-2 border-purple-200 rounded-xl focus:outline-none focus:ring-4 focus:ring-purple-400 font-medium"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -265,7 +265,7 @@ export default function ContactPage() {
                     type="text"
                     id="company"
                     name="company"
-                    className="w-full px-4 py-3 border-4 border-black focus:outline-none focus:ring-4 focus:ring-green-400 font-medium"
+                    className="w-full px-4 py-3 border-2 border-purple-200 rounded-xl focus:outline-none focus:ring-4 focus:ring-purple-400 font-medium"
                     placeholder="Acme Inc."
                   />
                 </div>
@@ -279,7 +279,7 @@ export default function ContactPage() {
                     id="subject"
                     name="subject"
                     required
-                    className="w-full px-4 py-3 border-4 border-black focus:outline-none focus:ring-4 focus:ring-green-400 font-medium bg-white"
+                    className="w-full px-4 py-3 border-2 border-purple-200 rounded-xl focus:outline-none focus:ring-4 focus:ring-purple-400 font-medium bg-white"
                   >
                     <option value="">Select a topic...</option>
                     <option value="general">General Inquiry</option>
@@ -302,7 +302,7 @@ export default function ContactPage() {
                     name="message"
                     required
                     rows={6}
-                    className="w-full px-4 py-3 border-4 border-black focus:outline-none focus:ring-4 focus:ring-green-400 font-medium resize-none"
+                    className="w-full px-4 py-3 border-2 border-purple-200 rounded-xl focus:outline-none focus:ring-4 focus:ring-purple-400 font-medium resize-none"
                     placeholder="Tell us how we can help you..."
                   />
                 </div>
@@ -311,7 +311,7 @@ export default function ContactPage() {
                 <Button
                   type="submit"
                   size="lg"
-                  className="w-full bg-green-400 text-black border-4 border-black font-bold uppercase hover:bg-purple-300"
+                  className="w-full bg-purple-500 text-black border-2 border-purple-200 rounded-xl font-bold uppercase hover:bg-purple-300"
                 >
                   <RiArrowRightLine className="w-5 h-5 mr-2" />
                   Send Message
@@ -342,13 +342,13 @@ export default function ContactPage() {
             {supportTopics.map((topic, index) => (
               <div
                 key={index}
-                className={`p-8 border-4 border-black ${
-                  index % 2 === 0 ? "bg-white brutalist-shadow" : "bg-black text-white brutalist-shadow-yellow"
+                className={`p-8 border-2 border-purple-200 rounded-xl ${
+                  index % 2 === 0 ? "bg-white shadow-lg" : "bg-black text-white shadow-lg"
                 }`}
               >
                 <h3
                   className={`text-2xl font-bold uppercase mb-6 ${
-                    index % 2 === 0 ? "text-black" : "text-green-400"
+                    index % 2 === 0 ? "text-black" : "text-purple-500"
                   }`}
                 >
                   {topic.title}
@@ -358,7 +358,7 @@ export default function ContactPage() {
                     <li key={i} className="flex items-start gap-3">
                       <RiCheckLine
                         className={`w-5 h-5 flex-shrink-0 mt-0.5 ${
-                          index % 2 === 0 ? "text-black" : "text-green-400"
+                          index % 2 === 0 ? "text-black" : "text-purple-500"
                         }`}
                       />
                       <span className={index % 2 === 0 ? "text-gray-700" : "text-white"}>
@@ -374,7 +374,7 @@ export default function ContactPage() {
       </section>
 
       {/* Quick Links */}
-      <section className="py-24 bg-green-400 border-y-8 border-black">
+      <section className="py-24 bg-purple-500 border-y-8 border-black">
         <Container maxWidth="xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold uppercase mb-4">
@@ -388,7 +388,7 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <a
               href="/pricing"
-              className="p-6 bg-white border-4 border-black brutalist-shadow text-center hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all"
+              className="p-6 bg-white border-2 border-purple-200 rounded-xl shadow-lg text-center hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all"
             >
               <RiQuestionLine className="w-12 h-12 mx-auto mb-4" />
               <h3 className="text-lg font-bold uppercase mb-2">Pricing FAQ</h3>
@@ -399,10 +399,10 @@ export default function ContactPage() {
 
             <a
               href="/demo"
-              className="p-6 bg-black text-white border-4 border-black brutalist-shadow-yellow text-center hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_rgba(234,179,8,1)] transition-all"
+              className="p-6 bg-black text-white border-2 border-purple-200 rounded-xl shadow-lg text-center hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_rgba(234,179,8,1)] transition-all"
             >
-              <RiRocketLine className="w-12 h-12 text-green-400 mx-auto mb-4" />
-              <h3 className="text-lg font-bold uppercase mb-2 text-green-400">Try Demo</h3>
+              <RiRocketLine className="w-12 h-12 text-purple-500 mx-auto mb-4" />
+              <h3 className="text-lg font-bold uppercase mb-2 text-purple-500">Try Demo</h3>
               <p className="text-sm text-white">
                 Test our voice generation before signing up
               </p>
@@ -410,7 +410,7 @@ export default function ContactPage() {
 
             <a
               href="/features"
-              className="p-6 bg-white border-4 border-black brutalist-shadow text-center hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all"
+              className="p-6 bg-white border-2 border-purple-200 rounded-xl shadow-lg text-center hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all"
             >
               <RiCustomerService2Line className="w-12 h-12 mx-auto mb-4" />
               <h3 className="text-lg font-bold uppercase mb-2">Feature Docs</h3>
@@ -423,23 +423,23 @@ export default function ContactPage() {
       </section>
 
       {/* Emergency Support */}
-      <section className="py-24 bg-black border-t-8 border-green-400">
+      <section className="py-24 bg-black border-t-8 border-purple-500">
         <Container maxWidth="xl">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold uppercase mb-6 text-green-400">
+            <h2 className="text-4xl md:text-5xl font-bold uppercase mb-6 text-purple-500">
               ENTERPRISE & URGENT SUPPORT
             </h2>
             <p className="text-xl text-white mb-8">
               Enterprise customers with SLA agreements have access to priority 24/7 support via dedicated channels.
             </p>
-            <div className="p-8 bg-white border-4 border-white brutalist-shadow-yellow">
+            <div className="p-8 bg-white border-4 border-white shadow-lg">
               <h3 className="text-2xl font-bold uppercase mb-4">ENTERPRISE CUSTOMERS</h3>
               <p className="text-gray-700 mb-6">
                 If you have an active Enterprise plan with SLA guarantee, use your dedicated support channels for immediate assistance.
               </p>
               <Button
                 size="lg"
-                className="bg-black text-green-400 border-4 border-black font-bold uppercase"
+                className="bg-black text-purple-500 border-2 border-purple-200 rounded-xl font-bold uppercase"
                 asChild
               >
                 <a href="mailto:support@coursify.ai">

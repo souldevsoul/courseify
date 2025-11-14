@@ -137,7 +137,7 @@ export default function BlogPage() {
       <section className="py-20 border-b-8 border-black">
         <Container maxWidth="xl">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="inline-flex items-center gap-3 px-6 py-3 bg-green-400 border-4 border-black mb-8">
+            <div className="inline-flex items-center gap-3 px-6 py-3 bg-purple-500 border-2 border-purple-200 rounded-xl mb-8">
               <RiArticleLine className="w-6 h-6" />
               <span className="text-sm font-bold uppercase tracking-wider">Blog</span>
             </div>
@@ -152,7 +152,7 @@ export default function BlogPage() {
       </section>
 
       {/* Category Filter */}
-      <section className="py-8 bg-black border-b-8 border-green-400">
+      <section className="py-8 bg-black border-b-8 border-purple-500">
         <Container maxWidth="xl">
           <div className="flex flex-wrap justify-center gap-4">
             {categories.map((category, index) => (
@@ -160,7 +160,7 @@ export default function BlogPage() {
                 key={index}
                 className={`px-6 py-3 font-bold uppercase text-sm border-4 ${
                   index === 0
-                    ? "bg-green-400 text-black border-green-400"
+                    ? "bg-purple-500 text-black border-purple-500"
                     : "bg-transparent text-white border-white hover:bg-white hover:text-black"
                 } transition-all`}
               >
@@ -180,19 +180,19 @@ export default function BlogPage() {
             <h2 className="text-2xl font-bold uppercase">Featured Post</h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 bg-black border-4 border-black brutalist-shadow-yellow p-8">
-            <div className="bg-green-400 border-4 border-black aspect-video flex items-center justify-center">
+          <div className="grid md:grid-cols-2 gap-8 bg-black border-2 border-purple-200 rounded-xl shadow-lg p-8">
+            <div className="bg-purple-500 border-2 border-purple-200 rounded-xl aspect-video flex items-center justify-center">
               <RiMicLine className="w-24 h-24 text-black" />
             </div>
 
             <div className="flex flex-col justify-center text-white">
-              <div className="inline-flex items-center gap-2 text-green-400 text-xs font-bold uppercase mb-3">
-                <span className="px-3 py-1 bg-green-400 text-black border-2 border-green-400">
+              <div className="inline-flex items-center gap-2 text-purple-500 text-xs font-bold uppercase mb-3">
+                <span className="px-3 py-1 bg-purple-500 text-black border-2 border-purple-500">
                   {featuredPost.category}
                 </span>
               </div>
 
-              <h3 className="text-3xl font-bold uppercase mb-4 leading-tight text-green-400">
+              <h3 className="text-3xl font-bold uppercase mb-4 leading-tight text-purple-500">
                 {featuredPost.title}
               </h3>
 
@@ -213,7 +213,7 @@ export default function BlogPage() {
 
               <Button
                 size="lg"
-                className="bg-green-400 text-black border-4 border-green-400 font-bold uppercase w-fit"
+                className="bg-purple-500 text-black border-4 border-purple-500 font-bold uppercase w-fit"
               >
                 Read Article
                 <RiArrowRightLine className="w-5 h-5 ml-2" />
@@ -237,8 +237,8 @@ export default function BlogPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post, index) => {
-              const bgColors = ["bg-white", "bg-black", "bg-green-400"]
-              const textColors = ["text-black", "text-green-400", "text-black"]
+              const bgColors = ["bg-white", "bg-black", "bg-purple-500"]
+              const textColors = ["text-black", "text-purple-500", "text-black"]
               const excerptColors = ["text-gray-700", "text-white", "text-gray-900"]
               const metaColors = ["text-gray-600", "text-gray-300", "text-gray-700"]
               const colorIndex = index % 3
@@ -254,19 +254,19 @@ export default function BlogPage() {
               return (
                 <div
                   key={index}
-                  className={`${bgColors[colorIndex]} border-4 border-black ${
-                    colorIndex === 1 ? "brutalist-shadow-yellow" : "brutalist-shadow"
+                  className={`${bgColors[colorIndex]} border-2 border-purple-200 rounded-xl ${
+                    colorIndex === 1 ? "shadow-lg" : "shadow-lg"
                   } overflow-hidden flex flex-col`}
                 >
                   {/* Image Placeholder */}
                   <div
                     className={`h-48 ${
-                      colorIndex === 1 ? "bg-green-400" : colorIndex === 2 ? "bg-black" : "bg-gray-200"
-                    } border-b-4 border-black flex items-center justify-center`}
+                      colorIndex === 1 ? "bg-purple-500" : colorIndex === 2 ? "bg-black" : "bg-gray-200"
+                    } border-b-2 border-purple-200 flex items-center justify-center`}
                   >
                     <RiArticleLine
                       className={`w-16 h-16 ${
-                        colorIndex === 1 ? "text-black" : colorIndex === 2 ? "text-green-400" : "text-gray-400"
+                        colorIndex === 1 ? "text-black" : colorIndex === 2 ? "text-purple-500" : "text-gray-400"
                       }`}
                     />
                   </div>
@@ -277,10 +277,10 @@ export default function BlogPage() {
                       <span
                         className={`text-xs font-bold uppercase px-3 py-1 ${
                           colorIndex === 1
-                            ? "bg-green-400 text-black"
+                            ? "bg-purple-500 text-black"
                             : colorIndex === 2
-                            ? "bg-black text-green-400"
-                            : "bg-black text-green-400"
+                            ? "bg-black text-purple-500"
+                            : "bg-black text-purple-500"
                         }`}
                       >
                         {post.category}
@@ -288,7 +288,7 @@ export default function BlogPage() {
                       <div className="flex items-center gap-1">
                         <TagIcon
                           className={`w-4 h-4 ${
-                            colorIndex === 1 ? "text-green-400" : "text-black"
+                            colorIndex === 1 ? "text-purple-500" : "text-black"
                           }`}
                         />
                         <span
@@ -327,10 +327,10 @@ export default function BlogPage() {
                     <button
                       className={`w-full py-3 font-bold uppercase text-sm border-4 ${
                         colorIndex === 1
-                          ? "bg-green-400 text-black border-green-400 hover:bg-purple-300"
+                          ? "bg-purple-500 text-black border-purple-500 hover:bg-purple-300"
                           : colorIndex === 2
-                          ? "bg-black text-green-400 border-black hover:bg-gray-900"
-                          : "bg-black text-green-400 border-black hover:bg-gray-900"
+                          ? "bg-black text-purple-500 border-black hover:bg-gray-900"
+                          : "bg-black text-purple-500 border-black hover:bg-gray-900"
                       } transition-all`}
                     >
                       Read More →
@@ -346,7 +346,7 @@ export default function BlogPage() {
             <Button
               size="xl"
               variant="outline"
-              className="gap-3 bg-white text-black border-4 border-black font-bold uppercase brutalist-shadow"
+              className="gap-3 bg-white text-black border-2 border-purple-200 rounded-xl font-bold uppercase shadow-lg"
             >
               Load More Articles
               <RiArrowRightLine className="w-5 h-5" />
@@ -356,10 +356,10 @@ export default function BlogPage() {
       </section>
 
       {/* Newsletter CTA */}
-      <section className="py-24 bg-black border-y-8 border-green-400">
+      <section className="py-24 bg-black border-y-8 border-purple-500">
         <Container maxWidth="xl">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold uppercase mb-6 text-green-400">
+            <h2 className="text-4xl md:text-5xl font-bold uppercase mb-6 text-purple-500">
               STAY UPDATED
             </h2>
             <p className="text-xl text-white mb-8">
@@ -370,11 +370,11 @@ export default function BlogPage() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-6 py-4 border-4 border-white font-medium text-lg focus:outline-none focus:ring-4 focus:ring-green-400"
+                className="flex-1 px-6 py-4 border-4 border-white font-medium text-lg focus:outline-none focus:ring-4 focus:ring-purple-400"
               />
               <Button
                 size="lg"
-                className="bg-green-400 text-black border-4 border-green-400 font-bold uppercase px-8 whitespace-nowrap"
+                className="bg-purple-500 text-black border-4 border-purple-500 font-bold uppercase px-8 whitespace-nowrap"
               >
                 Subscribe
                 <RiArrowRightLine className="w-5 h-5 ml-2" />
@@ -383,7 +383,7 @@ export default function BlogPage() {
 
             <p className="text-sm text-gray-400 mt-4">
               No spam. Unsubscribe anytime. Read our{" "}
-              <a href="/privacy" className="text-green-400 underline hover:no-underline">
+              <a href="/privacy" className="text-purple-500 underline hover:no-underline">
                 Privacy Policy
               </a>
             </p>

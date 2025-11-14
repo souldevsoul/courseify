@@ -39,70 +39,64 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 
     const sizeConfig = sizeMap[size]
 
-    // Custom variant styles - Brutalist Black/White/Yellow
+    // Custom variant styles - Coursify Purple/Pink Gradients
     const variantStyles = {
       primary: {
         variant: 'filled' as const,
-        color: 'yellow',
+        color: 'pink',
         style: {
-          backgroundColor: '#EAB308',
-          color: '#000000',
-          borderWidth: 4,
-          borderColor: '#000000',
+          background: 'linear-gradient(135deg, #A855F7 0%, #EC4899 100%)',
+          color: '#FFFFFF',
+          borderWidth: 0,
           fontWeight: 700,
-          textTransform: 'uppercase' as const,
+          boxShadow: '0 4px 14px 0 rgba(236, 72, 153, 0.39)',
         },
       },
       secondary: {
-        variant: 'outline' as const,
-        color: 'dark',
+        variant: 'light' as const,
+        color: 'pink',
         style: {
-          borderWidth: 4,
-          borderColor: '#000000',
-          color: '#000000',
-          backgroundColor: '#FFFFFF',
+          borderWidth: 2,
+          borderColor: '#EC4899',
+          color: '#EC4899',
+          backgroundColor: 'rgba(236, 72, 153, 0.1)',
           fontWeight: 700,
-          textTransform: 'uppercase' as const,
         },
       },
       outline: {
         variant: 'outline' as const,
-        color: 'dark',
+        color: 'pink',
         style: {
-          borderWidth: 4,
-          borderColor: '#000000',
-          color: '#000000',
+          borderWidth: 2,
+          borderColor: '#EC4899',
+          color: '#EC4899',
           fontWeight: 700,
-          textTransform: 'uppercase' as const,
         },
       },
       ghost: {
         variant: 'subtle' as const,
-        color: 'dark',
+        color: 'gray',
         style: {
-          borderWidth: 4,
-          borderColor: 'transparent',
-          fontWeight: 700,
-          textTransform: 'uppercase' as const,
+          borderWidth: 0,
+          fontWeight: 600,
         },
       },
       destructive: {
         variant: 'filled' as const,
         color: 'red',
         style: {
-          borderWidth: 4,
-          borderColor: '#000000',
+          borderWidth: 0,
           fontWeight: 700,
-          textTransform: 'uppercase' as const,
+          boxShadow: '0 4px 14px 0 rgba(239, 68, 68, 0.39)',
         },
       },
       link: {
         variant: 'transparent' as const,
-        color: 'dark',
+        color: 'pink',
         style: {
           textDecoration: 'underline',
           textUnderlineOffset: 4,
-          fontWeight: 700,
+          fontWeight: 600,
         },
       },
     }
@@ -115,8 +109,8 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         className: cn(
           "inline-flex items-center justify-center gap-2 font-bold transition-all duration-200",
           "hover:scale-[1.02] active:scale-[0.98]",
-          "focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-green-400 focus-visible:ring-offset-2",
-          variant === 'primary' && "bg-green-400 text-black border-4 border-black uppercase",
+          "focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-purple-400 focus-visible:ring-offset-2",
+          variant === 'primary' && "bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg",
           className,
           (children as any).props.className
         ),
@@ -144,8 +138,8 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
           "font-bold transition-all duration-200",
           // Hover effects
           "hover:scale-[1.02] active:scale-[0.98]",
-          // Focus styles - Yellow ring for brutalist design
-          "focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-green-400 focus-visible:ring-offset-2",
+          // Focus styles - Purple ring for Coursify design
+          "focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-purple-400 focus-visible:ring-offset-2",
           className
         )}
         styles={{

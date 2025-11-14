@@ -27,7 +27,7 @@ export default function DemoPage() {
           {/* Back to Home Link */}
           <a
             href="/"
-            className="inline-flex items-center gap-2 text-sm font-bold uppercase text-gray-700 hover:text-green-400 transition-colors mb-8"
+            className="inline-flex items-center gap-2 text-sm font-bold uppercase text-gray-700 hover:text-purple-500 transition-colors mb-8"
           >
             <ArrowLeft className="w-4 h-4" />
             Back to Home
@@ -35,7 +35,7 @@ export default function DemoPage() {
 
           {/* Page Header */}
           <div className="mb-12">
-            <div className="inline-flex items-center gap-3 px-6 py-3 bg-green-400 border-4 border-black mb-6">
+            <div className="inline-flex items-center gap-3 px-6 py-3 bg-purple-500 border-2 border-purple-200 rounded-xl mb-6">
               <span className="text-sm font-bold uppercase tracking-wider">Live Demo</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold uppercase mb-6 leading-tight">
@@ -59,8 +59,8 @@ export default function DemoPage() {
           {/* Info Cards */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Card 1 */}
-            <div className="p-6 border-4 border-black bg-green-50 brutalist-shadow">
-              <div className="w-10 h-10 bg-green-400 border-2 border-black flex items-center justify-center mb-4">
+            <div className="p-6 border-2 border-purple-200 rounded-xl bg-green-50 shadow-lg">
+              <div className="w-10 h-10 bg-purple-500 border-2 border-black flex items-center justify-center mb-4">
                 <span className="text-xl font-bold">1</span>
               </div>
               <h3 className="text-lg font-bold uppercase mb-2">Enter Text</h3>
@@ -70,7 +70,7 @@ export default function DemoPage() {
             </div>
 
             {/* Card 2 */}
-            <div className="p-6 border-4 border-black bg-white brutalist-shadow">
+            <div className="p-6 border-2 border-purple-200 rounded-xl bg-white shadow-lg">
               <div className="w-10 h-10 bg-black text-white border-2 border-black flex items-center justify-center mb-4">
                 <span className="text-xl font-bold">2</span>
               </div>
@@ -81,8 +81,8 @@ export default function DemoPage() {
             </div>
 
             {/* Card 3 */}
-            <div className="p-6 border-4 border-black bg-green-50 brutalist-shadow">
-              <div className="w-10 h-10 bg-green-400 border-2 border-black flex items-center justify-center mb-4">
+            <div className="p-6 border-2 border-purple-200 rounded-xl bg-green-50 shadow-lg">
+              <div className="w-10 h-10 bg-purple-500 border-2 border-black flex items-center justify-center mb-4">
                 <span className="text-xl font-bold">3</span>
               </div>
               <h3 className="text-lg font-bold uppercase mb-2">Generate & Download</h3>
@@ -93,11 +93,11 @@ export default function DemoPage() {
           </div>
 
           {/* Features List */}
-          <div className="mt-12 p-8 border-4 border-black bg-black text-white brutalist-shadow-yellow">
-            <h2 className="text-3xl font-bold uppercase mb-6 text-green-400">What You Can Do</h2>
+          <div className="mt-12 p-8 border-2 border-purple-200 rounded-xl bg-black text-white shadow-lg">
+            <h2 className="text-3xl font-bold uppercase mb-6 text-purple-500">What You Can Do</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="flex items-start gap-3">
-                <div className="w-6 h-6 bg-green-400 border-2 border-green-400 flex-shrink-0 mt-0.5" />
+                <div className="w-6 h-6 bg-purple-500 border-2 border-purple-500 flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-bold uppercase mb-1">Multiple Emotions</h4>
                   <p className="text-sm text-gray-300">
@@ -107,7 +107,7 @@ export default function DemoPage() {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="w-6 h-6 bg-green-400 border-2 border-green-400 flex-shrink-0 mt-0.5" />
+                <div className="w-6 h-6 bg-purple-500 border-2 border-purple-500 flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-bold uppercase mb-1">Speed Control</h4>
                   <p className="text-sm text-gray-300">
@@ -117,7 +117,7 @@ export default function DemoPage() {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="w-6 h-6 bg-green-400 border-2 border-green-400 flex-shrink-0 mt-0.5" />
+                <div className="w-6 h-6 bg-purple-500 border-2 border-purple-500 flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-bold uppercase mb-1">Pitch Adjustment</h4>
                   <p className="text-sm text-gray-300">
@@ -127,7 +127,7 @@ export default function DemoPage() {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="w-6 h-6 bg-green-400 border-2 border-green-400 flex-shrink-0 mt-0.5" />
+                <div className="w-6 h-6 bg-purple-500 border-2 border-purple-500 flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-bold uppercase mb-1">High-Quality Output</h4>
                   <p className="text-sm text-gray-300">
@@ -148,7 +148,7 @@ export default function DemoPage() {
             </p>
             <a
               href="/signup"
-              className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold uppercase bg-green-400 text-black border-4 border-black hover:bg-purple-300 transition-all hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]"
+              className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold uppercase bg-purple-500 text-black border-2 border-purple-200 rounded-xl hover:bg-purple-300 transition-all hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]"
             >
               Create Free Account
             </a>

@@ -27,7 +27,7 @@ export default function PaymentPolicyPage() {
       <section className="py-20 border-b-8 border-black">
         <Container maxWidth="xl">
           <div className="max-w-4xl mx-auto">
-            <div className="inline-flex items-center gap-3 px-6 py-3 bg-green-400 border-4 border-black mb-8">
+            <div className="inline-flex items-center gap-3 px-6 py-3 bg-purple-500 border-2 border-purple-200 rounded-xl mb-8">
               <RiSecurePaymentLine className="w-6 h-6" />
               <span className="text-sm font-bold uppercase tracking-wider">Payment Policy</span>
             </div>
@@ -50,14 +50,14 @@ export default function PaymentPolicyPage() {
             {/* Payment Methods */}
             <div>
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center">
-                  <RiSecurePaymentLine className="w-6 h-6 text-green-400" />
+                <div className="w-12 h-12 bg-black border-2 border-purple-200 rounded-xl flex items-center justify-center">
+                  <RiSecurePaymentLine className="w-6 h-6 text-purple-500" />
                 </div>
                 <h2 className="text-3xl font-bold uppercase">1. Accepted Payment Methods</h2>
               </div>
 
               <div className="space-y-4">
-                <div className="p-6 bg-white border-4 border-black brutalist-shadow">
+                <div className="p-6 bg-white border-2 border-purple-200 rounded-xl shadow-lg">
                   <h3 className="text-lg font-bold uppercase mb-4">Credit & Debit Cards</h3>
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-4">
                     <div className="bg-white p-3 border-2 border-black flex items-center justify-center">
@@ -78,7 +78,7 @@ export default function PaymentPolicyPage() {
                   </p>
                 </div>
 
-                <div className="p-6 bg-green-50 border-4 border-black">
+                <div className="p-6 bg-green-50 border-2 border-purple-200 rounded-xl">
                   <h3 className="text-lg font-bold uppercase mb-3">Payment Processor</h3>
                   <p className="text-gray-700 leading-relaxed">
                     All payments are processed securely through Stripe, a PCI DSS Level 1 compliant payment processor. Coursify does not store your complete credit card information on our servers.
@@ -90,14 +90,14 @@ export default function PaymentPolicyPage() {
             {/* Billing */}
             <div>
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center">
-                  <RiMoneyDollarCircleLine className="w-6 h-6 text-green-400" />
+                <div className="w-12 h-12 bg-black border-2 border-purple-200 rounded-xl flex items-center justify-center">
+                  <RiMoneyDollarCircleLine className="w-6 h-6 text-purple-500" />
                 </div>
                 <h2 className="text-3xl font-bold uppercase">2. Billing & Charges</h2>
               </div>
 
               <div className="space-y-4">
-                <div className="p-6 bg-white border-4 border-black brutalist-shadow">
+                <div className="p-6 bg-white border-2 border-purple-200 rounded-xl shadow-lg">
                   <h3 className="text-lg font-bold uppercase mb-3">Subscription Billing</h3>
                   <ul className="space-y-3 text-gray-700">
                     <li className="flex items-start gap-2">
@@ -119,7 +119,7 @@ export default function PaymentPolicyPage() {
                   </ul>
                 </div>
 
-                <div className="p-6 bg-green-50 border-4 border-black">
+                <div className="p-6 bg-green-50 border-2 border-purple-200 rounded-xl">
                   <h3 className="text-lg font-bold uppercase mb-3">Currency & Pricing</h3>
                   <p className="text-gray-700 leading-relaxed mb-3">
                     <span className="font-bold">Primary Currency:</span> United States Dollar (USD)
@@ -132,8 +132,8 @@ export default function PaymentPolicyPage() {
                   </p>
                 </div>
 
-                <div className="p-6 bg-black text-white border-4 border-black brutalist-shadow-yellow">
-                  <h3 className="text-lg font-bold uppercase mb-3 text-green-400">No Minimum or Maximum Transaction Amounts</h3>
+                <div className="p-6 bg-black text-white border-2 border-purple-200 rounded-xl shadow-lg">
+                  <h3 className="text-lg font-bold uppercase mb-3 text-purple-500">No Minimum or Maximum Transaction Amounts</h3>
                   <p className="leading-relaxed">
                     In compliance with Visa and Mastercard regulations, we do not impose minimum or maximum transaction amounts for card payments. All subscription tiers are available regardless of payment amount.
                   </p>
@@ -144,14 +144,14 @@ export default function PaymentPolicyPage() {
             {/* Security */}
             <div>
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center">
-                  <RiShieldCheckLine className="w-6 h-6 text-green-400" />
+                <div className="w-12 h-12 bg-black border-2 border-purple-200 rounded-xl flex items-center justify-center">
+                  <RiShieldCheckLine className="w-6 h-6 text-purple-500" />
                 </div>
                 <h2 className="text-3xl font-bold uppercase">3. Payment Security</h2>
               </div>
 
               <div className="space-y-4">
-                <div className="p-6 bg-white border-4 border-black brutalist-shadow">
+                <div className="p-6 bg-white border-2 border-purple-200 rounded-xl shadow-lg">
                   <h3 className="text-lg font-bold uppercase mb-3">PCI DSS Compliance</h3>
                   <ul className="space-y-3 text-gray-700">
                     <li className="flex items-start gap-2">
@@ -177,7 +177,7 @@ export default function PaymentPolicyPage() {
                   </ul>
                 </div>
 
-                <div className="p-6 bg-green-50 border-4 border-black">
+                <div className="p-6 bg-green-50 border-2 border-purple-200 rounded-xl">
                   <h3 className="text-lg font-bold uppercase mb-3">What We Store</h3>
                   <p className="text-gray-700 leading-relaxed mb-3">
                     For your convenience, we store:
@@ -210,14 +210,14 @@ export default function PaymentPolicyPage() {
             {/* Failed Payments */}
             <div>
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center">
-                  <RiAlertLine className="w-6 h-6 text-green-400" />
+                <div className="w-12 h-12 bg-black border-2 border-purple-200 rounded-xl flex items-center justify-center">
+                  <RiAlertLine className="w-6 h-6 text-purple-500" />
                 </div>
                 <h2 className="text-3xl font-bold uppercase">4. Failed Payments & Retries</h2>
               </div>
 
               <div className="space-y-4">
-                <div className="p-6 bg-white border-4 border-black brutalist-shadow">
+                <div className="p-6 bg-white border-2 border-purple-200 rounded-xl shadow-lg">
                   <h3 className="text-lg font-bold uppercase mb-3">Automatic Retry</h3>
                   <p className="text-gray-700 leading-relaxed mb-3">
                     If a payment fails, we will automatically retry up to 3 times over 7 days:
@@ -238,15 +238,15 @@ export default function PaymentPolicyPage() {
                   </ul>
                 </div>
 
-                <div className="p-6 bg-green-50 border-4 border-black">
+                <div className="p-6 bg-green-50 border-2 border-purple-200 rounded-xl">
                   <h3 className="text-lg font-bold uppercase mb-3">Account Suspension</h3>
                   <p className="text-gray-700 leading-relaxed">
                     If all retry attempts fail, your subscription will be suspended. You can reactivate by updating your payment method. No data is deleted during suspension.
                   </p>
                 </div>
 
-                <div className="p-6 bg-black text-white border-4 border-black brutalist-shadow-yellow">
-                  <h3 className="text-lg font-bold uppercase mb-3 text-green-400">Email Notifications</h3>
+                <div className="p-6 bg-black text-white border-2 border-purple-200 rounded-xl shadow-lg">
+                  <h3 className="text-lg font-bold uppercase mb-3 text-purple-500">Email Notifications</h3>
                   <p className="leading-relaxed">
                     We will email you immediately when a payment fails and before each retry attempt. Please update your payment information promptly to avoid service interruption.
                   </p>
@@ -256,7 +256,7 @@ export default function PaymentPolicyPage() {
 
             {/* Taxes */}
             <div>
-              <div className="p-8 bg-green-400 border-4 border-black brutalist-shadow">
+              <div className="p-8 bg-purple-500 border-2 border-purple-200 rounded-xl shadow-lg">
                 <h2 className="text-2xl font-bold uppercase mb-4">TAXES & VAT</h2>
                 <p className="text-gray-900 leading-relaxed mb-4">
                   <span className="font-bold">Prices are exclusive of taxes.</span> Depending on your location, applicable taxes (VAT, GST, sales tax) may be added to your invoice.
@@ -272,8 +272,8 @@ export default function PaymentPolicyPage() {
 
             {/* Disputes */}
             <div>
-              <div className="p-6 bg-black text-white border-4 border-black brutalist-shadow-yellow">
-                <h2 className="text-2xl font-bold uppercase mb-4 text-green-400">
+              <div className="p-6 bg-black text-white border-2 border-purple-200 rounded-xl shadow-lg">
+                <h2 className="text-2xl font-bold uppercase mb-4 text-purple-500">
                   PAYMENT DISPUTES & CHARGEBACKS
                 </h2>
                 <p className="leading-relaxed mb-4">
@@ -290,7 +290,7 @@ export default function PaymentPolicyPage() {
 
             {/* Invoice */}
             <div>
-              <div className="p-6 bg-white border-4 border-black brutalist-shadow">
+              <div className="p-6 bg-white border-2 border-purple-200 rounded-xl shadow-lg">
                 <h2 className="text-2xl font-bold uppercase mb-4">INVOICES & RECEIPTS</h2>
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex items-start gap-2">
@@ -315,7 +315,7 @@ export default function PaymentPolicyPage() {
 
             {/* Contact */}
             <div>
-              <div className="p-8 bg-green-50 border-4 border-black text-center">
+              <div className="p-8 bg-green-50 border-2 border-purple-200 rounded-xl text-center">
                 <h2 className="text-2xl font-bold uppercase mb-4">PAYMENT QUESTIONS?</h2>
                 <p className="text-gray-700 mb-6">
                   Contact our billing team for payment-related inquiries

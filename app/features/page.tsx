@@ -214,7 +214,7 @@ export default function FeaturesPage() {
       <section className="py-20 border-b-8 border-black">
         <Container maxWidth="xl">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="inline-flex items-center gap-3 px-6 py-3 bg-green-400 border-4 border-black mb-8">
+            <div className="inline-flex items-center gap-3 px-6 py-3 bg-purple-500 border-2 border-purple-200 rounded-xl mb-8">
               <RiSparklingLine className="w-6 h-6" />
               <span className="text-sm font-bold uppercase tracking-wider">Features</span>
             </div>
@@ -227,7 +227,7 @@ export default function FeaturesPage() {
             <div className="flex flex-wrap justify-center gap-4">
               <Button
                 size="lg"
-                className="gap-3 bg-black text-green-400 border-4 border-black font-bold uppercase"
+                className="gap-3 bg-black text-purple-500 border-2 border-purple-200 rounded-xl font-bold uppercase"
               >
                 <RiArrowRightLine className="w-5 h-5" />
                 Start Free Trial
@@ -235,7 +235,7 @@ export default function FeaturesPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="gap-3 border-4 border-black font-bold uppercase"
+                className="gap-3 border-2 border-purple-200 rounded-xl font-bold uppercase"
               >
                 View Pricing
               </Button>
@@ -245,23 +245,23 @@ export default function FeaturesPage() {
       </section>
 
       {/* Model Stats */}
-      <section className="py-16 bg-black border-b-8 border-green-400">
+      <section className="py-16 bg-black border-b-8 border-purple-500">
         <Container maxWidth="xl">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-5xl font-bold text-green-400 mb-2 uppercase">56.7M+</div>
+              <div className="text-5xl font-bold text-purple-500 mb-2 uppercase">56.7M+</div>
               <div className="text-sm font-bold text-white uppercase tracking-wider">Kokoro Runs</div>
             </div>
             <div>
-              <div className="text-5xl font-bold text-green-400 mb-2 uppercase">50+</div>
+              <div className="text-5xl font-bold text-purple-500 mb-2 uppercase">50+</div>
               <div className="text-sm font-bold text-white uppercase tracking-wider">Languages</div>
             </div>
             <div>
-              <div className="text-5xl font-bold text-green-400 mb-2 uppercase">300+</div>
+              <div className="text-5xl font-bold text-purple-500 mb-2 uppercase">300+</div>
               <div className="text-sm font-bold text-white uppercase tracking-wider">Voices</div>
             </div>
             <div>
-              <div className="text-5xl font-bold text-green-400 mb-2 uppercase">48kHz</div>
+              <div className="text-5xl font-bold text-purple-500 mb-2 uppercase">48kHz</div>
               <div className="text-sm font-bold text-white uppercase tracking-wider">Audio Quality</div>
             </div>
           </div>
@@ -274,20 +274,20 @@ export default function FeaturesPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {mainFeatures.map((feature, index) => {
               const Icon = feature.icon
-              const bgColors = ["bg-white", "bg-black", "bg-green-400"]
-              const textColors = ["text-black", "text-green-400", "text-black"]
+              const bgColors = ["bg-white", "bg-black", "bg-purple-500"]
+              const textColors = ["text-black", "text-purple-500", "text-black"]
               const subtitleColors = ["text-gray-600", "text-white", "text-gray-900"]
               const colorIndex = index % 3
 
               return (
                 <div
                   key={index}
-                  className={`p-8 ${bgColors[colorIndex]} border-4 border-black ${
-                    colorIndex === 1 ? "brutalist-shadow-yellow" : "brutalist-shadow"
+                  className={`p-8 ${bgColors[colorIndex]} border-2 border-purple-200 rounded-xl ${
+                    colorIndex === 1 ? "shadow-lg" : "shadow-lg"
                   }`}
                 >
-                  <div className={`w-16 h-16 ${colorIndex === 1 ? "bg-green-400" : "bg-black"} flex items-center justify-center mb-6`}>
-                    <Icon className={`w-8 h-8 ${colorIndex === 1 ? "text-black" : "text-green-400"}`} />
+                  <div className={`w-16 h-16 ${colorIndex === 1 ? "bg-purple-500" : "bg-black"} flex items-center justify-center mb-6`}>
+                    <Icon className={`w-8 h-8 ${colorIndex === 1 ? "text-black" : "text-purple-500"}`} />
                   </div>
 
                   <h3 className={`text-2xl font-bold uppercase mb-2 ${textColors[colorIndex]}`}>
@@ -305,7 +305,7 @@ export default function FeaturesPage() {
                   <ul className="space-y-2">
                     {feature.features.map((item, i) => (
                       <li key={i} className="flex items-start gap-2">
-                        <RiCheckDoubleLine className={`w-5 h-5 flex-shrink-0 ${colorIndex === 1 ? "text-green-400" : "text-black"}`} />
+                        <RiCheckDoubleLine className={`w-5 h-5 flex-shrink-0 ${colorIndex === 1 ? "text-purple-500" : "text-black"}`} />
                         <span className={`text-sm ${colorIndex === 1 ? "text-white" : "text-gray-700"}`}>
                           {item}
                         </span>
@@ -320,12 +320,12 @@ export default function FeaturesPage() {
       </section>
 
       {/* Model Comparison CTA */}
-      <section className="py-24 bg-green-400 border-y-8 border-black">
+      <section className="py-24 bg-purple-500 border-y-8 border-black">
         <Container maxWidth="xl">
           <div className="text-center max-w-3xl mx-auto">
-            <div className="inline-flex items-center gap-3 px-6 py-3 bg-black border-4 border-black mb-8">
-              <RiSoundModuleLine className="w-6 h-6 text-green-400" />
-              <span className="text-sm font-bold uppercase tracking-wider text-green-400">Multiple Models</span>
+            <div className="inline-flex items-center gap-3 px-6 py-3 bg-black border-2 border-purple-200 rounded-xl mb-8">
+              <RiSoundModuleLine className="w-6 h-6 text-purple-500" />
+              <span className="text-sm font-bold uppercase tracking-wider text-purple-500">Multiple Models</span>
             </div>
             <h2 className="text-5xl font-bold uppercase mb-6 text-black">
               CHOOSE THE RIGHT MODEL FOR YOUR NEEDS
@@ -335,7 +335,7 @@ export default function FeaturesPage() {
             </p>
             <Button
               size="xl"
-              className="gap-3 bg-black text-green-400 border-4 border-black font-bold uppercase brutalist-shadow"
+              className="gap-3 bg-black text-purple-500 border-2 border-purple-200 rounded-xl font-bold uppercase shadow-lg"
             >
               <RiArrowRightLine className="w-5 h-5" />
               Compare Models
@@ -345,10 +345,10 @@ export default function FeaturesPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 bg-black border-t-8 border-green-400">
+      <section className="py-24 bg-black border-t-8 border-purple-500">
         <Container maxWidth="xl">
           <div className="text-center max-w-4xl mx-auto">
-            <h2 className="text-5xl md:text-6xl font-bold uppercase mb-6 text-green-400">
+            <h2 className="text-5xl md:text-6xl font-bold uppercase mb-6 text-purple-500">
               READY TO GET STARTED?
             </h2>
             <p className="text-xl text-white mb-12">
@@ -357,7 +357,7 @@ export default function FeaturesPage() {
             <div className="flex flex-wrap justify-center gap-4">
               <Button
                 size="xl"
-                className="gap-3 bg-green-400 text-black border-4 border-green-400 font-bold uppercase"
+                className="gap-3 bg-purple-500 text-black border-4 border-purple-500 font-bold uppercase"
               >
                 <RiArrowRightLine className="w-5 h-5" />
                 Start Free Trial

@@ -196,7 +196,7 @@ export default function PrivacyPage() {
       <section className="py-20 border-b-8 border-black">
         <Container maxWidth="xl">
           <div className="max-w-4xl mx-auto">
-            <div className="inline-flex items-center gap-3 px-6 py-3 bg-green-400 border-4 border-black mb-8">
+            <div className="inline-flex items-center gap-3 px-6 py-3 bg-purple-500 border-2 border-purple-200 rounded-xl mb-8">
               <RiShieldCheckLine className="w-6 h-6" />
               <span className="text-sm font-bold uppercase tracking-wider">Privacy Policy</span>
             </div>
@@ -214,10 +214,10 @@ export default function PrivacyPage() {
       </section>
 
       {/* Quick Summary */}
-      <section className="py-16 bg-black border-b-8 border-green-400">
+      <section className="py-16 bg-black border-b-8 border-purple-500">
         <Container maxWidth="xl">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold uppercase mb-8 text-green-400">
+            <h2 className="text-3xl font-bold uppercase mb-8 text-purple-500">
               THE SHORT VERSION
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
@@ -260,8 +260,8 @@ export default function PrivacyPage() {
                 <div key={sectionIndex} id={`section-${sectionIndex + 1}`}>
                   <div className="mb-8">
                     <div className="flex items-center gap-4 mb-4">
-                      <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center">
-                        <Icon className="w-6 h-6 text-green-400" />
+                      <div className="w-12 h-12 bg-black border-2 border-purple-200 rounded-xl flex items-center justify-center">
+                        <Icon className="w-6 h-6 text-purple-500" />
                       </div>
                       <h2 className="text-3xl font-bold uppercase">{section.title}</h2>
                     </div>
@@ -271,8 +271,8 @@ export default function PrivacyPage() {
                     {section.content.map((item, itemIndex) => (
                       <div
                         key={itemIndex}
-                        className={`p-6 border-4 border-black ${
-                          itemIndex % 2 === 0 ? "bg-white brutalist-shadow" : "bg-green-50"
+                        className={`p-6 border-2 border-purple-200 rounded-xl ${
+                          itemIndex % 2 === 0 ? "bg-white shadow-lg" : "bg-green-50"
                         }`}
                       >
                         <h3 className="text-lg font-bold uppercase mb-3">{item.subtitle}</h3>
@@ -288,14 +288,14 @@ export default function PrivacyPage() {
             <div id="section-8">
               <div className="mb-8">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center">
-                    <RiGlobalLine className="w-6 h-6 text-green-400" />
+                  <div className="w-12 h-12 bg-black border-2 border-purple-200 rounded-xl flex items-center justify-center">
+                    <RiGlobalLine className="w-6 h-6 text-purple-500" />
                   </div>
                   <h2 className="text-3xl font-bold uppercase">8. International Data Transfers</h2>
                 </div>
               </div>
 
-              <div className="p-6 bg-white border-4 border-black brutalist-shadow">
+              <div className="p-6 bg-white border-2 border-purple-200 rounded-xl shadow-lg">
                 <p className="text-gray-700 leading-relaxed mb-4">
                   Coursify is based in the United States. If you access our services from outside the US, your information will be transferred to, stored, and processed in the United States and other countries where our service providers operate.
                 </p>
@@ -311,14 +311,14 @@ export default function PrivacyPage() {
             <div id="section-9">
               <div className="mb-8">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center">
-                    <RiUserLine className="w-6 h-6 text-green-400" />
+                  <div className="w-12 h-12 bg-black border-2 border-purple-200 rounded-xl flex items-center justify-center">
+                    <RiUserLine className="w-6 h-6 text-purple-500" />
                   </div>
                   <h2 className="text-3xl font-bold uppercase">9. Children's Privacy</h2>
                 </div>
               </div>
 
-              <div className="p-6 bg-white border-4 border-black brutalist-shadow">
+              <div className="p-6 bg-white border-2 border-purple-200 rounded-xl shadow-lg">
                 <p className="text-gray-700 leading-relaxed mb-4">
                   Coursify is not intended for use by children under the age of 13 (or 16 in the EU). We do not knowingly collect personal information from children under these ages.
                 </p>
@@ -331,14 +331,14 @@ export default function PrivacyPage() {
             <div id="section-10">
               <div className="mb-8">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 bg-black border-4 border-black flex items-center justify-center">
-                    <RiLockLine className="w-6 h-6 text-green-400" />
+                  <div className="w-12 h-12 bg-black border-2 border-purple-200 rounded-xl flex items-center justify-center">
+                    <RiLockLine className="w-6 h-6 text-purple-500" />
                   </div>
                   <h2 className="text-3xl font-bold uppercase">10. Changes to This Policy</h2>
                 </div>
               </div>
 
-              <div className="p-6 bg-white border-4 border-black brutalist-shadow">
+              <div className="p-6 bg-white border-2 border-purple-200 rounded-xl shadow-lg">
                 <p className="text-gray-700 leading-relaxed mb-4">
                   We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors.
                 </p>
@@ -355,20 +355,20 @@ export default function PrivacyPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-24 bg-black border-t-8 border-green-400">
+      <section className="py-24 bg-black border-t-8 border-purple-500">
         <Container maxWidth="xl">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="w-20 h-20 bg-green-400 border-4 border-green-400 flex items-center justify-center mx-auto mb-6">
+            <div className="w-20 h-20 bg-purple-500 border-4 border-purple-500 flex items-center justify-center mx-auto mb-6">
               <RiMailLine className="w-10 h-10 text-black" />
             </div>
-            <h2 className="text-4xl font-bold uppercase mb-6 text-green-400">
+            <h2 className="text-4xl font-bold uppercase mb-6 text-purple-500">
               QUESTIONS ABOUT PRIVACY?
             </h2>
             <p className="text-xl text-white mb-8">
               If you have questions about this Privacy Policy or how we handle your data, we're here to help.
             </p>
 
-            <div className="p-8 bg-white border-4 border-white brutalist-shadow-yellow">
+            <div className="p-8 bg-white border-4 border-white shadow-lg">
               <h3 className="text-2xl font-bold uppercase mb-4">CONTACT US</h3>
               <div className="space-y-3 text-left max-w-2xl mx-auto">
                 <div>
