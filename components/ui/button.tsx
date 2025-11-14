@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Button as MantineButton, ButtonProps as MantineButtonProps } from "@mantine/core"
+import { Button as MantineButton } from "@mantine/core"
 import { cn } from "@/lib/utils"
 
 export interface ButtonProps extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'size'> {

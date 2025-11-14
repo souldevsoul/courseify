@@ -60,7 +60,7 @@ export function NewsletterPopup() {
         setStatus('error')
         setMessage(data.error || 'Failed to subscribe. Please try again.')
       }
-    } catch (error) {
+    } catch {
       setStatus('error')
       setMessage('Network error. Please try again.')
     } finally {

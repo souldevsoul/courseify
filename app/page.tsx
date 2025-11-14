@@ -9,17 +9,11 @@ import {
   RiSparklingLine,
   RiBookOpenLine,
   RiVideoLine,
-  RiFlashlightLine,
-  RiShieldCheckLine,
-  RiGlobalLine,
   RiArrowRightLine,
   RiPlayCircleLine,
   RiCheckLine,
   RiCloseLine,
-  RiStarFill,
-  RiLightbulbLine,
   RiPresentationLine,
-  RiQuestionLine,
   RiAwardLine,
   RiGroupLine,
   RiLineChartLine,
@@ -47,7 +41,7 @@ export default function Home() {
       setCurrentCourse((prev) => (prev + 1) % courseExamples.length)
     }, 4000)
     return () => clearInterval(interval)
-  }, [])
+  }, [courseExamples.length])
 
   // Features data
   const features = [

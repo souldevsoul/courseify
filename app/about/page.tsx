@@ -8,11 +8,9 @@ import {
   RiSparklingLine,
   RiHeartLine,
   RiLightbulbLine,
-  RiRocketLine,
   RiShieldCheckLine,
   RiGlobalLine,
   RiGraduationCapLine,
-  RiBookOpenLine,
   RiArrowRightLine,
 } from "react-icons/ri"
 
@@ -91,7 +89,7 @@ export default function AboutPage() {
               Making Course Creation Accessible to Everyone
             </h1>
             <p className="text-xl text-gray-700 mb-8">
-              We're building the future of online education. AI-powered course creation that helps educators share knowledge at scale.
+              We&apos;re building the future of online education. AI-powered course creation that helps educators share knowledge at scale.
             </p>
           </div>
         </Container>
@@ -109,7 +107,7 @@ export default function AboutPage() {
                 Education has the power to transform lives. But creating professional online courses has been too time-consuming and technically challenging for most educators.
               </p>
               <p className="text-xl text-gray-700 leading-relaxed">
-                We built Coursify to change that. By leveraging the world's most advanced AI models, we're making high-quality course creation accessible to everyone—from independent teachers to educational institutions.
+                We built Coursify to change that. By leveraging the world&apos;s most advanced AI models, we&apos;re making high-quality course creation accessible to everyone—from independent teachers to educational institutions.
               </p>
             </div>
             <div className="bg-gradient-to-br from-purple-50 to-pink-50 border-2 border-purple-200 rounded-2xl p-12 text-center">

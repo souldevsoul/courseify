@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from 'react'
-import { RiCheckLine, RiLockLine, RiPlayCircleLine, RiArticleLine, RiQuestionLine } from 'react-icons/ri'
+import { RiCheckLine, RiPlayCircleLine, RiArticleLine, RiQuestionLine } from 'react-icons/ri'
 import { Card } from '@/components/ui/card'
 import { Text, Heading } from '@/components/ui/typography'
 import { Button } from '@/components/ui/button'
@@ -19,7 +19,7 @@ type Lesson = {
   videoUrl: string | null
   quiz?: {
     id: string
-    questions: any
+    questions: unknown
     passingScore: number
   } | null
 }

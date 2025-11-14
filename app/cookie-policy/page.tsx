@@ -133,7 +133,7 @@ export default function CookiePolicyPage() {
               <section>
                 <h2 className="text-2xl font-bold uppercase mb-4 text-black">Updates to This Policy</h2>
                 <p>
-                  We may update this Cookie Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any material changes by posting the new policy on this page with an updated "Last updated" date.
+                  We may update this Cookie Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any material changes by posting the new policy on this page with an updated &quot;Last updated&quot; date.
                 </p>
               </section>
 

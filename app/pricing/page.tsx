@@ -9,9 +9,6 @@ import {
   RiCheckLine,
   RiCloseLine,
   RiArrowRightLine,
-  RiGraduationCapLine,
-  RiBookOpenLine,
-  RiGlobalLine,
 } from "react-icons/ri"
 
 export default function PricingPage() {
@@ -255,7 +252,7 @@ export default function PricingPage() {
               Compare Plans
             </h2>
             <p className="text-xl text-gray-700">
-              See what's included in each plan
+              See what&apos;s included in each plan
             </p>
           </div>
 

@@ -34,7 +34,7 @@ type Enrollment = {
 export default function MyCoursesPage() {
   const [enrollments, setEnrollments] = useState<Enrollment[]>([])
   const [loading, setLoading] = useState(true)
-  const [userId, setUserId] = useState<string | null>(null)
+  const [, setUserId] = useState<string | null>(null)
 
   useEffect(() => {
     fetchUserAndEnrollments()
@@ -63,10 +63,6 @@ export default function MyCoursesPage() {
     } finally {
       setLoading(false)
     }
-  }
-
-  const getTotalLessons = (course: Enrollment['course']) => {
-    return course.modules.reduce((total, module) => total + module.lessons.length, 0)
   }
 
   const formatDate = (dateString: string) => {
@@ -112,7 +108,6 @@ export default function MyCoursesPage() {
         ) : (
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {enrollments.map((enrollment) => {
-              const totalLessons = getTotalLessons(enrollment.course)
               const isCompleted = enrollment.completedAt !== null
 
               return (

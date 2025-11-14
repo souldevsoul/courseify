@@ -107,7 +107,7 @@ export default function ContactPage() {
               <span className="text-sm font-bold text-purple-700">Contact Us</span>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-              We're Here to Help
+              We&apos;re Here to Help
             </h1>
             <p className="text-xl text-gray-700 mb-8">
               Have questions? Need support? Want to discuss enterprise options? Our team is ready to assist you.
@@ -179,7 +179,7 @@ export default function ContactPage() {
                 Send Us a Message
               </h2>
               <p className="text-xl text-gray-700">
-                Fill out the form and we'll get back to you as soon as possible
+                Fill out the form and we&apos;ll get back to you as soon as possible
               </p>
             </div>
 
@@ -293,7 +293,7 @@ export default function ContactPage() {
               Common Support Topics
             </h2>
             <p className="text-xl text-gray-700">
-              Reach out about any of these topics—we're here to help
+              Reach out about any of these topics—we&apos;re here to help
             </p>
           </div>
 

@@ -311,7 +311,7 @@ export default function DeliveryPolicyPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="font-bold text-purple-500">5.</span>
-                    <span>Contact support@coursify.ai immediately - we'll resolve within 24 hours</span>
+                    <span>Contact support@coursify.ai immediately - we&apos;ll resolve within 24 hours</span>
                   </li>
                 </ol>
               </div>

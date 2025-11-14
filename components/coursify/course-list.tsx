@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { RiEditLine, RiDeleteBinLine, RiEyeLine, RiEyeOffLine } from 'react-icons/ri'
+import { RiDeleteBinLine, RiEyeLine, RiEyeOffLine } from 'react-icons/ri'
 import { Card } from '@/components/ui/card'
 import { Text, Heading } from '@/components/ui/typography'
 import { Button } from '@/components/ui/button'

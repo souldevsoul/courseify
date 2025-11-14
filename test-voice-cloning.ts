@@ -10,7 +10,6 @@
 
 import Replicate from 'replicate';
 import * as fs from 'fs';
-import * as path from 'path';
 
 // Initialize Replicate
 const replicate = new Replicate({
@@ -34,7 +33,7 @@ async function uploadAudioToReplicate(audioPath: string): Promise<string> {
   const audioBlob = new Blob([audioBuffer], { type: 'audio/mpeg' });
 
   // Upload to Replicate
-  const file = await replicate.files.create(audioBlob as any);
+  const file = await replicate.files.create(audioBlob as File);
 
   console.log('✅ Audio uploaded successfully!');
   console.log('   File ID:', file.id);
@@ -47,7 +46,7 @@ async function testVoiceCloning(audioUrl: string) {
   console.log('\n🎤 Step 2: Cloning voice with Replicate...');
   console.log('   Audio URL:', audioUrl);
 
-  const output: any = await replicate.run(
+  const output = await replicate.run(
     "minimax/voice-cloning:fff8a670880f066d3742838515a88f7f0a3ae40a4f2e06dae0f7f70ba63582d7",
     {
       input: {
@@ -176,7 +175,7 @@ async function testViaAPI() {
   const listData = await listResponse.json();
   console.log('   ✅ List API success:', {
     totalVoices: listData.voices.length,
-    voices: listData.voices.map((v: any) => ({ id: v.id, name: v.name })),
+    voices: listData.voices.map((v: { id: string; name: string }) => ({ id: v.id, name: v.name })),
   });
 
   return {
@@ -241,8 +240,8 @@ async function runCompleteTest() {
     console.log('   Via API:', apiResults.generatedAudio);
     console.log('\n✨ Integration is fully working!\n');
 
-  } catch (error: any) {
-    console.error('\n❌ Test failed:', error.message);
+  } catch (error) {
+    console.error('\n❌ Test failed:', error instanceof Error ? error.message : String(error));
     console.error(error);
     process.exit(1);
   }

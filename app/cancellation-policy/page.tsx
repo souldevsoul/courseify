@@ -252,7 +252,7 @@ export default function CancellationPolicyPage() {
               <div className="p-8 bg-white border-2 border-purple-200 rounded-xl shadow-lg text-center">
                 <h2 className="text-2xl font-bold uppercase mb-4">NEED HELP?</h2>
                 <p className="text-gray-700 mb-6">
-                  Before canceling, let us know if there's anything we can do to improve your experience.
+                  Before canceling, let us know if there&apos;s anything we can do to improve your experience.
                 </p>
                 <div className="space-y-2">
                   <p>

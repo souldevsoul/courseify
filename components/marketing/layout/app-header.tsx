@@ -2,8 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { RiGraduationCapLine, RiUserLine, RiLogoutBoxLine, RiSparklingLine } from "react-icons/ri"
+import { RiGraduationCapLine, RiUserLine, RiLogoutBoxLine } from "react-icons/ri"
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
@@ -22,8 +21,6 @@ type AppHeaderProps = {
 }
 
 export function AppHeader({ user }: AppHeaderProps) {
-  const pathname = usePathname()
-
   return (
     <header className="sticky top-0 z-50 border-b-2 border-purple-200 bg-white">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">

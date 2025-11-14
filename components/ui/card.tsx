@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Card as MantineCard, CardSection as MantineCardSection, Paper, PaperProps } from "@mantine/core"
+import { CardSection as MantineCardSection, Paper } from "@mantine/core"
 import { cn } from "@/lib/utils"
 
 export interface CardProps extends React.PropsWithChildren<React.HTMLAttributes<HTMLDivElement>> {

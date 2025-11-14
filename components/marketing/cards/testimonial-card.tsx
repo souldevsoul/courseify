@@ -44,7 +44,7 @@ const TestimonialCard = React.forwardRef<HTMLDivElement, TestimonialCardProps>(
 
           {/* Quote Text */}
           <blockquote className="text-slate-700 text-base leading-relaxed mb-6">
-            "{quote}"
+            &quot;{quote}&quot;
           </blockquote>
 
           {/* Author Info */}

@@ -12,7 +12,6 @@ import {
   RiFireLine,
   RiLightbulbLine,
   RiCodeLine,
-  RiMicLine,
 } from "react-icons/ri"
 
 export default function BlogPage() {

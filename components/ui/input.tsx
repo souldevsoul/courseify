@@ -48,7 +48,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           "focus-within:shadow-md",
           className
         )}
-        styles={(theme) => ({
+        styles={() => ({
           input: {
             fontSize: inputSize === 'sm' ? '0.875rem' : inputSize === 'lg' ? '1rem' : '0.9375rem',
             height: inputSize === 'sm' ? 36 : inputSize === 'lg' ? 56 : 44,

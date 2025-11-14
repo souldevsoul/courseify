@@ -1,6 +1,6 @@
 "use client"
 
-import { Suspense, useState, useEffect } from "react"
+import { Suspense, useState } from "react"
 import { signIn } from "next-auth/react"
 import { useRouter, useSearchParams } from "next/navigation"
 import Link from "next/link"
@@ -26,15 +26,9 @@ function SignUpForm() {
   const [error, setError] = useState("")
   const [isLoading, setIsLoading] = useState(false)
   const [success, setSuccess] = useState(false)
-  const [selectedPlan, setSelectedPlan] = useState<'starter' | 'pro'>('starter')
-
   // Get plan from URL params
-  useEffect(() => {
-    const plan = searchParams?.get('plan')
-    if (plan === 'pro') {
-      setSelectedPlan('pro')
-    }
-  }, [searchParams])
+  const plan = searchParams?.get('plan')
+  const [selectedPlan] = useState<'starter' | 'pro'>(plan === 'pro' ? 'pro' : 'starter')
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -97,7 +91,7 @@ function SignUpForm() {
         router.push("/dashboard")
         router.refresh()
       }, 2000)
-    } catch (error) {
+    } catch {
       setError("An error occurred. Please try again.")
       setIsLoading(false)
     }

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { CourseTopicForm, CoursePreview } from '@/components/coursify';
+import { CourseTopicForm } from '@/components/coursify';
 import { Button } from '@/components/ui/button';
 import { RiArrowLeftLine, RiSparklingLine } from 'react-icons/ri';
 import Link from 'next/link';
@@ -33,7 +33,6 @@ interface CourseData {
 export default function CourseBuilderPage() {
   const [step, setStep] = useState<'topic' | 'generating' | 'preview'>('topic');
   const [courseData, setCourseData] = useState<CourseData | null>(null);
-  const [loading, setLoading] = useState(false);
   const [publishing, setPublishing] = useState(false);
 
   const handleGenerateCourse = async (data: {
