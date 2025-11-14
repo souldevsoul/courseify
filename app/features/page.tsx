@@ -6,173 +6,173 @@ import { Header } from "@/components/marketing/layout/header"
 import { Footer } from "@/components/marketing/layout/footer"
 import {
   RiSparklingLine,
-  RiMicLine,
-  RiFlashlightLine,
-  RiShieldCheckLine,
+  RiBookOpenLine,
+  RiVideoLine,
+  RiQuestionLine,
   RiGlobalLine,
-  RiHeadphoneLine,
-  RiSettings4Line,
-  RiVoiceprintLine,
-  RiTimerLine,
+  RiBarChartBoxLine,
+  RiShieldCheckLine,
+  RiAwardLine,
+  RiTeamLine,
   RiDatabase2Line,
   RiCodeLine,
-  RiTeamLine,
+  RiPaletteLine,
   RiArrowRightLine,
   RiCheckDoubleLine,
-  RiSoundModuleLine,
+  RiGraduationCapLine,
 } from "react-icons/ri"
 
 export default function FeaturesPage() {
   const mainFeatures = [
     {
       icon: RiSparklingLine,
-      title: "Powered by Kokoro-82M",
-      subtitle: "56M+ RUNS - MOST POPULAR MODEL",
-      description: "Built on the world's most popular voice synthesis model. Battle-tested at massive scale with 56.7 million production runs. Proven reliability, exceptional quality, lightning-fast inference.",
+      title: "AI Course Generation",
+      subtitle: "GPT-4 POWERED",
+      description: "Generate complete course structures with AI. Built on GPT-4 and Claude for intelligent content generation. Proven reliability, exceptional quality, lightning-fast course creation.",
       features: [
-        "82M parameters based on StyleTTS2",
-        "Natural-sounding speech synthesis",
-        "Multiple voice profiles available",
-        "Automatic long text splitting",
-        "Speed control from 0.1x to 5.0x",
-        "Lightweight and efficient"
+        "AI-powered course structure generation",
+        "Natural, engaging lesson content",
+        "Multiple subject areas supported",
+        "Automatic lesson organization",
+        "Customizable difficulty levels",
+        "Smart content adaptation"
       ]
     },
     {
-      icon: RiMicLine,
-      title: "Advanced Voice Cloning",
-      subtitle: "MINIMAX TECHNOLOGY",
-      description: "Clone any voice with Minimax's cutting-edge voice cloning technology. Quick training from just 10 seconds to 5 minutes of audio. Create custom voice profiles that work across all our synthesis models.",
+      icon: RiVideoLine,
+      title: "Video Lesson Creation",
+      subtitle: "AUTOMATED VIDEO GENERATION",
+      description: "Create engaging video lessons automatically. AI generates scripts, visuals, and narration. Transform your course content into professional video lessons in minutes.",
       features: [
-        "300+ preset voices included",
-        "Custom voice training in minutes",
-        "Noise reduction & volume normalization",
-        "Works with Speech 2.6 Turbo & HD",
-        "Quality validation built-in",
-        "Voice ID generation"
+        "Automated video script generation",
+        "AI-powered visual creation",
+        "Professional voice narration",
+        "Customizable video templates",
+        "HD quality output",
+        "Multiple aspect ratios"
       ]
     },
     {
-      icon: RiFlashlightLine,
-      title: "Real-Time Synthesis",
-      subtitle: "LIGHTNING FAST PERFORMANCE",
-      description: "Generate professional voice content in seconds, not minutes. Minimax 2.6 Turbo optimized for real-time applications with minimal latency. Perfect for live applications, chatbots, and streaming.",
+      icon: RiQuestionLine,
+      title: "Automatic Quiz Generation",
+      subtitle: "INTELLIGENT ASSESSMENTS",
+      description: "Generate quizzes automatically from lesson content. Multiple question types, difficulty levels, and instant feedback. Perfect for assessing student understanding.",
       features: [
-        "Sub-second response times",
-        "Real-time streaming support",
-        "Batch processing for efficiency",
-        "Queue management for scale",
-        "Concurrent request handling",
-        "CDN-optimized audio delivery"
+        "Multiple choice questions",
+        "True/false questions",
+        "Fill-in-the-blank",
+        "Configurable difficulty",
+        "Instant grading",
+        "Detailed explanations"
       ]
     },
     {
-      icon: RiSettings4Line,
-      title: "Emotion & Expression Control",
-      subtitle: "NATURAL EMOTIONAL DELIVERY",
-      description: "Fine-tune every aspect of voice delivery. Control emotion, pitch, speed, and volume to create the perfect voice for your content. From happy and excited to calm and serious - full emotional range.",
+      icon: RiBarChartBoxLine,
+      title: "Progress Tracking & Analytics",
+      subtitle: "DATA-DRIVEN INSIGHTS",
+      description: "Track student progress with comprehensive analytics. Monitor completion rates, quiz scores, and engagement metrics. Identify struggling students and optimize content.",
       features: [
-        "8 emotion presets (happy, sad, angry, etc.)",
-        "Automatic emotion detection",
-        "Pitch adjustment (-12 to +12 semitones)",
-        "Speed control (0.5x to 2.0x)",
-        "Volume control (0 to 10)",
-        "Temperature control for variance"
+        "Real-time progress tracking",
+        "Completion rate analytics",
+        "Quiz performance metrics",
+        "Engagement statistics",
+        "Student activity logs",
+        "Export detailed reports"
       ]
     },
     {
       icon: RiGlobalLine,
-      title: "Multilingual Support",
+      title: "Multilingual Content",
       subtitle: "50+ LANGUAGES",
-      description: "Generate voices in 50+ languages with native accents and natural intonation. Powered by Minimax and XTTS-v2 for global reach. Cross-language voice transfer supported.",
+      description: "Create courses in 50+ languages with native-quality content. AI-powered translation and localization. Reach global audiences with multilingual course support.",
       features: [
-        "50+ languages (Minimax)",
-        "17 languages with voice cloning (XTTS-v2)",
-        "Native accent support",
-        "Natural cross-language intonation",
-        "Language-specific normalization",
+        "50+ languages supported",
+        "Native-quality translations",
+        "Cultural adaptation",
+        "Localized examples",
+        "Multi-language quizzes",
         "Automatic language detection"
       ]
     },
     {
-      icon: RiHeadphoneLine,
-      title: "Studio Quality Audio",
-      subtitle: "PROFESSIONAL OUTPUT",
-      description: "Professional-grade audio output at up to 48kHz sample rate. Multiple format support including MP3, WAV, FLAC, and PCM. Perfect for podcasts, audiobooks, videos, and commercial production.",
+      icon: RiAwardLine,
+      title: "Certificate Generation",
+      subtitle: "PROFESSIONAL CREDENTIALS",
+      description: "Generate professional certificates for course completion. Customizable templates, digital signatures, and verification. Recognize student achievements with beautiful certificates.",
       features: [
-        "48kHz sample rate (max)",
-        "MP3, WAV, FLAC, PCM formats",
-        "Configurable bitrates",
-        "Mono & stereo channel support",
-        "Subtitle export with timestamps",
-        "High-fidelity output"
+        "Customizable certificate templates",
+        "Digital signature support",
+        "Verification codes",
+        "PDF download",
+        "Batch certificate generation",
+        "Branded design options"
       ]
     },
     {
       icon: RiShieldCheckLine,
-      title: "Security & Privacy",
-      subtitle: "ENTERPRISE-GRADE PROTECTION",
-      description: "Your voice data is encrypted end-to-end and never shared with third parties. Full GDPR compliance, SOC 2 Type II certified. Enterprise-grade security for peace of mind.",
+      title: "LMS Integration",
+      subtitle: "SEAMLESS CONNECTIVITY",
+      description: "Integrate with popular Learning Management Systems. SCORM 1.2 and 2004 support, xAPI/Tin Can, and custom API. Deploy courses anywhere.",
       features: [
-        "End-to-end encryption",
-        "GDPR compliant",
-        "SOC 2 Type II certified",
-        "Data residency options",
-        "Zero data retention (optional)",
-        "Audit logs & compliance reports"
+        "SCORM 1.2 & 2004 support",
+        "xAPI/Tin Can compatibility",
+        "LTI integration",
+        "Custom API access",
+        "Single sign-on (SSO)",
+        "Grade passback support"
       ]
     },
     {
-      icon: RiVoiceprintLine,
-      title: "Voice Library Management",
-      subtitle: "ORGANIZE YOUR VOICES",
-      description: "Manage unlimited custom voice clones. Organize, preview, edit, and delete voice profiles. Search and filter your voice library. Track usage statistics for each voice.",
+      icon: RiPaletteLine,
+      title: "Course Customization",
+      subtitle: "YOUR BRAND, YOUR WAY",
+      description: "Customize every aspect of your courses. Brand colors, logos, layouts, and styling. Create courses that match your unique brand identity.",
       features: [
-        "Unlimited voice storage (Enterprise)",
-        "Voice preview & testing",
-        "Metadata & descriptions",
-        "Usage analytics per voice",
-        "Batch operations",
-        "Import/export voice profiles"
+        "Custom branding options",
+        "Color theme customization",
+        "Logo placement",
+        "Layout templates",
+        "Font selections",
+        "CSS customization"
       ]
     },
     {
-      icon: RiTimerLine,
-      title: "Advanced Text Processing",
-      subtitle: "INTELLIGENT TEXT HANDLING",
-      description: "Automatic text splitting for long content. Pause markers for timing control. Number and date normalization. SSML support for advanced control over pronunciation and delivery.",
+      icon: RiGraduationCapLine,
+      title: "Instructional Design",
+      subtitle: "PEDAGOGICALLY SOUND",
+      description: "Built on proven instructional design principles. Bloom's Taxonomy, ADDIE model, and learning science. AI creates courses that actually teach effectively.",
       features: [
-        "Automatic long text splitting",
-        "Pause markers (<#0.5#>)",
-        "Number & date normalization",
-        "Custom pronunciation dictionary",
-        "SSML markup support (coming soon)",
-        "Character limit: 10,000 per request"
+        "Bloom's Taxonomy alignment",
+        "ADDIE model implementation",
+        "Learning objectives mapping",
+        "Assessment alignment",
+        "Scaffolded learning",
+        "Knowledge retention focus"
       ]
     },
     {
       icon: RiDatabase2Line,
-      title: "Usage & Analytics",
-      subtitle: "TRACK YOUR USAGE",
-      description: "Comprehensive analytics dashboard showing character usage, voice generation history, model performance, and cost tracking. Export reports for accounting and billing.",
+      title: "Content Library",
+      subtitle: "REUSABLE ASSETS",
+      description: "Build and manage your content library. Reuse lessons, quizzes, and resources across courses. Organize assets with tags, categories, and search.",
       features: [
-        "Real-time usage tracking",
-        "Character count analytics",
-        "Generation history",
-        "Cost estimation & tracking",
-        "Export reports (CSV, PDF)",
-        "Webhook notifications"
+        "Centralized asset management",
+        "Drag-and-drop organization",
+        "Advanced search & filters",
+        "Version control",
+        "Bulk operations",
+        "Import/export support"
       ]
     },
     {
       icon: RiCodeLine,
       title: "Developer API",
       subtitle: "FULL API ACCESS",
-      description: "Complete REST API with comprehensive documentation. SDKs available for Node.js, Python, Go, and more. Webhook support for async operations. Rate limiting and authentication included.",
+      description: "Complete REST API with comprehensive documentation. SDKs available for Node.js, Python, Ruby. Webhook support for real-time updates.",
       features: [
         "RESTful API",
-        "Official SDKs (Node.js, Python, Go)",
-        "Webhook support",
+        "Official SDKs (Node, Python, Ruby)",
+        "Webhook notifications",
         "Rate limiting & quotas",
         "API key management",
         "Detailed error messages"
@@ -181,15 +181,15 @@ export default function FeaturesPage() {
     {
       icon: RiTeamLine,
       title: "Team Collaboration",
-      subtitle: "WORK TOGETHER",
-      description: "Built for teams. Share voice clones across your organization. Role-based access control. Team analytics and usage tracking. Centralized billing and management.",
+      subtitle: "BUILT FOR TEAMS",
+      description: "Built for teams and organizations. Share courses, collaborate on content, and manage permissions. Centralized billing and team analytics.",
       features: [
-        "Unlimited team members (Enterprise)",
+        "Unlimited team members",
         "Role-based permissions",
-        "Shared voice library",
+        "Shared course library",
         "Team usage analytics",
         "Centralized billing",
-        "SSO integration (Enterprise)"
+        "SSO integration"
       ]
     },
   ]
@@ -202,32 +202,32 @@ export default function FeaturesPage() {
         navLinks={[
           { label: "Features", href: "/features" },
           { label: "Pricing", href: "/pricing" },
-          { label: "Demo", href: "/demo" },
+          { label: "About", href: "/about" },
         ]}
         ctaButton={{
-          text: "Get Started",
-          href: "/signup",
+          text: "Start Free",
+          href: "/dashboard",
         }}
       />
 
       {/* Hero Section */}
-      <section className="py-20 border-b-8 border-black">
+      <section className="py-20 border-b-2 border-purple-200">
         <Container maxWidth="xl">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="inline-flex items-center gap-3 px-6 py-3 bg-purple-500 border-2 border-purple-200 rounded-xl mb-8">
-              <RiSparklingLine className="w-6 h-6" />
-              <span className="text-sm font-bold uppercase tracking-wider">Features</span>
+            <div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-purple-100 to-pink-100 rounded-full mb-8">
+              <RiSparklingLine className="w-6 h-6 text-purple-600" />
+              <span className="text-sm font-bold text-purple-700">Features</span>
             </div>
-            <h1 className="text-6xl md:text-7xl font-bold uppercase mb-6 leading-tight">
-              EVERYTHING YOU NEED FOR PROFESSIONAL VOICE CONTENT
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+              Everything You Need for Professional Course Creation
             </h1>
             <p className="text-xl text-gray-700 mb-12 max-w-3xl mx-auto">
-              Powered by the world's most popular voice models. Built for creators, businesses, and developers who demand the best.
+              Powered by GPT-4 and Claude. Built for educators, businesses, and content creators who demand the best.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button
                 size="lg"
-                className="gap-3 bg-black text-purple-500 border-2 border-purple-200 rounded-xl font-bold uppercase"
+                className="gap-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white border-2 border-purple-200 rounded-2xl font-semibold shadow-lg hover:shadow-xl"
               >
                 <RiArrowRightLine className="w-5 h-5" />
                 Start Free Trial
@@ -235,7 +235,7 @@ export default function FeaturesPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="gap-3 border-2 border-purple-200 rounded-xl font-bold uppercase"
+                className="gap-3 border-2 border-purple-200 rounded-2xl font-semibold hover:bg-purple-50"
               >
                 View Pricing
               </Button>
@@ -245,24 +245,24 @@ export default function FeaturesPage() {
       </section>
 
       {/* Model Stats */}
-      <section className="py-16 bg-black border-b-8 border-purple-500">
+      <section className="py-16 bg-gradient-to-br from-purple-50 to-pink-50 border-b-2 border-purple-200">
         <Container maxWidth="xl">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-5xl font-bold text-purple-500 mb-2 uppercase">56.7M+</div>
-              <div className="text-sm font-bold text-white uppercase tracking-wider">Kokoro Runs</div>
+              <div className="text-4xl md:text-5xl font-bold text-purple-600 mb-2">GPT-4</div>
+              <div className="text-sm font-semibold text-gray-600">AI Model</div>
             </div>
             <div>
-              <div className="text-5xl font-bold text-purple-500 mb-2 uppercase">50+</div>
-              <div className="text-sm font-bold text-white uppercase tracking-wider">Languages</div>
+              <div className="text-4xl md:text-5xl font-bold text-purple-600 mb-2">50+</div>
+              <div className="text-sm font-semibold text-gray-600">Languages</div>
             </div>
             <div>
-              <div className="text-5xl font-bold text-purple-500 mb-2 uppercase">300+</div>
-              <div className="text-sm font-bold text-white uppercase tracking-wider">Voices</div>
+              <div className="text-4xl md:text-5xl font-bold text-purple-600 mb-2">Unlimited</div>
+              <div className="text-sm font-semibold text-gray-600">Courses</div>
             </div>
             <div>
-              <div className="text-5xl font-bold text-purple-500 mb-2 uppercase">48kHz</div>
-              <div className="text-sm font-bold text-white uppercase tracking-wider">Audio Quality</div>
+              <div className="text-4xl md:text-5xl font-bold text-purple-600 mb-2">HD</div>
+              <div className="text-sm font-semibold text-gray-600">Video Quality</div>
             </div>
           </div>
         </Container>
@@ -274,39 +274,35 @@ export default function FeaturesPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {mainFeatures.map((feature, index) => {
               const Icon = feature.icon
-              const bgColors = ["bg-white", "bg-black", "bg-purple-500"]
-              const textColors = ["text-black", "text-purple-500", "text-black"]
-              const subtitleColors = ["text-gray-600", "text-white", "text-gray-900"]
+              const bgColors = ["bg-white", "bg-gradient-to-br from-purple-50 to-pink-50", "bg-gradient-to-br from-pink-50 to-rose-50"]
               const colorIndex = index % 3
 
               return (
                 <div
                   key={index}
-                  className={`p-8 ${bgColors[colorIndex]} border-2 border-purple-200 rounded-xl ${
-                    colorIndex === 1 ? "shadow-lg" : "shadow-lg"
-                  }`}
+                  className={`p-8 ${bgColors[colorIndex]} border-2 border-purple-200 rounded-2xl shadow-lg hover:shadow-xl transition-shadow`}
                 >
-                  <div className={`w-16 h-16 ${colorIndex === 1 ? "bg-purple-500" : "bg-black"} flex items-center justify-center mb-6`}>
-                    <Icon className={`w-8 h-8 ${colorIndex === 1 ? "text-black" : "text-purple-500"}`} />
+                  <div className="w-16 h-16 bg-gradient-to-br from-purple-600 to-pink-600 rounded-2xl flex items-center justify-center mb-6">
+                    <Icon className="w-8 h-8 text-white" />
                   </div>
 
-                  <h3 className={`text-2xl font-bold uppercase mb-2 ${textColors[colorIndex]}`}>
+                  <h3 className="text-2xl font-bold mb-2 text-gray-900">
                     {feature.title}
                   </h3>
 
-                  <div className={`text-xs font-bold uppercase tracking-wider mb-4 ${subtitleColors[colorIndex]}`}>
+                  <div className="text-xs font-bold uppercase tracking-wider mb-4 text-purple-600">
                     {feature.subtitle}
                   </div>
 
-                  <p className={`mb-6 ${colorIndex === 1 ? "text-white" : "text-gray-700"}`}>
+                  <p className="mb-6 text-gray-700">
                     {feature.description}
                   </p>
 
                   <ul className="space-y-2">
                     {feature.features.map((item, i) => (
                       <li key={i} className="flex items-start gap-2">
-                        <RiCheckDoubleLine className={`w-5 h-5 flex-shrink-0 ${colorIndex === 1 ? "text-purple-500" : "text-black"}`} />
-                        <span className={`text-sm ${colorIndex === 1 ? "text-white" : "text-gray-700"}`}>
+                        <RiCheckDoubleLine className="w-5 h-5 flex-shrink-0 text-purple-600" />
+                        <span className="text-sm text-gray-700">
                           {item}
                         </span>
                       </li>
@@ -319,45 +315,45 @@ export default function FeaturesPage() {
         </Container>
       </section>
 
-      {/* Model Comparison CTA */}
-      <section className="py-24 bg-purple-500 border-y-8 border-black">
+      {/* CTA Section */}
+      <section className="py-24 bg-gradient-to-br from-purple-600 to-pink-600 border-y-2 border-purple-200">
         <Container maxWidth="xl">
           <div className="text-center max-w-3xl mx-auto">
-            <div className="inline-flex items-center gap-3 px-6 py-3 bg-black border-2 border-purple-200 rounded-xl mb-8">
-              <RiSoundModuleLine className="w-6 h-6 text-purple-500" />
-              <span className="text-sm font-bold uppercase tracking-wider text-purple-500">Multiple Models</span>
+            <div className="inline-flex items-center gap-3 px-6 py-3 bg-white rounded-full mb-8">
+              <RiBookOpenLine className="w-6 h-6 text-purple-600" />
+              <span className="text-sm font-bold text-purple-600">AI-Powered</span>
             </div>
-            <h2 className="text-5xl font-bold uppercase mb-6 text-black">
-              CHOOSE THE RIGHT MODEL FOR YOUR NEEDS
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+              Ready to Transform Your Course Creation?
             </h2>
-            <p className="text-xl text-gray-900 mb-8">
-              We support multiple voice models: Kokoro-82M (simplest, most popular), Minimax 2.6 Turbo (advanced features), and XTTS-v2 (multilingual cloning).
+            <p className="text-xl text-purple-50 mb-8">
+              Join thousands of educators and businesses using Coursify to create professional online courses in minutes.
             </p>
             <Button
               size="xl"
-              className="gap-3 bg-black text-purple-500 border-2 border-purple-200 rounded-xl font-bold uppercase shadow-lg"
+              className="gap-3 bg-white text-purple-600 border-2 border-white rounded-2xl font-bold shadow-lg hover:bg-purple-50"
             >
               <RiArrowRightLine className="w-5 h-5" />
-              Compare Models
+              Start Free Trial
             </Button>
           </div>
         </Container>
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 bg-black border-t-8 border-purple-500">
+      <section className="py-24 bg-gray-50">
         <Container maxWidth="xl">
           <div className="text-center max-w-4xl mx-auto">
-            <h2 className="text-5xl md:text-6xl font-bold uppercase mb-6 text-purple-500">
-              READY TO GET STARTED?
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+              Ready to Get Started?
             </h2>
-            <p className="text-xl text-white mb-12">
-              Join thousands of creators and businesses using Coursify. Start your free trial today—no credit card required.
+            <p className="text-xl text-gray-700 mb-12">
+              Start your free trial today—no credit card required.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button
                 size="xl"
-                className="gap-3 bg-purple-500 text-black border-4 border-purple-500 font-bold uppercase"
+                className="gap-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white border-2 border-purple-200 rounded-2xl font-bold shadow-lg"
               >
                 <RiArrowRightLine className="w-5 h-5" />
                 Start Free Trial
@@ -365,7 +361,7 @@ export default function FeaturesPage() {
               <Button
                 size="xl"
                 variant="outline"
-                className="gap-3 bg-white text-black border-4 border-white font-bold uppercase"
+                className="gap-3 border-2 border-purple-200 rounded-2xl font-semibold hover:bg-purple-50"
               >
                 View Pricing
               </Button>
