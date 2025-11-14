@@ -7,9 +7,32 @@ import { RiArrowLeftLine, RiSparklingLine } from 'react-icons/ri';
 import Link from 'next/link';
 import { toast } from 'sonner';
 
+interface Lesson {
+  id: string;
+  title: string;
+  duration: number;
+}
+
+interface Module {
+  id: string;
+  title: string;
+  description: string;
+  lessons?: Lesson[];
+}
+
+interface CourseData {
+  id: string;
+  title: string;
+  description: string;
+  category?: string;
+  difficultyLevel?: string;
+  published: boolean;
+  modules?: Module[];
+}
+
 export default function CourseBuilderPage() {
   const [step, setStep] = useState<'topic' | 'generating' | 'preview'>('topic');
-  const [courseData, setCourseData] = useState<any>(null);
+  const [courseData, setCourseData] = useState<CourseData | null>(null);
   const [loading, setLoading] = useState(false);
   const [publishing, setPublishing] = useState(false);
 
@@ -184,7 +207,7 @@ export default function CourseBuilderPage() {
               {/* Course Modules */}
               <div className="space-y-4 mt-8">
                 <h3 className="text-xl font-bold text-gray-900">Course Curriculum</h3>
-                {courseData.modules?.map((module: any, idx: number) => (
+                {courseData.modules?.map((module, idx) => (
                   <div key={module.id} className="border border-gray-200 rounded-xl p-6">
                     <div className="flex items-start gap-4">
                       <div className="w-10 h-10 bg-gradient-to-br from-purple-400 to-pink-600 rounded-lg flex items-center justify-center text-white font-bold flex-shrink-0">
@@ -194,7 +217,7 @@ export default function CourseBuilderPage() {
                         <h4 className="text-lg font-bold text-gray-900 mb-2">{module.title}</h4>
                         <p className="text-gray-600 text-sm mb-4">{module.description}</p>
                         <div className="space-y-2">
-                          {module.lessons?.map((lesson: any, lessonIdx: number) => (
+                          {module.lessons?.map((lesson, lessonIdx) => (
                             <div key={lesson.id} className="flex items-center gap-3 text-sm">
                               <div className="w-6 h-6 bg-gray-100 rounded flex items-center justify-center text-gray-600 font-medium text-xs">
                                 {lessonIdx + 1}

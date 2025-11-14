@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Container } from "@/components/ui/container"
 import { Header } from "@/components/marketing/layout/header"
 import { Footer } from "@/components/marketing/layout/footer"
@@ -25,13 +26,13 @@ export default function DemoPage() {
       <section className="py-20">
         <Container maxWidth="xl">
           {/* Back to Home Link */}
-          <a
+          <Link
             href="/"
             className="inline-flex items-center gap-2 text-sm font-bold uppercase text-gray-700 hover:text-purple-500 transition-colors mb-8"
           >
             <ArrowLeft className="w-4 h-4" />
             Back to Home
-          </a>
+          </Link>
 
           {/* Page Header */}
           <div className="mb-12">

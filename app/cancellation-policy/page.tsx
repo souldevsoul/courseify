@@ -69,7 +69,7 @@ export default function CancellationPolicyPage() {
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="font-bold text-black">3.</span>
-                      <span>Click "Cancel Subscription"</span>
+                      <span>Click &quot;Cancel Subscription&quot;</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="font-bold text-black">4.</span>
@@ -94,11 +94,11 @@ export default function CancellationPolicyPage() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-black font-bold">•</span>
-                      Subject line: "Cancel Subscription"
+                      Subject line: &quot;Cancel Subscription&quot;
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-black font-bold">•</span>
-                      We'll process your cancellation within 24 hours
+                      We&apos;ll process your cancellation within 24 hours
                     </li>
                   </ul>
                 </div>

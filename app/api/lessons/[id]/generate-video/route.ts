@@ -70,9 +70,9 @@ export async function POST(
             duration: "5s",
           },
         }
-      ) as any
+      ) as { video_url?: string } | string
 
-      videoUrl = output.video_url || output
+      videoUrl = typeof output === 'string' ? output : (output.video_url || '')
     } catch (lumaError) {
       console.error("Luma Ray failed, trying Google Veo:", lumaError)
 
@@ -86,9 +86,9 @@ export async function POST(
               duration: 5,
             },
           }
-        ) as any
+        ) as { video_url?: string } | string
 
-        videoUrl = output.video_url || output
+        videoUrl = typeof output === 'string' ? output : (output.video_url || '')
       } catch (veoError) {
         console.error("Google Veo also failed:", veoError)
         throw new Error("All video generation services failed")

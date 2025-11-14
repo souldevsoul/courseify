@@ -105,21 +105,22 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 
     // If asChild is true, just render the children directly with styling
     if (asChild && React.isValidElement(children)) {
-      return React.cloneElement(children as React.ReactElement<any>, {
+      const childElement = children as React.ReactElement<{ className?: string; style?: React.CSSProperties }>
+      return React.cloneElement(childElement, {
         className: cn(
           "inline-flex items-center justify-center gap-2 font-bold transition-all duration-200",
           "hover:scale-[1.02] active:scale-[0.98]",
           "focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-purple-400 focus-visible:ring-offset-2",
           variant === 'primary' && "bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg",
           className,
-          (children as any).props.className
+          childElement.props.className
         ),
         style: {
           height: size === 'icon' ? sizeConfig.h : undefined,
           width: size === 'icon' ? sizeConfig.h : undefined,
           paddingLeft: size !== 'icon' ? sizeConfig.px : 0,
           paddingRight: size !== 'icon' ? sizeConfig.px : 0,
-          ...(children as any).props.style,
+          ...childElement.props.style,
         },
       })
     }

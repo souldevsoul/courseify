@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+import Link from "next/link"
 import { Container } from "@/components/ui/container"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
@@ -62,7 +63,7 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
         <Container maxWidth="xl">
           <nav className="flex items-center justify-between h-20">
             {/* Logo */}
-            <a href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+            <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
               {logo || (
                 <>
                   <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl flex items-center justify-center shadow-lg">
@@ -71,34 +72,41 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
                   <span className="text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">{logoText}</span>
                 </>
               )}
-            </a>
+            </Link>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">
               {navLinks.map((link, index) => (
-                <a
+                <Link
                   key={index}
                   href={link.href}
                   className="text-sm font-semibold text-gray-700 hover:text-pink-500 transition-colors"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
             </div>
 
             {/* CTA Button */}
             <div className="hidden md:flex items-center gap-4">
               {ctaButton && (
-                <button
-                  onClick={ctaButton.onClick}
-                  className="bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-700 hover:to-pink-700 font-bold px-6 py-2 rounded-lg shadow-lg transition-all"
-                >
+                <>
                   {ctaButton.href ? (
-                    <a href={ctaButton.href}>{ctaButton.text}</a>
+                    <Link
+                      href={ctaButton.href}
+                      className="bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-700 hover:to-pink-700 font-bold px-6 py-2 rounded-lg shadow-lg transition-all"
+                    >
+                      {ctaButton.text}
+                    </Link>
                   ) : (
-                    ctaButton.text
+                    <button
+                      onClick={ctaButton.onClick}
+                      className="bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-700 hover:to-pink-700 font-bold px-6 py-2 rounded-lg shadow-lg transition-all"
+                    >
+                      {ctaButton.text}
+                    </button>
                   )}
-                </button>
+                </>
               )}
             </div>
 
@@ -121,29 +129,37 @@ const Header = React.forwardRef<HTMLElement, HeaderProps>(
             <div className="md:hidden border-t-2 border-purple-200 py-4">
               <div className="flex flex-col gap-4">
                 {navLinks.map((link, index) => (
-                  <a
+                  <Link
                     key={index}
                     href={link.href}
                     className="text-sm font-semibold text-gray-700 hover:text-pink-500 transition-colors py-2"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 ))}
                 {ctaButton && (
-                  <button
-                    className="bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-700 hover:to-pink-700 font-bold px-6 py-3 rounded-lg shadow-lg transition-all w-full"
-                    onClick={() => {
-                      ctaButton.onClick?.()
-                      setMobileMenuOpen(false)
-                    }}
-                  >
+                  <>
                     {ctaButton.href ? (
-                      <a href={ctaButton.href}>{ctaButton.text}</a>
+                      <Link
+                        href={ctaButton.href}
+                        className="bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-700 hover:to-pink-700 font-bold px-6 py-3 rounded-lg shadow-lg transition-all w-full text-center"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        {ctaButton.text}
+                      </Link>
                     ) : (
-                      ctaButton.text
+                      <button
+                        className="bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-700 hover:to-pink-700 font-bold px-6 py-3 rounded-lg shadow-lg transition-all w-full"
+                        onClick={() => {
+                          ctaButton.onClick?.()
+                          setMobileMenuOpen(false)
+                        }}
+                      >
+                        {ctaButton.text}
+                      </button>
                     )}
-                  </button>
+                  </>
                 )}
               </div>
             </div>

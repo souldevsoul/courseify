@@ -67,17 +67,17 @@ export default async function CoursesPage() {
           </Card>
         ) : (
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {courses.map((course: any) => {
+            {courses.map((course: { id: string; title: string; description: string; thumbnailUrl?: string; category?: string; difficultyLevel?: string; user?: { name?: string; email?: string }; modules?: { lessons?: { duration?: number }[] }[] }) => {
               const totalLessons = course.modules?.reduce(
-                (acc: number, module: any) => acc + (module.lessons?.length || 0),
+                (acc, module) => acc + (module.lessons?.length || 0),
                 0
               ) || 0
 
               const totalDuration = course.modules?.reduce(
-                (acc: number, module: any) =>
+                (acc, module) =>
                   acc +
                   (module.lessons?.reduce(
-                    (sum: number, lesson: any) => sum + (lesson.duration || 0),
+                    (sum, lesson) => sum + (lesson.duration || 0),
                     0
                   ) || 0),
                 0

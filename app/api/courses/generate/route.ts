@@ -34,12 +34,12 @@ export async function POST(request: NextRequest) {
         category,
         difficultyLevel,
         modules: {
-          create: courseStructure.modules.map((module: any, moduleIndex: number) => ({
+          create: courseStructure.modules.map((module: { title: string; description: string; lessons: { title: string; content: string; type?: string; duration?: number }[] }, moduleIndex: number) => ({
             title: module.title,
             description: module.description,
             order: moduleIndex,
             lessons: {
-              create: module.lessons.map((lesson: any, lessonIndex: number) => ({
+              create: module.lessons.map((lesson: { title: string; content: string; type?: string; duration?: number }, lessonIndex: number) => ({
                 title: lesson.title,
                 content: lesson.content,
                 lessonType: lesson.type || 'article',
