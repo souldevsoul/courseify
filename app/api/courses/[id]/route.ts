@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { PrismaClient } from '@prisma/client';
+import { requireAuth } from '@/lib/session';
 
 const prisma = new PrismaClient();
 
@@ -109,7 +110,30 @@ export async function DELETE(
   { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const user = await requireAuth();
     const { id } = await params;
+
+    // Check if course exists and user owns it
+    const course = await prisma.course.findUnique({
+      where: { id },
+      select: { userId: true },
+    });
+
+    if (!course) {
+      return NextResponse.json(
+        { error: 'Course not found' },
+        { status: 404 }
+      );
+    }
+
+    if (course.userId !== user.id) {
+      return NextResponse.json(
+        { error: 'Unauthorized' },
+        { status: 403 }
+      );
+    }
+
+    // Delete course (cascade will delete modules, lessons, quizzes, enrollments)
     await prisma.course.delete({
       where: { id },
     });
