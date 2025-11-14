@@ -60,6 +60,7 @@ export default async function CoursesPage() {
               Start creating your first AI-powered course today!
             </Text>
             <Link href="/builder">
+              {/* eslint-disable-next-line product-quality/no-button-without-handler */}
               <Button className="bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-700 hover:to-pink-700">
                 Create Course
               </Button>

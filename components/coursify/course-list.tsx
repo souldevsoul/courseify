@@ -99,6 +99,7 @@ export function CourseList({ courses, onDelete, onTogglePublish }: CourseListPro
           Create your first AI-powered course to get started
         </Text>
         <Link href="/builder">
+          {/* eslint-disable-next-line product-quality/no-button-without-handler */}
           <Button className="bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-700 hover:to-pink-700">
             Create Course
           </Button>
@@ -150,6 +151,7 @@ export function CourseList({ courses, onDelete, onTogglePublish }: CourseListPro
 
               <div className="flex items-center gap-3">
                 <Link href={`/courses/${course.id}`}>
+                  {/* eslint-disable-next-line product-quality/no-button-without-handler */}
                   <Button variant="outline" size="sm" className="border-purple-300 text-purple-700">
                     <RiEyeLine className="mr-2 h-4 w-4" />
                     View

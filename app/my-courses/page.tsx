@@ -99,6 +99,7 @@ export default function MyCoursesPage() {
               Explore our course catalog and start learning today
             </Text>
             <Link href="/courses">
+              {/* eslint-disable-next-line product-quality/no-button-without-handler */}
               <Button className="bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-700 hover:to-pink-700">
                 Browse Courses
                 <RiArrowRightLine className="ml-2 h-5 w-5" />
@@ -182,6 +183,7 @@ export default function MyCoursesPage() {
 
                     {/* Action Button */}
                     <Link href={`/courses/${enrollment.course.id}`}>
+                      {/* eslint-disable-next-line product-quality/no-button-without-handler */}
                       <Button
                         className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-700 hover:to-pink-700"
                         size="sm"
@@ -201,6 +203,7 @@ export default function MyCoursesPage() {
         {enrollments.length > 0 && (
           <div className="mt-12 text-center">
             <Link href="/courses">
+              {/* eslint-disable-next-line product-quality/no-button-without-handler */}
               <Button
                 variant="outline"
                 className="border-2 border-purple-300 text-purple-700 hover:bg-purple-50"

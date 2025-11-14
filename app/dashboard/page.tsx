@@ -129,6 +129,7 @@ export default function DashboardPage() {
           </Heading>
           <div className="flex justify-center">
             <Link href="/builder">
+              {/* eslint-disable-next-line product-quality/no-button-without-handler */}
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-700 hover:to-pink-700"
@@ -148,6 +149,7 @@ export default function DashboardPage() {
             </Heading>
             {courses.length > 0 && (
               <Link href="/builder">
+                {/* eslint-disable-next-line product-quality/no-button-without-handler */}
                 <Button
                   size="sm"
                   variant="outline"

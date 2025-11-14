@@ -39,6 +39,7 @@ export function AppHeader({ user }: AppHeaderProps) {
         {user ? (
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
+              {/* eslint-disable-next-line product-quality/no-button-without-handler */}
               <Button
                 variant="outline"
                 size="md"

@@ -51,6 +51,7 @@ export function EnrollButton({ courseId, isEnrolled, userId }: EnrollButtonProps
 
   if (enrolled) {
     return (
+      // eslint-disable-next-line product-quality/no-button-without-handler
       <Button
         disabled
         className="bg-green-600 text-white border-2 border-green-700 cursor-not-allowed"

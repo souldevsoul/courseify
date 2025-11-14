@@ -63,6 +63,7 @@ function ErrorContent() {
               </Button>
 
               <Link href="/">
+                {/* eslint-disable-next-line product-quality/no-button-without-handler */}
                 <Button
                   variant="secondary"
                   className="w-full h-12 gap-3 bg-white text-black hover:bg-gray-100 border-2 border-purple-200 rounded-xl font-bold uppercase"
