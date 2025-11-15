@@ -162,9 +162,20 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden min-h-[90vh] flex items-center">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-1/4 -left-24 w-96 h-96 bg-purple-300/20 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/4 -right-24 w-96 h-96 bg-pink-300/20 rounded-full blur-3xl" />
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1920&q=80"
+            alt="Students learning together"
+            className="w-full h-full object-cover"
+          />
+          {/* Gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-purple-900/85 via-purple-900/70 to-purple-900/85" />
+        </div>
+
+        <div className="absolute inset-0 overflow-hidden pointer-events-none z-[1]">
+          <div className="absolute top-1/4 -left-24 w-96 h-96 bg-purple-300/15 rounded-full blur-3xl" />
+          <div className="absolute bottom-1/4 -right-24 w-96 h-96 bg-pink-300/15 rounded-full blur-3xl" />
         </div>
 
         <div className="max-w-7xl mx-auto px-6 py-24 relative z-10">
@@ -177,19 +188,19 @@ export default function Home() {
             <div className="space-y-6">
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
                 <span className={`block transition-all duration-700 delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                  <span className="text-slate-900">Create Online Courses</span>
+                  <span className="text-white">Create Online Courses</span>
                 </span>
                 <span className={`block transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                  <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">In Minutes</span>
+                  <span className="bg-gradient-to-r from-pink-400 to-purple-300 bg-clip-text text-transparent">In Minutes</span>
                 </span>
                 <span className={`block transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                  <span className="text-slate-900">With AI</span>
+                  <span className="text-white">With AI</span>
                 </span>
               </h1>
             </div>
 
             <div className={`transition-all duration-700 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-              <Text variant="lead" className="text-slate-600 max-w-3xl mx-auto text-xl md:text-2xl">
+              <Text variant="lead" className="text-purple-100 max-w-3xl mx-auto text-xl md:text-2xl">
                 Transform your expertise into professional online courses. AI generates curriculum, videos, quizzes, and more. No technical skills required.
               </Text>
             </div>
@@ -213,17 +224,17 @@ export default function Home() {
               </Button>
             </div>
 
-            <div className={`flex flex-wrap justify-center items-center gap-8 pt-12 text-sm text-slate-600 transition-all duration-700 delay-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+            <div className={`flex flex-wrap justify-center items-center gap-8 pt-12 text-sm text-purple-100 transition-all duration-700 delay-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
               <div className="flex items-center gap-2">
-                <RiCheckLine className="w-5 h-5 text-green-500" />
+                <RiCheckLine className="w-5 h-5 text-green-400" />
                 <span>10,000+ Courses Created</span>
               </div>
               <div className="flex items-center gap-2">
-                <RiCheckLine className="w-5 h-5 text-green-500" />
+                <RiCheckLine className="w-5 h-5 text-green-400" />
                 <span>50,000+ Students Enrolled</span>
               </div>
               <div className="flex items-center gap-2">
-                <RiCheckLine className="w-5 h-5 text-green-500" />
+                <RiCheckLine className="w-5 h-5 text-green-400" />
                 <span>5-Minute Setup</span>
               </div>
             </div>
