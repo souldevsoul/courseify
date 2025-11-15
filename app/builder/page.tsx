@@ -34,6 +34,7 @@ export default function CourseBuilderPage() {
   const [step, setStep] = useState<'topic' | 'generating' | 'preview'>('topic');
   const [courseData, setCourseData] = useState<CourseData | null>(null);
   const [publishing, setPublishing] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleGenerateCourse = async (data: {
     topic: string;

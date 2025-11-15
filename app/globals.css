@@ -265,6 +265,85 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@keyframes shimmer {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.05);
+  }
+  70% {
+    transform: translateY(5px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes word-reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) rotateX(-90deg);
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+    filter: blur(0);
+  }
+}
+
+/* Educational theme animations */
+@keyframes chalkboard-draw {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes page-flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes pencil-write {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes graduate-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+}
+
 /* Animation Classes */
 .animate-fade-in {
   animation: fadeIn 0.5s ease-out;
@@ -296,6 +375,34 @@ h1, h2, h3, h4, h5, h6 {
 
 .animate-wave {
   animation: wave 1s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 3s linear infinite;
+}
+
+.animate-bounce-in {
+  animation: bounce-in 0.8s ease-out;
+}
+
+.animate-word-reveal {
+  animation: word-reveal 0.6s ease-out;
+}
+
+.animate-chalkboard-draw {
+  animation: chalkboard-draw 2s ease-out;
+}
+
+.animate-page-flip {
+  animation: page-flip 1.5s ease-in-out infinite;
+}
+
+.animate-pencil-write {
+  animation: pencil-write 2s ease-out;
+}
+
+.animate-graduate-float {
+  animation: graduate-float 3s ease-in-out infinite;
 }
 
 /* Hover Effects */

@@ -9,7 +9,6 @@ import {
   RiSparklingLine,
   RiBookOpenLine,
   RiVideoLine,
-  RiArrowRightLine,
   RiPlayCircleLine,
   RiCheckLine,
   RiCloseLine,
@@ -23,8 +22,41 @@ export default function Home() {
   const [isVisible, setIsVisible] = React.useState(false)
   const [currentCourse, setCurrentCourse] = React.useState(0)
 
+  // Stats counter animation
+  const [stats, setStats] = React.useState({
+    courses: 0,
+    students: 0,
+    setupTime: 0
+  })
+
   React.useEffect(() => {
     setIsVisible(true)
+
+    // Counter animation for stats
+    setTimeout(() => {
+      const duration = 2000
+      const steps = 60
+      const interval = duration / steps
+
+      let currentStep = 0
+      const timer = setInterval(() => {
+        currentStep++
+        const progress = currentStep / steps
+
+        setStats({
+          courses: Math.floor(10000 * progress),
+          students: Math.floor(50000 * progress),
+          setupTime: Math.floor(5 * progress)
+        })
+
+        if (currentStep >= steps) {
+          clearInterval(timer)
+          setStats({ courses: 10000, students: 50000, setupTime: 5 })
+        }
+      }, interval)
+
+      return () => clearInterval(timer)
+    }, 1800)
   }, [])
 
   // Course examples carousel
@@ -135,24 +167,24 @@ export default function Home() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-pink-50">
+    <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-purple-200">
+      <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b-2 border-slate-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-lg">
+            <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-blue-600 rounded-2xl flex items-center justify-center shadow-md border-2 border-white">
               <RiBookOpenLine className="w-7 h-7 text-white" />
             </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Coursify</span>
+            <span className="text-2xl font-black bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">Coursify</span>
           </div>
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-sm font-semibold text-slate-700 hover:text-purple-600 transition-colors">Features</a>
-            <a href="#pricing" className="text-sm font-semibold text-slate-700 hover:text-purple-600 transition-colors">Pricing</a>
-            <a href="/about" className="text-sm font-semibold text-slate-700 hover:text-purple-600 transition-colors">About</a>
+            <a href="#features" className="text-sm font-bold text-slate-700 hover:text-purple-600 transition-colors uppercase tracking-wide">Features</a>
+            <a href="#pricing" className="text-sm font-bold text-slate-700 hover:text-purple-600 transition-colors uppercase tracking-wide">Pricing</a>
+            <a href="/about" className="text-sm font-bold text-slate-700 hover:text-purple-600 transition-colors uppercase tracking-wide">About</a>
           </nav>
           <Button
             size="md"
-            className="bg-gradient-to-r from-purple-500 to-pink-600 text-white hover:from-purple-600 hover:to-pink-700 shadow-lg hover:shadow-xl transition-all font-semibold"
+            className="bg-gradient-to-r from-purple-600 to-blue-600 text-white hover:from-purple-700 hover:to-blue-700 shadow-md hover:shadow-lg hover:scale-105 transition-all font-bold border-2 border-white/20"
             onClick={() => window.location.href = '/dashboard'}
           >
             Create Course
@@ -160,82 +192,210 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="relative overflow-hidden min-h-[90vh] flex items-center">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1920&q=80"
-            alt="Students learning together"
-            className="w-full h-full object-cover"
-          />
-          {/* Gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-purple-900/85 via-purple-900/70 to-purple-900/85" />
+      {/* Hero Section - Educational Command Center */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+        {/* Decorative academic elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-40">
+          {/* Graph paper grid */}
+          <div className="absolute inset-0" style={{
+            backgroundImage: `
+              linear-gradient(to right, rgb(148 163 184 / 0.1) 1px, transparent 1px),
+              linear-gradient(to bottom, rgb(148 163 184 / 0.1) 1px, transparent 1px)
+            `,
+            backgroundSize: '40px 40px'
+          }} />
+
+          {/* Floating academic icons */}
+          <div className="absolute top-20 left-[10%] text-purple-200 opacity-20 animate-float">
+            <RiBookOpenLine className="w-24 h-24" />
+          </div>
+          <div className="absolute top-40 right-[15%] text-purple-200 opacity-20 animate-float" style={{ animationDelay: '1s' }}>
+            <RiAwardLine className="w-20 h-20" />
+          </div>
+          <div className="absolute bottom-40 left-[20%] text-fuchsia-200 opacity-20 animate-float" style={{ animationDelay: '2s' }}>
+            <RiPresentationLine className="w-28 h-28" />
+          </div>
         </div>
 
-        <div className="absolute inset-0 overflow-hidden pointer-events-none z-[1]">
-          <div className="absolute top-1/4 -left-24 w-96 h-96 bg-purple-300/15 rounded-full blur-3xl" />
-          <div className="absolute bottom-1/4 -right-24 w-96 h-96 bg-pink-300/15 rounded-full blur-3xl" />
-        </div>
-
-        <div className="max-w-7xl mx-auto px-6 py-24 relative z-10">
-          <div className="text-center space-y-12">
-            <div className={`inline-flex items-center gap-3 px-6 py-3 bg-white/80 backdrop-blur-sm rounded-full shadow-lg border border-purple-200 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}>
-              <RiSparklingLine className="w-5 h-5 text-purple-600" />
-              <Text variant="body-sm" className="font-semibold text-slate-700">AI-Powered Course Creation</Text>
-            </div>
-
-            <div className="space-y-6">
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
-                <span className={`block transition-all duration-700 delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                  <span className="text-white">Create Online Courses</span>
-                </span>
-                <span className={`block transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                  <span className="bg-gradient-to-r from-pink-400 to-purple-300 bg-clip-text text-transparent">In Minutes</span>
-                </span>
-                <span className={`block transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-                  <span className="text-white">With AI</span>
-                </span>
-              </h1>
-            </div>
-
-            <div className={`transition-all duration-700 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-              <Text variant="lead" className="text-purple-100 max-w-3xl mx-auto text-xl md:text-2xl">
-                Transform your expertise into professional online courses. AI generates curriculum, videos, quizzes, and more. No technical skills required.
-              </Text>
-            </div>
-
-            <div className={`flex flex-wrap justify-center gap-6 pt-4 transition-all duration-700 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-              <Button
-                size="xl"
-                className="gap-3 bg-gradient-to-r from-purple-500 to-pink-600 text-white hover:from-purple-600 hover:to-pink-700 shadow-xl hover:shadow-2xl transition-all font-semibold text-lg px-12 py-8 rounded-2xl"
-                onClick={() => window.location.href = '/dashboard'}
-              >
-                <RiArrowRightLine className="w-6 h-6" />
-                Create Your First Course
-              </Button>
-              <Button
-                size="xl"
-                className="gap-3 bg-white text-slate-700 hover:bg-slate-50 shadow-lg hover:shadow-xl transition-all font-semibold text-lg px-12 py-8 rounded-2xl border border-slate-200"
-                onClick={() => window.location.href = '/demo'}
-              >
-                <RiPlayCircleLine className="w-6 h-6" />
-                See Examples
-              </Button>
-            </div>
-
-            <div className={`flex flex-wrap justify-center items-center gap-8 pt-12 text-sm text-purple-100 transition-all duration-700 delay-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-              <div className="flex items-center gap-2">
-                <RiCheckLine className="w-5 h-5 text-green-400" />
-                <span>10,000+ Courses Created</span>
+        <div className="max-w-7xl mx-auto px-6 py-20 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[85vh]">
+            {/* Left: Content */}
+            <div className="space-y-8">
+              {/* Badge */}
+              <div className={`inline-flex items-center gap-3 px-5 py-2.5 bg-white rounded-2xl shadow-md border-2 border-slate-200 transition-all duration-700 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
+                <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse" />
+                <Text variant="body-sm" className="font-bold text-slate-700 tracking-wide uppercase text-xs">AI-Powered Education Platform</Text>
               </div>
-              <div className="flex items-center gap-2">
-                <RiCheckLine className="w-5 h-5 text-green-400" />
-                <span>50,000+ Students Enrolled</span>
+
+              {/* Main headline with academic styling */}
+              <div className="space-y-4">
+                <h1 className={`text-5xl md:text-6xl lg:text-7xl font-black leading-[1.1] transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+                  style={{ transitionDelay: '200ms' }}>
+                  <span className="block text-slate-900">Your Teaching</span>
+                  <span className="block text-slate-900">Command</span>
+                  <span className="block bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                    Center
+                  </span>
+                </h1>
+
+                <div className={`h-1.5 w-24 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full transition-all duration-1000 ${isVisible ? 'opacity-100 scale-x-100' : 'opacity-0 scale-x-0'}`}
+                  style={{ transitionDelay: '400ms', transformOrigin: 'left' }} />
               </div>
-              <div className="flex items-center gap-2">
-                <RiCheckLine className="w-5 h-5 text-green-400" />
-                <span>5-Minute Setup</span>
+
+              {/* Subtitle */}
+              <p className={`text-xl md:text-2xl text-slate-600 font-medium leading-relaxed max-w-xl transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+                style={{ transitionDelay: '600ms' }}>
+                Build professional online courses in minutes. AI creates your curriculum, videos, quizzes, and student materials automatically.
+              </p>
+
+              {/* Feature highlights */}
+              <div className={`space-y-3 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+                style={{ transitionDelay: '800ms' }}>
+                {[
+                  { icon: RiSparklingLine, text: "AI generates complete course structure" },
+                  { icon: RiVideoLine, text: "Auto-create video lessons & presentations" },
+                  { icon: RiGroupLine, text: "Student progress tracking built-in" }
+                ].map((item, idx) => (
+                  <div key={idx} className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-100 to-blue-100 flex items-center justify-center border-2 border-white shadow-sm">
+                      <item.icon className="w-5 h-5 text-purple-600" />
+                    </div>
+                    <span className="text-slate-700 font-semibold">{item.text}</span>
+                  </div>
+                ))}
+              </div>
+
+              {/* CTA Buttons */}
+              <div className={`flex flex-wrap gap-4 pt-4 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+                style={{ transitionDelay: '1000ms' }}>
+                <Button
+                  size="xl"
+                  className="gap-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white hover:from-purple-700 hover:to-blue-700 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 font-bold text-lg px-10 py-7 rounded-2xl border-2 border-white/20"
+                  onClick={() => window.location.href = '/dashboard'}
+                >
+                  <RiSparklingLine className="w-6 h-6" />
+                  Create Your First Course
+                </Button>
+                <Button
+                  size="xl"
+                  className="gap-3 bg-white text-slate-800 hover:bg-slate-50 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 font-bold text-lg px-10 py-7 rounded-2xl border-2 border-slate-200"
+                  onClick={() => window.location.href = '/demo'}
+                >
+                  <RiPlayCircleLine className="w-6 h-6 text-purple-600" />
+                  Watch Demo
+                </Button>
+              </div>
+
+              {/* Stats with academic styling */}
+              <div className={`flex flex-wrap gap-8 pt-8 border-t-2 border-slate-200 transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+                style={{ transitionDelay: '1200ms' }}>
+                <div className="text-center">
+                  <div className="text-3xl font-black text-slate-900 mb-1">{stats.courses.toLocaleString()}+</div>
+                  <div className="text-sm font-semibold text-slate-600 uppercase tracking-wide">Courses Built</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-black text-slate-900 mb-1">{stats.students.toLocaleString()}+</div>
+                  <div className="text-sm font-semibold text-slate-600 uppercase tracking-wide">Students Taught</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-black text-slate-900 mb-1">{stats.setupTime}min</div>
+                  <div className="text-sm font-semibold text-slate-600 uppercase tracking-wide">Setup Time</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right: Interactive Course Builder Preview */}
+            <div className={`relative transition-all duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}
+              style={{ transitionDelay: '400ms' }}>
+
+              {/* Main dashboard card */}
+              <div className="relative bg-white rounded-3xl shadow-2xl border-2 border-slate-200 overflow-hidden">
+                {/* Header bar */}
+                <div className="bg-gradient-to-r from-purple-600 to-blue-600 px-6 py-4 flex items-center gap-3">
+                  <div className="flex gap-1.5">
+                    <div className="w-3 h-3 rounded-full bg-white/30" />
+                    <div className="w-3 h-3 rounded-full bg-white/30" />
+                    <div className="w-3 h-3 rounded-full bg-white/30" />
+                  </div>
+                  <div className="text-white font-bold text-sm">Course Builder</div>
+                </div>
+
+                {/* Content area */}
+                <div className="p-6 space-y-4">
+                  {/* Course title input mockup */}
+                  <div className="space-y-2">
+                    <label className="text-xs font-bold text-slate-600 uppercase tracking-wide">Course Title</label>
+                    <div className="bg-slate-50 rounded-xl px-4 py-3 border-2 border-slate-200 font-semibold text-slate-900">
+                      Introduction to Web Development
+                    </div>
+                  </div>
+
+                  {/* Module list */}
+                  <div className="space-y-2">
+                    <label className="text-xs font-bold text-slate-600 uppercase tracking-wide">Course Modules</label>
+                    <div className="space-y-2">
+                      {[
+                        { title: "HTML Fundamentals", lessons: 8, duration: "45min", icon: RiBookOpenLine, color: "purple" },
+                        { title: "CSS Styling", lessons: 12, duration: "60min", icon: RiPresentationLine, color: "blue" },
+                        { title: "JavaScript Basics", lessons: 15, duration: "90min", icon: RiVideoLine, color: "indigo" },
+                      ].map((module, idx) => (
+                        <div key={idx}
+                          className="bg-gradient-to-br from-white to-slate-50 rounded-xl p-4 border-2 border-slate-200 hover:border-purple-300 transition-all hover:shadow-md cursor-pointer group"
+                          style={{
+                            animation: isVisible ? `slideInRight 0.6s ease-out ${0.6 + idx * 0.15}s both` : 'none'
+                          }}>
+                          <div className="flex items-start gap-3">
+                            <div className={`w-10 h-10 rounded-lg bg-gradient-to-br from-${module.color}-100 to-${module.color}-200 flex items-center justify-center border-2 border-white shadow-sm group-hover:scale-110 transition-transform`}>
+                              <module.icon className={`w-5 h-5 text-${module.color}-600`} />
+                            </div>
+                            <div className="flex-1 min-w-0">
+                              <div className="font-bold text-slate-900 text-sm mb-1">{module.title}</div>
+                              <div className="flex items-center gap-3 text-xs text-slate-500 font-semibold">
+                                <span>{module.lessons} lessons</span>
+                                <span>•</span>
+                                <span>{module.duration}</span>
+                              </div>
+                            </div>
+                            <div className="w-6 h-6 rounded-full bg-green-100 border-2 border-green-500 flex items-center justify-center">
+                              <RiCheckLine className="w-4 h-4 text-green-600" />
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* AI generation button mockup */}
+                  <button className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all flex items-center justify-center gap-2 border-2 border-white/20">
+                    <RiSparklingLine className="w-5 h-5 animate-pulse" />
+                    <span>AI Generate Content</span>
+                  </button>
+                </div>
+              </div>
+
+              {/* Floating student avatar cards */}
+              <div className="absolute -right-4 top-1/4 bg-white rounded-2xl shadow-xl border-2 border-slate-200 px-4 py-3 animate-float">
+                <div className="flex items-center gap-3">
+                  <div className="flex -space-x-2">
+                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-purple-400 to-blue-400 border-2 border-white" />
+                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-400 to-indigo-400 border-2 border-white" />
+                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-400 to-purple-400 border-2 border-white" />
+                  </div>
+                  <div className="text-xs font-bold text-slate-700">142 enrolled</div>
+                </div>
+              </div>
+
+              {/* Floating certificate badge */}
+              <div className="absolute -left-6 bottom-20 bg-white rounded-2xl shadow-xl border-2 border-slate-200 p-4 animate-float" style={{ animationDelay: '1.5s' }}>
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center">
+                    <RiAwardLine className="w-7 h-7 text-white" />
+                  </div>
+                  <div>
+                    <div className="text-xs font-bold text-slate-900">Auto Certificates</div>
+                    <div className="text-xs text-slate-500 font-semibold">On completion</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
